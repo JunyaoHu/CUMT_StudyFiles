@@ -1,0 +1,41 @@
+body{ scrollbar-3dlight-color:#595959; scrollbar-arrow-color:#FFFFFF; scrollbar-base-color:#CFCFCF; scrollbar-darkshadow-color:#FFFFFF; scrollbar-face-color:#CFCFCF; scrollbar-highlight-color:#FFFFFF; scrollbar-shadow-color:#595959;}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #333333; PADDING-TOP: 0px;
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #333333;
+}
+A {
+	COLOR: #333333; TEXT-DECORATION:underline;
+}
+A:hover {
+	COLOR: #FF0000; TEXT-DECORATION: underline;
+}
+.red {color: #FF0000}
+.mtitle {
+	color: #666666;
+	font-weight: bold;
+	font-size:14px;
+}
+form{margin:0px; padding:0px;}
+.bntStyle{
+	width:55px;
+	font-size:9pt;
+	height:19px;
+	cursor: hand;
+	background-image: url(seebutton3.gif);
+	background-position: center center;
+	border-top: 0px outset #eeeeee;
+	border-right: 0px outset #888888;
+	border-bottom: 0px outset #888888;
+	border-left: 0px outset #eeeeee;
+	padding-top: 4px;
+	background-repeat: repeat-x;
+}
+
+.bnt14{border:1px solid #CCCCCC; background-color:#FFFFFF; font-size:14px; cursor:pointer; padding-top:5px;}
+.g001 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #3366FF;
+}

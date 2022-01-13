@@ -1,0 +1,3 @@
+.actGotop{position:fixed; _position:absolute; bottom:100px; right:50px; width:150px; height:195px; display:none;}
+.actGotop a,.actGotop a:link{width:150px;height:195px;display:inline-block; background:url(../images/gotop.png) no-repeat; _background:url(../images/gotop.gif) no-repeat; outline:none;}
+.actGotop a:hover{width:150px; height:195px; background:url(../images/gotopd.gif) no-repeat; outline:none;}

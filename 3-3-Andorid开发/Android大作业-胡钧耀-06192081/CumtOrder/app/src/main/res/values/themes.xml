@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.CumtOrder" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="badge_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:minWidth">14dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/badge_bg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="Dialog_Style" parent="@android:style/Theme.Dialog">
+        <!--设置界面无标题栏-->
+        <item name="android:windowIsFloating">true</item>     <!--对话框浮在Activity之上-->
+        <item name="android:windowIsTranslucent">true</item> <!--设置对话框背景为透明-->
+        <item name="android:windowNoTitle">true</item>         <!--设置界面无标题-->
+        <!--设置窗体背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置对话框内容背景透明-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--设置对话框背景有半透明遮障层-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.ActivityDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>   <!--设置对话框背景为透明-->
+        <!--设置对话框背景有半透明遮障层-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item> <!--设置窗体内容背景-->
+        <!--点击对话框外的部分关闭该界面-->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsFloating">true</item> <!--浮在Activity之上-->
+    </style>
+</resources>
+
+

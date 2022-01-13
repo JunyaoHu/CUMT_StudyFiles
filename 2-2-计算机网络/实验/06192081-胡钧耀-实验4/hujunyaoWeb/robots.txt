@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+Disallow: /inc/
+Disallow: /Admin/
+Disallow: /wap/
+Disallow: /upfiles/
+Disallow: /themes/
+Disallow: /ncss/
+Disallow: /fckeditor/
+Disallow: /AppCode/

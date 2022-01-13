@@ -1,0 +1,1 @@
+<%Response.Redirect("ad_login.asp")%>

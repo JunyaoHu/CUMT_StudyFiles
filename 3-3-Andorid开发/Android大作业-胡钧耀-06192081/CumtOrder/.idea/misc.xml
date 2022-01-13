@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/add_car_selector.xml" value="0.1" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/add_normal.xml" value="0.15989583333333332" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/add_pressed.xml" value="0.15989583333333332" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/badge_bg.xml" value="0.11481481481481481" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/corner_bg.xml" value="0.13148148148148148" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/feature_bg.xml" value="0.290625" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/go_back_selector.xml" value="0.15989583333333332" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/ic_launcher_background.xml" value="0.290625" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/icon_bg.xml" value="0.290625" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/indicator_off.xml" value="0.12129629629629629" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/indicator_on.xml" value="0.12129629629629629" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/item_bg_selector.xml" value="0.11481481481481481" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/menu_item_bg_selector.xml" value="0.1" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/payment_bg_selector.xml" value="0.11481481481481481" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/register_selector.xml" value="0.10648148148148148" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/drawable/taste_bg.xml" value="0.15989583333333332" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_food.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_order.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_shop.xml" value="0.2" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_shop_detail.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/ad_banner.xml" value="0.1" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/adbanner.xml" value="0.4" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/car.xml" value="0.8" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/car_item.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/car_list.xml" value="0.31016731016731014" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/dialog_clear.xml" value="0.4" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/menu_item.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/order_head.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/order_item.xml" value="0.264" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/payment.xml" value="0.1390625" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/qr_code.xml" value="0.176" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/shop_car.xml" value="0.1" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/shop_detail_head.xml" value="0.1" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/shop_item.xml" value="0.1" />
+        <entry key="..\:/CodeField/AndroidCode/CumtOrder/app/src/main/res/layout/title_bar.xml" value="0.2734375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
