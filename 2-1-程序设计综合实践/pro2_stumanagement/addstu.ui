@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddStu</class>
+ <widget class="QDialog" name="AddStu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>新增学生信息</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/image/images/new.png</normaloff>:/image/images/new.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QComboBox{
+	border-radius:5px;
+	background-color: rgba(0, 150, 136, 0.75);
+	color:rgb(255,255,255);
+	font: 75 9pt &quot;微软雅黑&quot;;
+}
+QComboBox:hover{
+	border-color: rgb(0, 150, 136);
+	background-color: rgba(0, 150, 136, 0.8);
+}
+QComboBox:pressed{
+	background-color: rgba(0, 150, 136, 0.95);}
+QComboBox::drop-down{border-left-color: darkgray;}
+
+QLineEdit{border-radius:5px;}
+</string>
+  </property>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>250</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius:5px;
+	background-color: rgba(0, 150, 136, 0.75);
+	color:rgb(255,255,255);
+	font: 75 10pt &quot;微软雅黑&quot;;
+}
+QPushButton:hover{
+	border-color: rgb(0, 150, 136);
+	background-color: rgba(0, 150, 136, 0.8);
+}
+QPushButton:pressed{
+	background-color: rgba(0, 150, 136, 0.95);
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="ClassBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>162</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string>请先选择学院</string>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAtBottom</enum>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>请先选择学院</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="PartBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>129</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>计算机学院</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>化工学院</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Class">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>159</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>班级</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Tel">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>192</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>电话</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="GradeBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>96</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxCount">
+    <number>30</number>
+   </property>
+   <property name="duplicatesEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>请选择年级</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2017</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2018</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2019</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2020</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2021</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Part">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>126</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>学院</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Name">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>60</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>姓名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NameText">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>63</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	setMaxLength(8);
+    setPlaceholderText(&quot;abc&quot;);
+	background:transparent;
+	border-width:0;
+	border-style:outset;
+
+}
+
+
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>请输入姓名</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Num">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>27</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>学号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Grade">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>93</y>
+     <width>40</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>年级</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="TelText">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>195</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	setMaxLength(8);
+    setPlaceholderText(&quot;abc&quot;);
+	background:transparent;
+	border-width:0;
+	border-style:outset;
+
+}
+
+
+</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>请输入电话</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NumText">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	setMaxLength(8);
+	background:transparent;
+	border-width:0;
+	border-style:outset;
+}
+
+
+</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhDigitsOnly</set>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>最多八位</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="yes">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>250</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius:5px;
+	background-color: rgba(0, 150, 136, 0.75);
+	color:rgb(255,255,255);
+	font: 75 10pt &quot;微软雅黑&quot;;
+}
+QPushButton:hover{
+	border-color: rgb(0, 150, 136);
+	background-color: rgba(0, 150, 136, 0.8);
+}
+QPushButton:pressed{
+	background-color: rgba(0, 150, 136, 0.95);
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="picture">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>190</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>9</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius:5px;
+	background-color: rgba(0, 150, 136, 0.75);
+	color:rgb(255,255,255);
+	font: 75 9pt &quot;微软雅黑&quot;;
+}
+QPushButton:hover{
+	border-color: rgb(0, 150, 136);
+	background-color: rgba(0, 150, 136, 0.8);
+}
+QPushButton:pressed{
+	background-color: rgba(0, 150, 136, 0.95);
+}
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>修改照片</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="showpic">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>30</y>
+     <width>101</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>101</width>
+     <height>141</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>101</width>
+     <height>141</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>未上传照片</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>NumText</tabstop>
+  <tabstop>NameText</tabstop>
+  <tabstop>GradeBox</tabstop>
+  <tabstop>PartBox</tabstop>
+  <tabstop>ClassBox</tabstop>
+  <tabstop>TelText</tabstop>
+  <tabstop>picture</tabstop>
+  <tabstop>yes</tabstop>
+  <tabstop>back</tabstop>
+ </tabstops>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

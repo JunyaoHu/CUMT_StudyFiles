@@ -1,0 +1,138 @@
+[2021-12-24 20:42:52] [info]  [ 6572] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:42:52] [info]  [ 6572] Running Service 'Tomcat9'...
+[2021-12-24 20:42:52] [info]  [ 5760] Starting service...
+[2021-12-24 20:42:52] [error] [ 5760] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:42:52] [error] [ 5760] 系统找不到指定的路径。
+[2021-12-24 20:42:52] [error] [ 5760] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:42:52] [error] [ 5760] 系统找不到指定的路径。
+[2021-12-24 20:42:52] [error] [ 5760] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:42:52] [error] [ 5760] 系统找不到指定的路径。
+[2021-12-24 20:42:52] [error] [ 5760] ServiceStart returned 1.
+[2021-12-24 20:42:52] [error] [ 5760] 系统找不到指定的路径。
+[2021-12-24 20:42:52] [info]  [ 6572] Run service finished.
+[2021-12-24 20:42:52] [info]  [ 6572] Apache Commons Daemon procrun finished.
+[2021-12-24 20:44:41] [info]  [ 1320] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:44:41] [info]  [ 1320] Running Service 'Tomcat9'...
+[2021-12-24 20:44:41] [info]  [ 4272] Starting service...
+[2021-12-24 20:44:41] [error] [ 4272] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:44:41] [error] [ 4272] 系统找不到指定的路径。
+[2021-12-24 20:44:41] [error] [ 4272] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:44:41] [error] [ 4272] 系统找不到指定的路径。
+[2021-12-24 20:44:41] [error] [ 4272] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:44:41] [error] [ 4272] 系统找不到指定的路径。
+[2021-12-24 20:44:41] [error] [ 4272] ServiceStart returned 1.
+[2021-12-24 20:44:41] [error] [ 4272] 系统找不到指定的路径。
+[2021-12-24 20:44:41] [info]  [ 1320] Run service finished.
+[2021-12-24 20:44:41] [info]  [ 1320] Apache Commons Daemon procrun finished.
+[2021-12-24 20:44:50] [info]  [14412] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:44:50] [info]  [14412] Running Service 'Tomcat9'...
+[2021-12-24 20:44:50] [info]  [10168] Starting service...
+[2021-12-24 20:44:50] [error] [10168] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:44:50] [error] [10168] 系统找不到指定的路径。
+[2021-12-24 20:44:50] [error] [10168] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:44:50] [error] [10168] 系统找不到指定的路径。
+[2021-12-24 20:44:50] [error] [10168] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:44:50] [error] [10168] 系统找不到指定的路径。
+[2021-12-24 20:44:50] [error] [10168] ServiceStart returned 1.
+[2021-12-24 20:44:50] [error] [10168] 系统找不到指定的路径。
+[2021-12-24 20:44:50] [info]  [14412] Run service finished.
+[2021-12-24 20:44:50] [info]  [14412] Apache Commons Daemon procrun finished.
+[2021-12-24 20:45:13] [info]  [ 5712] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:45:13] [info]  [ 5712] Running Service 'Tomcat9'...
+[2021-12-24 20:45:13] [info]  [ 7512] Starting service...
+[2021-12-24 20:45:13] [error] [ 7512] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:45:13] [error] [ 7512] 系统找不到指定的路径。
+[2021-12-24 20:45:13] [error] [ 7512] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:45:13] [error] [ 7512] 系统找不到指定的路径。
+[2021-12-24 20:45:13] [error] [ 7512] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:45:13] [error] [ 7512] 系统找不到指定的路径。
+[2021-12-24 20:45:13] [error] [ 7512] ServiceStart returned 1.
+[2021-12-24 20:45:13] [error] [ 7512] 系统找不到指定的路径。
+[2021-12-24 20:45:13] [info]  [ 5712] Run service finished.
+[2021-12-24 20:45:13] [info]  [ 5712] Apache Commons Daemon procrun finished.
+[2021-12-24 20:45:36] [info]  [ 6936] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:45:36] [info]  [ 6936] Debugging 'Tomcat9' service...
+[2021-12-24 20:45:36] [info]  [ 6936] Starting service...
+[2021-12-24 20:45:36] [error] [ 6936] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:45:36] [error] [ 6936] 系统找不到指定的路径。
+[2021-12-24 20:45:36] [error] [ 6936] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:45:36] [error] [ 6936] 系统找不到指定的路径。
+[2021-12-24 20:45:36] [error] [ 6936] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:45:36] [error] [ 6936] 系统找不到指定的路径。
+[2021-12-24 20:45:36] [error] [ 6936] ServiceStart returned 1.
+[2021-12-24 20:45:36] [error] [ 6936] 系统找不到指定的路径。
+[2021-12-24 20:45:36] [info]  [ 6936] Debug service finished with exit code 1.
+[2021-12-24 20:45:36] [error] [ 6936] Apache Commons Daemon procrun failed with exit value: 3 (failed to run service as console application).
+[2021-12-24 20:45:36] [error] [ 6936] 系统找不到指定的路径。
+[2021-12-24 20:45:55] [info]  [ 7320] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:45:55] [info]  [ 7320] Debugging 'Tomcat9' service...
+[2021-12-24 20:45:55] [info]  [ 7320] Starting service...
+[2021-12-24 20:45:55] [error] [ 7320] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:45:55] [error] [ 7320] 系统找不到指定的路径。
+[2021-12-24 20:45:55] [error] [ 7320] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:45:55] [error] [ 7320] 系统找不到指定的路径。
+[2021-12-24 20:45:55] [error] [ 7320] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:45:55] [error] [ 7320] 系统找不到指定的路径。
+[2021-12-24 20:45:55] [error] [ 7320] ServiceStart returned 1.
+[2021-12-24 20:45:55] [error] [ 7320] 系统找不到指定的路径。
+[2021-12-24 20:45:55] [info]  [ 7320] Debug service finished with exit code 1.
+[2021-12-24 20:45:55] [error] [ 7320] Apache Commons Daemon procrun failed with exit value: 3 (failed to run service as console application).
+[2021-12-24 20:45:55] [error] [ 7320] 系统找不到指定的路径。
+[2021-12-24 20:47:51] [info]  [15220] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:47:51] [info]  [15220] Debugging 'Tomcat9' service...
+[2021-12-24 20:47:51] [info]  [15220] Starting service...
+[2021-12-24 20:47:51] [error] [15220] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:47:51] [error] [15220] 系统找不到指定的路径。
+[2021-12-24 20:47:51] [error] [15220] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:47:51] [error] [15220] 系统找不到指定的路径。
+[2021-12-24 20:47:51] [error] [15220] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:47:51] [error] [15220] 系统找不到指定的路径。
+[2021-12-24 20:47:51] [error] [15220] ServiceStart returned 1.
+[2021-12-24 20:47:51] [error] [15220] 系统找不到指定的路径。
+[2021-12-24 20:47:51] [info]  [15220] Debug service finished with exit code 1.
+[2021-12-24 20:47:51] [error] [15220] Apache Commons Daemon procrun failed with exit value: 3 (failed to run service as console application).
+[2021-12-24 20:47:51] [error] [15220] 系统找不到指定的路径。
+[2021-12-24 20:48:03] [info]  [10344] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:48:03] [info]  [10344] Debugging 'Tomcat9' service...
+[2021-12-24 20:48:03] [info]  [10344] Starting service...
+[2021-12-24 20:48:03] [error] [10344] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:48:03] [error] [10344] 系统找不到指定的路径。
+[2021-12-24 20:48:03] [error] [10344] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:48:03] [error] [10344] 系统找不到指定的路径。
+[2021-12-24 20:48:03] [error] [10344] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:48:03] [error] [10344] 系统找不到指定的路径。
+[2021-12-24 20:48:03] [error] [10344] ServiceStart returned 1.
+[2021-12-24 20:48:03] [error] [10344] 系统找不到指定的路径。
+[2021-12-24 20:48:03] [info]  [10344] Debug service finished with exit code 1.
+[2021-12-24 20:48:03] [error] [10344] Apache Commons Daemon procrun failed with exit value: 3 (failed to run service as console application).
+[2021-12-24 20:48:03] [error] [10344] 系统找不到指定的路径。
+[2021-12-24 20:50:18] [info]  [ 9776] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:50:18] [info]  [ 9776] Debugging 'Tomcat9' service...
+[2021-12-24 20:50:18] [info]  [ 9776] Starting service...
+[2021-12-24 20:50:18] [error] [ 9776] Invalid RuntimeLib specified 'D:\Software\JavaJDK\bin\server\jvm.dll'
+[2021-12-24 20:50:18] [error] [ 9776] 系统找不到指定的路径。
+[2021-12-24 20:50:18] [error] [ 9776] Failed to load JVM DLL 'D:\Software\JavaJDK\bin\server\jvm.dll', home ''.
+[2021-12-24 20:50:18] [error] [ 9776] 系统找不到指定的路径。
+[2021-12-24 20:50:18] [error] [ 9776] Failed creating Java 'D:\Software\JavaJDK\bin\server\jvm.dll'.
+[2021-12-24 20:50:18] [error] [ 9776] 系统找不到指定的路径。
+[2021-12-24 20:50:18] [error] [ 9776] ServiceStart returned 1.
+[2021-12-24 20:50:18] [error] [ 9776] 系统找不到指定的路径。
+[2021-12-24 20:50:18] [info]  [ 9776] Debug service finished with exit code 1.
+[2021-12-24 20:50:18] [error] [ 9776] Apache Commons Daemon procrun failed with exit value: 3 (failed to run service as console application).
+[2021-12-24 20:50:18] [error] [ 9776] 系统找不到指定的路径。
+[2021-12-24 20:51:53] [info]  [14768] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:51:53] [info]  [14768] Debugging 'Tomcat9' service...
+[2021-12-24 20:51:53] [info]  [14768] Starting service...
+[2021-12-24 20:51:54] [info]  [14768] Service started in 1253 milliseconds.
+[2021-12-24 20:51:56] [info]  [10356] Console CTRL+CLOSE event signaled.
+[2021-12-24 20:51:56] [info]  [10356] Stopping service...
+[2021-12-24 20:51:57] [info]  [10356] Service stop thread completed.
+[2021-12-24 20:59:12] [info]  [ 9968] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-24 20:59:12] [info]  [ 9968] Running Service 'Tomcat9'...
+[2021-12-24 20:59:12] [info]  [ 2776] Starting service...
+[2021-12-24 20:59:14] [info]  [ 2776] Service started in 2028 milliseconds.
+[2021-12-25 16:24:04] [info]  [ 6080] Console SHUTDOWN event signaled.
+[2021-12-25 16:24:04] [info]  [ 6080] Stopping service...
+[2021-12-25 16:24:05] [info]  [ 6080] Service stop thread completed.
+[2021-12-25 16:24:05] [info]  [ 9968] Run service finished.
+[2021-12-25 16:24:05] [info]  [ 9968] Apache Commons Daemon procrun finished.

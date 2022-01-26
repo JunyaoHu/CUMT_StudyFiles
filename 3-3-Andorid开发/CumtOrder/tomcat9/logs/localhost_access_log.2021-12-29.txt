@@ -1,0 +1,8 @@
+10.3.109.193 - - [29/Dec/2021:19:34:40 +0800] "GET /order/shop_list_data.json HTTP/1.1" 200 3684
+10.3.109.193 - - [29/Dec/2021:19:34:58 +0800] "GET /order/img/food/food11.png HTTP/1.1" 200 72207
+10.3.109.193 - - [29/Dec/2021:19:34:58 +0800] "GET /order/img/food/food12.png HTTP/1.1" 200 82315
+10.3.109.193 - - [29/Dec/2021:19:34:58 +0800] "GET /order/img/food/food13.png HTTP/1.1" 200 94531
+10.3.109.193 - - [29/Dec/2021:19:35:46 +0800] "GET /order/img/food/food21.png HTTP/1.1" 200 95790
+10.3.109.193 - - [29/Dec/2021:19:35:56 +0800] "GET /order/img/food/food21.png HTTP/1.1" 200 95790
+10.3.109.193 - - [29/Dec/2021:19:35:56 +0800] "GET /order/img/food/food22.png HTTP/1.1" 200 111252
+10.3.109.193 - - [29/Dec/2021:19:35:56 +0800] "GET /order/img/food/food23.png HTTP/1.1" 200 101991

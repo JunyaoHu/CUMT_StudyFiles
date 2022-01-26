@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>welcome</class>
+ <widget class="QMainWindow" name="welcome">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>welcome</string>
+  </property>
+  <widget class="QWidget" name="welcomemain">
+   <widget class="QPushButton" name="Easy">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius:20px;
+	background-color: rgba(255, 255, 255,0.7);
+	font: 75 12pt &quot;微软雅黑&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(255, 255, 255,0.9);
+}
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255,0.95);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>简单模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titleEng">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>301</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Againts</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Puzzle Master</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Hard">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>240</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius:20px;
+	background-color: rgba(255, 255, 255,0.7);
+	font: 75 12pt &quot;微软雅黑&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(255, 255, 255,0.9);
+}
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255,0.95);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>挑战模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titleChi">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>311</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>演示镇魂行楷</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>拼图大师</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>691</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/main.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Rank">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>300</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius:20px;
+	background-color: rgba(255, 255, 255,0.7);
+	font: 75 12pt &quot;微软雅黑&quot;;
+}
+QPushButton:hover{
+	background-color: rgba(255, 255, 255,0.9);
+}
+QPushButton:pressed{
+	background-color: rgba(255, 255, 255,0.95);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>排行榜</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>370</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑 Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border-radius:10px;
+	background-color: rgba(0, 0, 0,0.5);</string>
+    </property>
+    <property name="text">
+     <string>  计科2019-4班 胡钧耀 06192081</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>Easy</zorder>
+   <zorder>titleEng</zorder>
+   <zorder>Hard</zorder>
+   <zorder>titleChi</zorder>
+   <zorder>Rank</zorder>
+   <zorder>label</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
