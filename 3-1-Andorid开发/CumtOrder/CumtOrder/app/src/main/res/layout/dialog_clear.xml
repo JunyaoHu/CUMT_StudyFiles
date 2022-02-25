@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="确认清空购物车？"
+        android:textColor="@color/color_gray"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/blue_color"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center"
+            android:text="清空"
+            android:textColor="@color/blue_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

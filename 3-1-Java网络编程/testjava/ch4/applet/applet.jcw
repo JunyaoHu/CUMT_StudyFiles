@@ -1,0 +1,15 @@
+! ** JCreator Workspace File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.00"
+LABEL := "applet"
+
+! Start Project Structure
+#[BeginProject]SOURCE := "\\LineApplet\\LineApplet.jcp" #[EndProject]
+
+! Start Last Document Structure
+#[BeginFile]SOURCE := "\\LineApplet\\LineApplet.java" #[EndFile]
+#[BeginFile]SOURCE := "\\LineApplet\\classes\\LineApplet.htm" #[EndFile]
+
+! Start Breakpoint Structure
+

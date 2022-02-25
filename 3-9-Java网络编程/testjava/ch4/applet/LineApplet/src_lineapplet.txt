@@ -1,1 +1,0 @@
-H:\java-example\ch4\applet\LineApplet\LineApplet.java

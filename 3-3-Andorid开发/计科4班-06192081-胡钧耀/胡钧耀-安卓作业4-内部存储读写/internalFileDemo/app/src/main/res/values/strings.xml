@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">internalFileDemo</string>
-    <string name="readSuccess">文件读取成功，文件长度为：</string>
-</resources>
