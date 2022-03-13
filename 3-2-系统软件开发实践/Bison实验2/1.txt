@@ -1,0 +1,9 @@
+  sti  leng  type  term  
+    1     4     0     1   <identifier>  main
+    2     1     0     1   <identifier>  i
+    3     1     0     2   <constant>    0
+    4     1     0     1   <identifier>  j
+    5     2     0     1   <identifier>  t1
+    6     4     0     4   {typedef}     uint
+    7     2     0     1   <identifier>  xx
+    8     2     0     1   <identifier>  yy

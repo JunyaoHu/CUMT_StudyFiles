@@ -1,0 +1,101 @@
+Symbol Table ...
+
+  sti  leng  type  term  
+    1     4     0     1   <identifier>                    main
+    2     1     0     1   <identifier>                    i
+    3     1     0     2   <constant>                      0
+    4     1     0     1   <identifier>                    j
+    5     2     0     1   <identifier>                    t1
+    6     4     0     4   {typedef}                       uint
+    7     2     0     1   <identifier>                    xx
+    8     2     0     1   <identifier>                    yy
+
+Abstract Syntax Tree ...
+
+  node  prev  next parent child  line   sti 
+    33     0     0      0    32     9     0     0     0   + goal_
+    32     0    55     33    31     9     0     0     0     + extdef_
+    31     0     0     32     7     9     0     0     0     | + funcdef_
+     7     0    30     31     3     5     0     0     0     |   + funcdecl_
+     3     0     6      7     1     4     0     0     0     |   | + decl_spec_
+     1     0     0      3     0     4     0     0     0     |   | | + void_
+     6     3     0      0     5     5     0     0     0     |   | + direct_decl_
+     5     0     0      6     4     4     0     0     0     |   |   + funcdecl_
+     4     0     0      5     2     4     0     0     0     |   |     + ident_
+     2     0     0      4     0     4     1     0     0     |   |       + IDENT_ (main)
+    30     7     0      0    29     9     0     0     0     |   + funcbody_
+    29     0     0     30    18     9     0     0     0     |     + compound_stmt_
+    18     0     0     29    17     6     0     0     0     |       + declarations_
+    17     0    28     18    10     6     0     0     0     |         + decl_init_
+    10     0    16     17     8     6     0     0     0     |         | + decl_spec_
+     8     0     0     10     0     6     0     0     0     |         | | + int_
+    16    10     0      0    15     6     0     0     0     |         | + init_declarators_
+    15     0     0     16    12     6     0     0     0     |         |   + declaratorinit_
+    12     0    14     15    11     6     0     0     0     |         |     + direct_decl_
+    11     0     0     12     9     6     0     0     0     |         |     | + ident_
+     9     0     0     11     0     6     2     0     0     |         |     |   + IDENT_ (i)
+    14    12     0      0    13     6     0     0     0     |         |     + assign_
+    13     0     0     14     0     6     3     0     0     |         |       + CONST_ (0)
+    28    17     0      0    21     7     0     0     0     |         + decl_init_
+    21     0    27     28    19     7     0     0     0     |           + decl_spec_
+    19     0     0     21     0     7     0     0     0     |           | + int_
+    27    21     0      0    26     7     0     0     0     |           + init_declarators_
+    26     0     0     27    23     7     0     0     0     |             + declaratorinit_
+    23     0    25     26    22     7     0     0     0     |               + direct_decl_
+    22     0     0     23    20     7     0     0     0     |               | + ident_
+    20     0     0     22     0     7     4     0     0     |               |   + IDENT_ (j)
+    25    23     0      0    24     7     0     0     0     |               + assign_
+    24     0     0     25     0     7     3     0     0     |                 + CONST_ (0)
+    55    32    66      0    54    14     0     0     0     + extdef_
+    54     0     0     55    40    14     0     0     0     | + funcdef_
+    40     0    53     54    36    12     0     0     0     |   + funcdecl_
+    36     0    39     40    34    11     0     0     0     |   | + decl_spec_
+    34     0     0     36     0    11     0     0     0     |   | | + void_
+    39    36     0      0    38    12     0     0     0     |   | + direct_decl_
+    38     0     0     39    37    11     0     0     0     |   |   + funcdecl_
+    37     0     0     38    35    11     0     0     0     |   |     + ident_
+    35     0     0     37     0    11     5     0     0     |   |       + IDENT_ (t1)
+    53    40     0      0    52    14     0     0     0     |   + funcbody_
+    52     0     0     53    51    14     0     0     0     |     + compound_stmt_
+    51     0     0     52    50    13     0     0     0     |       + declarations_
+    50     0     0     51    43    13     0     0     0     |         + decl_init_
+    43     0    49     50    41    13     0     0     0     |           + decl_spec_
+    41     0     0     43     0    13     0     0     0     |           | + int_
+    49    43     0      0    48    13     0     0     0     |           + init_declarators_
+    48     0     0     49    45    13     0     0     0     |             + declaratorinit_
+    45     0    47     48    44    13     0     0     0     |               + direct_decl_
+    44     0     0     45    42    13     0     0     0     |               | + ident_
+    42     0     0     44     0    13     2     0     0     |               |   + IDENT_ (i)
+    47    45     0      0    46    13     0     0     0     |               + assign_
+    46     0     0     47     0    13     3     0     0     |                 + CONST_ (0)
+    66    55    75      0    65    17     0     0     0     + extdef_
+    65     0     0     66    56    17     0     0     0     | + decl_init_
+    56     0    64     65    57    17     0     0     0     |   + typedef_
+    57     0     0     56    60    17     0     0     0     |   | + unsigned_
+    60     0     0     57    58    17     0     0     0     |   |   + decl_spec_
+    58     0     0     60     0    17     0     0     0     |   |     + int_
+    64    56     0      0    63    17     0     0     0     |   + init_declarators_
+    63     0     0     64    62    17     0     0     0     |     + declarator_
+    62     0     0     63    61    17     0     0     0     |       + direct_decl_
+    61     0     0     62    59    17     0     0     0     |         + ident_
+    59     0     0     61     0    17     6     0     0     |           + IDENT_ (uint)
+    75    66    84      0    74    19     0     0     0     + extdef_
+    74     0     0     75    69    19     0     0     0     | + decl_init_
+    69     0    73     74    67    19     0     0     0     |   + decl_spec_
+    67     0     0     69     0    19     6     0     0     |   | + type_name_ (uint)
+    73    69     0      0    72    19     0     0     0     |   + init_declarators_
+    72     0     0     73    71    19     0     0     0     |     + declarator_
+    71     0     0     72    70    19     0     0     0     |       + direct_decl_
+    70     0     0     71    68    19     0     0     0     |         + ident_
+    68     0     0     70     0    19     7     0     0     |           + IDENT_ (xx)
+    84    75     0      0    83    20     0     0     0     + extdef_
+    83     0     0     84    78    20     0     0     0       + decl_init_
+    78     0    82     83    76    20     0     0     0         + decl_spec_
+    76     0     0     78     0    20     6     0     0         | + type_name_ (uint)
+    82    78     0      0    81    20     0     0     0         + init_declarators_
+    81     0     0     82    80    20     0     0     0           + declarator_
+    80     0     0     81    79    20     0     0     0             + direct_decl_
+    79     0     0     80    77    20     0     0     0               + ident_
+    77     0     0     79     0    20     8     0     0                 + IDENT_ (yy)
+
+End of Output.
