@@ -1,0 +1,2 @@
+line(7): Error : syntax error, unexpected '='
+line(9): Error : syntax error, unexpected '}', expecting ',' or ';'

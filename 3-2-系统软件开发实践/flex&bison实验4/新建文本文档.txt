@@ -1,0 +1,41 @@
+所有3-3改3-4
+
+3-4.h加
+char* result;
+
+.l加
+# include <string.h>
+
+fb3-4.y改
+calclist: /* nothing */
+  | calclist stmt ';' EOL {
+     sprintf(result,"%4.4g",eval($2));
+     treefree($2);
+    }
+  | calclist LET NAME '(' symlist ')' '{' list '}' EOL {
+                       dodef($3, $5, $8);
+                       sprintf(result, "Defined %s .", $3->name); }
+ ;
+%%
+
+
+
+bison -d -o fb3-4.tab.c fb3-4.y  把两个tab弄出来
+flex -ofb3-4.lex.c fb3-4.l 弄出lex.c
+
+lex.c加
+void yyparse();
+
+char* calc(const char* expr)
+{
+    size_t len = strlen(expr);
+    result = (char*)malloc(sizeof(char)*(len+2));
+    yy_switch_to_buffer(yy_scan_string(expr));
+    yyparse();
+    return result;
+}
+
+
+gcc -fpic fb3-4.lex.c fb3-4.tab.c fb3-4funcs.c -lm -shared -o libmycalc.so
+
+
