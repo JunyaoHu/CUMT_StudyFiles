@@ -1,0 +1,16 @@
+[MASTER] 16:50:11.270 [Thread-2] ERROR System - Error while initializing System: null
+[MASTER] 16:50:11.387 [pool-2-thread-1] ERROR TestSuiteGenerator - Problem for net.mooctest.RedBlackTree. Full stack:
+java.lang.NullPointerException: null
+	at org.evosuite.runtime.System.restoreProperties(System.java:100) ~[evosuite-standalone-runtime-1.0.6.jar:1.0.6]
+	at org.evosuite.runtime.System.resetRuntime(System.java:328) ~[evosuite-standalone-runtime-1.0.6.jar:1.0.6]
+	at org.evosuite.runtime.Runtime.resetRuntime(Runtime.java:81) ~[evosuite-standalone-runtime-1.0.6.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:303) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.testcase.execution.TestCaseExecutor.execute(TestCaseExecutor.java:277) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.initializeTargetClass(TestSuiteGenerator.java:97) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.TestSuiteGenerator.generateTestSuite(TestSuiteGenerator.java:130) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.rmi.service.ClientNodeImpl$1.run(ClientNodeImpl.java:145) [evosuite-master-1.0.6.jar:1.0.6]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_311]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_311]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_311]

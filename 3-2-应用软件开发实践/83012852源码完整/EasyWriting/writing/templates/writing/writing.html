@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写作小助手-写作台</title>
+</head>
+{% load static %}
+<script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+<body>
+<div class="layui-header">
+    <ul class="layui-nav">
+        <li class="layui-nav-item"><a href="{% url 'writing:index' %}">主页</a></li>
+        <li class="layui-nav-item layui-this"><a href="">写作台</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:help'  %}">使用指南</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:about' %}">关于</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+            <a href="javascript:;">
+                <img id='iconNav' src="{% static 'media/web/icon.jpg' %}" class="layui-nav-img">
+                欢迎您，{{ username }}！
+            </a>
+            <dl class="layui-nav-child">
+                <dd><a href="{% url 'writing:user' %}">修改信息</a></dd>
+                <dd><a href="{% url 'user:logout' %}">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<div style="margin: 10px">
+    <div style="margin: 10px">
+        <blockquote class="layui-elem-quote layui-text">
+            这里总览自己已经创建的文章。
+        </blockquote>
+
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>文章总览</legend>
+        </fieldset>
+
+        <div class="layui-inline">
+            <div class="layui-inline">
+                <button type="button" class="layui-btn" id="add">新建文章</button>
+            </div>
+            <div class="layui-inline">
+                <form action="" class="layui-form">
+                    {% csrf_token %}
+                    <div class="layui-inline">
+                        <label class="layui-form-label">文章类型</label>
+                        <div class="layui-input-block">
+                            <select name="search_category">
+                                <option value="" selected=""></option>
+                                <option value="党建">党建</option>
+                                <option value="科技">科技</option>
+                                <option value="国际">国际</option>
+                                <option value="文化">文化</option>
+                                <option value="经济">经济</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">搜索类型</label>
+                        <div class="layui-input-block">
+                            <select name="search_type">
+                                <option value="" selected=""></option>
+                                <option value="title">按标题搜索</option>
+                                <option value="abstract">按摘要搜索</option>
+                                <option value="body">按内容搜索</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <input name="search" autocomplete="off" id="input_search" class="layui-input">
+                        </div>
+                        <button type="submit" class="layui-btn" id="search" lay-submit="" lay-filter="search">搜索
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <table id="article" lay-filter="article" lay-data="{id:'article'}"></table>
+    </div>
+
+
+</body>
+<script src="{% static 'layui/layui.js' %}"></script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<script>
+    layui.use(['table', 'form'], function () {
+        var table = layui.table;
+        var form = layui.form;
+        var token_value = $('[name="csrfmiddlewaretoken"]').val();
+        {#console.log(token_value);#}
+        table.render({
+            elem: '#article'
+            , height: 500
+            , url: '{% url 'writing:query'%}'
+            , method: 'post'
+            , where: {'csrfmiddlewaretoken': token_value}
+            , page: true //开启分页
+            , request: {
+                pageName: 'pageNo' //页码的参数名称，默认：page
+                , limitName: 'pageSize' //每页数据量的参数名，默认：limit
+            }
+            , cols: [[ //表头
+                {type: 'checkbox', fixed: 'left'}
+                , {field: 'id', title: '文章ID', width: 100, sort: true}
+                , {field: 'title', title: '标题', width: 200, sort: true}
+                , {field: 'category', title: '类型', width: 100, sort: true}
+                , {field: 'author', title: '作者', width: 100, sort: true}
+                , {field: 'abstract', title: '摘要', width: 300, sort: true}
+                , {field: 'keyword', title: '关键词', width: 200, sort: true}
+                , {field: 'body', title: '内容', width: 300}
+                , {
+                    field: 'create_time',
+                    title: '创建时间',
+                    width: 180,
+                    sort: true,
+                    templet: "<div>{% verbatim %}{{ layui.util.toDateString( d.create_time, 'yyyy-MM-dd HH:mm:ss') }}{% endverbatim %}</div>"
+                }
+                , {
+                    field: 'update_time',
+                    title: '修改时间',
+                    width: 180,
+                    sort: true,
+                    templet: "<div>{% verbatim %}{{ layui.util.toDateString( d.update_time, 'yyyy-MM-dd HH:mm:ss') }}{% endverbatim %}</div>"
+                }
+                , {field: 'right', title: '操作', width: 150, toolbar: '#barDemo', fixed: 'right'}
+            ]]
+        });
+
+
+        //监听行工具事件
+        table.on('tool(article)', function (obj) {
+            var data = obj.data
+                , layer = layui.layer;
+            // 删除
+            if (obj.event === 'del') {
+                layer.confirm("确定删除这行数据吗？", function () {
+                    $.ajax({
+                        url: "{% url 'writing:delete' %}",
+                        method: "post",
+                        data: {'article_id': data.id},
+                        success: function (res) {
+                            if (res === "success") {
+                                layer.msg('删除成功', {icon: 1});
+                                obj.del();
+                            } else {
+                                layer.msg('删除失败', {icon: 2});
+                            }
+                        },
+                        async: false
+                    })
+                    layer.close();
+                });
+
+            } else if (obj.event === 'edit') {
+                {#console.log(data.id)#}
+                layer.open({
+                    type: 2
+                    , title: '文章属性编辑'
+                    , maxmin: true
+                    , content: "../" + data.id
+                    , area: ['1000px', '620px']
+                    , cancel: function (index, layero) {
+                        table.reload('article');
+                    }
+                });
+
+
+            }
+        });
+
+        $('#add').on('click', function () {
+            window.location.href = '{% url 'writing:create' %}';
+        });
+
+        form.on('submit(search)', function (data) {
+            table.reload('article', {
+                url: '{% url 'writing:query'%}',
+                method: "post",
+                page: {curr: 1},
+                where: data.field,
+                request: {
+                    pageName: 'pageNo',  //页码的参数名称，默认：page
+                    limitName: 'pageSize' //每页数据量的参数名，默认：limit
+                },
+            })
+            return false;
+        });
+
+        {#$('#search').on('click', function () {#}
+        {#    var layer = layui.layer;#}
+        {#    var search_title = $("#input_search").val();#}
+        {#    var search_type = $("[selected]").val();#}
+        {#    console.log(search_title)#}
+        {#    console.log(search_type)#}
+
+        {# });#}
+    });
+</script>
+</html>

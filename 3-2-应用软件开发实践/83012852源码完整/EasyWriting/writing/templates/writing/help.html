@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写作小助手-使用指南</title>
+</head>
+{% load static %}
+<script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+<body>
+<div class="layui-header">
+    <ul class="layui-nav">
+        <li class="layui-nav-item"><a href="{% url 'writing:index' %}">主页</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:list' %}">写作台</a></li>
+        <li class="layui-nav-item layui-this"><a href="">使用指南</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:about' %}">关于</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+            <a href="javascript:;">
+                <img id='iconNav' src="{% static 'media/web/icon.jpg' %}" class="layui-nav-img">
+                欢迎您，{{ username }}！
+            </a>
+            <dl class="layui-nav-child">
+                <dd><a href="{% url 'writing:user' %}">修改信息</a></dd>
+                <dd><a href="{% url 'user:logout' %}">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<div style="margin: 10px">
+    <div style="margin: 10px">
+        <blockquote class="layui-elem-quote layui-text">
+            这里是用户写作平台的使用指南，可以查看平台的使用方法。
+        </blockquote>
+        <iframe class="pdf" src="{% static 'media/pdf/help_document.pdf' %}" style = "width:100%;
+    height:600px; border: none"></iframe>
+    </div>
+</div>
+
+
+</body>
+<script src="{% static 'layui/layui.js' %}"></script>
+</html>

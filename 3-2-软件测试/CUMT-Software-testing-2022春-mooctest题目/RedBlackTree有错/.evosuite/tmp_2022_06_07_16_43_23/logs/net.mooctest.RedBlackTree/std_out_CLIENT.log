@@ -1,0 +1,4 @@
+* Starting client
+* Connecting to master process on port 12567
+* Analyzing classpath: 
+* Error while initializing target class: java.lang.NullPointerException

@@ -1,0 +1,227 @@
+package net.mooctest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import static org.evosuite.runtime.EvoAssertions.*;
+public class TrieTest {
+
+	@Test
+	public void test() {
+		Trie tree=new Trie();
+	}
+	
+  @Test(timeout = 4000)
+  public void test00()  throws Throwable  {
+      Trie trie0 = new Trie();
+      Trie.TrieNode trie_TrieNode0 = trie0.new TrieNode();
+  }
+
+  @Test(timeout = 4000)
+  public void test01()  throws Throwable  {
+      Trie trie0 = new Trie();
+      // Undeclared exception!
+      try { 
+        trie0.preTraverse((Trie.TrieNode) null, "");
+        fail("Expecting exception: NullPointerException");
+      
+      } catch(NullPointerException e) {
+         //
+         // no message in exception (getMessage() returned null)
+         //
+         verifyException("net.mooctest.Trie$TrieNode", e);
+      }
+  }
+
+  @Test(timeout = 4000)
+  public void test02()  throws Throwable  {
+      Trie trie0 = new Trie();
+      // Undeclared exception!
+      try { 
+        trie0.insert("9M/eJ+IF^9^<IlbU]?T");
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -40
+         //
+         verifyException("net.mooctest.Trie", e);
+      }
+  }
+
+  @Test(timeout = 4000)
+  public void test03()  throws Throwable  {
+      Trie trie0 = new Trie();
+      // Undeclared exception!
+      try { 
+        trie0.hasPrefix("OX4?f; ");
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -18
+         //
+         verifyException("net.mooctest.Trie", e);
+      }
+  }
+
+  @Test(timeout = 4000)
+  public void test04()  throws Throwable  {
+      Trie trie0 = new Trie();
+      // Undeclared exception!
+      try { 
+        trie0.has("?I6iv_o<#Q |4kA3*");
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -34
+         //
+         verifyException("net.mooctest.Trie", e);
+      }
+  }
+
+  @Test(timeout = 4000)
+  public void test05()  throws Throwable  {
+      Trie trie0 = new Trie();
+      // Undeclared exception!
+      try { 
+        trie0.countPrefix("9#[oL).M{]@(");
+        fail("Expecting exception: ArrayIndexOutOfBoundsException");
+      
+      } catch(ArrayIndexOutOfBoundsException e) {
+         //
+         // -40
+         //
+         verifyException("net.mooctest.Trie", e);
+      }
+  }
+
+  @Test(timeout = 4000)
+  public void test06()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.preTraverse((Trie.TrieNode) null);
+  }
+
+  @Test(timeout = 4000)
+  public void test07()  throws Throwable  {
+      Trie trie0 = new Trie();
+      Trie.TrieNode trie_TrieNode0 = trie0.getRoot();
+      trie0.preTraverse(trie_TrieNode0);
+  }
+
+  @Test(timeout = 4000)
+  public void test08()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert("z");
+      boolean boolean0 = trie0.has("z");
+      assertTrue(boolean0);
+  }
+
+  @Test(timeout = 4000)
+  public void test09()  throws Throwable  {
+      Trie trie0 = new Trie();
+      boolean boolean0 = trie0.has("");
+      assertFalse(boolean0);
+  }
+
+  @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Trie trie0 = new Trie();
+      boolean boolean0 = trie0.has("z");
+      assertFalse(boolean0);
+  }
+
+  @Test(timeout = 4000)
+  public void test11()  throws Throwable  {
+      Trie trie0 = new Trie();
+      boolean boolean0 = trie0.has((String) null);
+      assertFalse(boolean0);
+  }
+
+  @Test(timeout = 4000)
+  public void test12()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert("z");
+      Trie.TrieNode trie_TrieNode0 = trie0.getRoot();
+      trie0.preTraverse(trie_TrieNode0, "z");
+  }
+
+  @Test(timeout = 4000)
+  public void test13()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert("z");
+      String string0 = trie0.hasPrefix("z");
+      assertNull(string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test14()  throws Throwable  {
+      Trie trie0 = new Trie();
+      String string0 = trie0.hasPrefix("");
+      assertNull(string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test15()  throws Throwable  {
+      Trie trie0 = new Trie();
+      String string0 = trie0.hasPrefix("z");
+      assertNull(string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test16()  throws Throwable  {
+      Trie trie0 = new Trie();
+      String string0 = trie0.hasPrefix((String) null);
+      assertNull(string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test17()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert("z");
+      int int0 = trie0.countPrefix("z");
+      assertEquals(1, int0);
+  }
+
+  @Test(timeout = 4000)
+  public void test18()  throws Throwable  {
+      Trie trie0 = new Trie();
+      int int0 = trie0.countPrefix("");
+      assertEquals((-1), int0);
+  }
+
+  @Test(timeout = 4000)
+  public void test19()  throws Throwable  {
+      Trie trie0 = new Trie();
+      int int0 = trie0.countPrefix("z");
+      assertEquals(0, int0);
+  }
+
+  @Test(timeout = 4000)
+  public void test20()  throws Throwable  {
+      Trie trie0 = new Trie();
+      int int0 = trie0.countPrefix((String) null);
+      assertEquals((-1), int0);
+  }
+
+  @Test(timeout = 4000)
+  public void test21()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert("z");
+      trie0.insert("z");
+  }
+
+  @Test(timeout = 4000)
+  public void test22()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert("");
+  }
+
+  @Test(timeout = 4000)
+  public void test23()  throws Throwable  {
+      Trie trie0 = new Trie();
+      trie0.insert((String) null);
+  }
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章新建</title>
+</head>
+
+{#  注意引入文件的方式  #}
+{% load static %}
+<script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+<body>
+<div class="layui-header">
+    <ul class="layui-nav">
+        <li class="layui-nav-item"><a href="{% url 'writing:index' %}">主页</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:list' %}">写作台</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:help' %}">使用指南</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:about' %}">关于</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+            <a href="javascript:;">
+                <img id='iconNav' src="{% static 'media/web/icon.jpg' %}" class="layui-nav-img">
+                欢迎您，{{ user.username }}！
+            </a>
+            <dl class="layui-nav-child">
+                <dd><a href="">修改信息</a></dd>
+                <dd><a href="{% url 'user:logout' %}">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+<div style="margin: 10px">
+    <blockquote class="layui-elem-quote layui-text">
+        这里可以修改用户的密码。
+    </blockquote>
+
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>用户信息修改</legend>
+    </fieldset>
+
+    <form class="layui-form" action="" lay-filter="user_edit">
+        {% csrf_token %}
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">输入旧密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="old_password" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">输入新密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="new_password" lay-verify="new_password" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">再次输入</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="repeat_password" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="btn_edit">立即提交</button>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+
+
+</body>
+<script src="{% static 'layui/layui.js' %}"></script>
+
+<script>
+    layui.use(['form', 'layedit'], function () {
+        var form = layui.form;
+
+        //自定义验证规则
+        form.verify({
+            new_password: function (value) {
+                var passwordPatt = /^\w{5,12}$/;
+                if (!passwordPatt.test(value)) {
+                    return "密码不合法：密码应长度5到12位，仅含字母，数字下划线";
+                }
+            },
+        });
+
+
+        //提交事件
+        form.on('submit(btn_edit)', function (data) {
+            {#layer.alert(JSON.stringify(data.field), {#}
+            {#    title: '最终的提交信息'#}
+            {# })#}
+            $.ajax({
+                url: "{% url 'writing:user_update' %}",
+                type: 'post',
+                data: data.field,
+                dataType: "text",
+                success: function (result) {
+                    // console.log(data)
+                    console.log("result: " + result)
+                    if (result === 'success') {
+                        layer.msg('提交成功', {icon: 1});
+                        location.reload();
+                    } else {
+                        layer.msg(result, {icon: 2});
+                    }
+                }
+            });
+            return false;//阻止表单跳转
+        });
+    });
+
+
+</script>
+
+
+</html>

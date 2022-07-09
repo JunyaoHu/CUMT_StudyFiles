@@ -1,0 +1,79 @@
+* Starting client
+* Connecting to master process on port 2062
+* Analyzing classpath: 
+  - C:\mooctest\projects\6562\118570\OST\target\test-classes
+  - C:\mooctest\projects\6562\118570\OST\target\classes
+  - C:\Users\hujunyao\.m2\repository\com\github\stefanbirkner\system-rules\1.18.0\system-rules-1.18.0.jar
+  - C:\Users\hujunyao\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\hujunyao\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class net.mooctest.OST
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Loaded 0 tests from C:\mooctest\projects\6562\118570\OST\.evosuite\evosuite-seeds\net.mooctest.OST.seed
+* Total number of test goals: 
+  - Line 352
+  - Branch 231
+  - Exception 0
+  - MutationFactory 794
+  - Output 34
+  - Method 20
+  - MethodNoException 20
+  - CBranchFitnessFactory 231
+* Using seed 1654570444750
+* Starting evolution
+* Search finished after 1680s and 604 generations, 490651 statements, best individual has fitness: 163.31891024709705
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 352
+* Number of covered goals: 340
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 88%
+* Total number of goals: 231
+* Number of covered goals: 204
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 15
+* Number of covered goals: 15
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 89%
+* Total number of goals: 794
+* Number of covered goals: 708
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 82%
+* Total number of goals: 34
+* Number of covered goals: 28
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 85%
+* Total number of goals: 20
+* Number of covered goals: 17
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 85%
+* Total number of goals: 20
+* Number of covered goals: 17
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 231
+* Number of covered goals: 202
+* Generated 62 tests with total length 396
+* Resulting test suite's coverage: 89% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 46%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 2
+* Writing JUnit test case 'OST_ESTest' to C:\mooctest\projects\6562\118570\OST\.evosuite\tmp_2022_06_07_10_54_02\tests
+* Done!
+

@@ -35,7 +35,7 @@ def cifa_handler(fname):
     ret_error = file_read('./output_file/scanner_error_output.txt')
     if ret_error == '':
         ret_error = '无词法错误'
-    return ret, ret_error
+    return ret, ret_error66
 
 
 def yufa_handler(fname):

@@ -1,0 +1,4 @@
+[MASTER] 14:29:57.522 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself
+[MASTER] 14:29:59.220 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.Comparator<T> : Type points to itself
+[MASTER] 14:30:32.301 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.List<E> : Type points to itself
+[MASTER] 14:32:41.131 [pool-2-thread-1] ERROR JUnitAnalyzer - Ran out of time while checking tests

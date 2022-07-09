@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章编辑</title>
+</head>
+
+{#  注意引入文件的方式  #}
+{% load static %}
+<script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+<body>
+
+<div style="margin: 10px">
+    <blockquote class="layui-elem-quote layui-text">
+        这里进行文章的编辑。
+    </blockquote>
+
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>文章编辑</legend>
+    </fieldset>
+
+    <div class="layui-bg-gray" style="padding: 20px;">
+
+        {#{% url 'user:edit' article.id %}#}
+        <form action="" class="layui-form" lay-filter="edit">
+            {% csrf_token %}
+
+            <div class="layui-row layui-col-space15">
+
+                <div class="layui-col-md7">
+                    <div class="layui-card">
+                        <div class="layui-card-header">文章编辑</div>
+                        <div class="layui-card-body">
+                            <textarea name="body" id="article_edit" lay-verify="content"
+                                      style="display: none;">{{ article.body }}</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-col-md5">
+                    <div class="layui-card">
+                        <div class="layui-card-header">文章属性</div>
+                        <div class="layui-card-body">
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">文章ID</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="id" value="{{ article.id }}" class="layui-input"
+                                               disabled
+                                               style="background-color: #C9C9C9; color: #009f95">
+                                    </div>
+                                </div>
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">作者名</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="author" value="{{ article.author }}"
+                                               class="layui-input"
+                                               disabled
+                                               style="background-color: #C9C9C9; color: #009f95">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">标题</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" lay-verify="title" value="{{ article.title }}"
+                                           placeholder="请输入标题" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item layui-form-text">
+                                <label class="layui-form-label">摘要</label>
+                                <div class="layui-input-block">
+                                    <textarea name="abstract" lay-verify="abstract" placeholder="请输入内容"
+                                              class="layui-textarea">{{ article.abstract }}</textarea>
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">类型</label>
+                                <div class="layui-input-block">
+                                    <select name="category">
+                                        <option value="党建" selected="">党建</option>
+                                        <option value="科技">科技</option>
+                                        <option value="国际">国际</option>
+                                        <option value="文化">文化</option>
+                                        <option value="经济">经济</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">关键词</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="keyword" value="{{ article.keyword }}"
+                                           placeholder="关键词" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button type="button" class="layui-btn layui-btn-normal"
+                                            id="LAY-component-form-setval">赋值
+                                    </button>
+                                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="btn_edit">立即提交
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+<script src="{% static 'layui/layui.js' %}"></script>
+
+<script>
+    layui.use(['form', 'layedit'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit;
+
+
+        //layedit.set一定要放在 layedit.build 前面，否则配置全局接口将无效。
+
+        //建立编辑器
+        var editIndex = layedit.build('article_edit', {
+            tool: ['left', 'center', 'right', '|', 'strong', 'italic', 'underline', 'del']
+        });
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 5) {
+                    return '标题至少得5个字符嗷';
+                } else if (value.length > 20) {
+                    return '标题最多20个字符嗷';
+                }
+            },
+            abstract: function (value) {
+                if (value.length < 5) {
+                    return '摘要至少得10个字符嗷';
+                } else if (value.length > 120) {
+                    return '摘要最多120个字符嗷';
+                }
+            },
+            content: function (value) {
+                return layedit.sync(editIndex);
+            }
+
+        });
+
+
+        //提交事件
+        form.on('submit(btn_edit)', function (data) {
+            {#layer.alert(JSON.stringify(data.field), {#}
+            {#    title: '最终的提交信息'#}
+            {# })#}
+            {#return false;#}
+            $.ajax({
+                url: "{% url 'writing:update'%}",
+                type: 'post',
+                data: data.field,
+                dataType: "text",
+                success: function (result) {
+                    // console.log(data)
+                    {#console.log("result: " + result)#}
+                    if (result == 'success') {
+                        layer.msg('提交成功', {icon: 1});
+                    } else {
+                        layer.msg('提交失败', {icon: 2});
+                    }
+                }
+            });
+            return false;//阻止表单跳转
+        });
+
+        //表单赋值
+        layui.$('#LAY-component-form-setval').on('click', function () {
+            form.val('edit', {
+                "body": "body",
+                "title": "title",
+                "abstract": "abstract",
+                "category": "文化"
+            });
+        });
+
+
+        form.val('edit', {
+                "category": "{{ article.category }}"
+        });
+
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,92 @@
+* Starting client
+* Connecting to master process on port 18058
+* Analyzing classpath: 
+  - C:\mooctest\projects\6580\118570\MatrixInverse\target\test-classes
+  - C:\mooctest\projects\6580\118570\MatrixInverse\target\classes
+  - C:\Users\hujunyao\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\hujunyao\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+  - C:\Users\hujunyao\.m2\repository\commons-cli\commons-cli\1.4\commons-cli-1.4.jar
+  - C:\Users\hujunyao\.m2\repository\com\google\guava\guava\24.0-jre\guava-24.0-jre.jar
+  - C:\Users\hujunyao\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar
+  - C:\Users\hujunyao\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar
+  - C:\Users\hujunyao\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar
+  - C:\Users\hujunyao\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar
+  - C:\Users\hujunyao\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar
+  - C:\Users\hujunyao\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar
+  - C:\Users\hujunyao\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar
+  - C:\Users\hujunyao\.m2\repository\jaxen\jaxen\1.1.6\jaxen-1.1.6.jar
+  - C:\Users\hujunyao\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.4\jackson-databind-2.9.4.jar
+  - C:\Users\hujunyao\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar
+  - C:\Users\hujunyao\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.4\jackson-core-2.9.4.jar
+  - C:\Users\hujunyao\.m2\repository\org\projectlombok\lombok\1.16.20\lombok-1.16.20.jar
+  - C:\Users\hujunyao\.m2\repository\com\github\javaparser\javaparser-core\3.5.17\javaparser-core-3.5.17.jar
+* Finished analyzing classpath
+* Generating tests for class net.mooctest.MatrixInverse
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 13:53:16.029 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: C:\mooctest\projects\6580\118570\MatrixInverse\.evosuite\evosuite-seeds\net.mooctest.MatrixInverse.seed
+* Loaded 0 tests from C:\mooctest\projects\6580\118570\MatrixInverse\.evosuite\evosuite-seeds\net.mooctest.MatrixInverse.seed
+* Total number of test goals: 
+  - Line 46
+  - Branch 45
+  - Exception 0
+  - MutationFactory 522
+  - Output 7
+  - Method 5
+  - MethodNoException 5
+  - CBranchFitnessFactory 45
+* Using seed 1654581193636
+* Starting evolution
+* Search finished after 66s and 619 generations, 309863 statements, best individual has fitness: 8.11111111111111
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 46
+* Number of covered goals: 46
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 8
+* Number of covered goals: 8
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 97%
+* Total number of goals: 522
+* Number of covered goals: 508
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 86%
+* Total number of goals: 7
+* Number of covered goals: 6
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 5
+* Number of covered goals: 5
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 45
+* Number of covered goals: 45
+* Generated 20 tests with total length 66
+* Resulting test suite's coverage: 98% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 13:54:30.417 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.6678888888888889% of time used, but only 6/20 tests minimized), falling back to using all assertions
+* Resulting test suite's mutation score: 26%
+* Compiling and checking tests
+* Writing JUnit test case 'MatrixInverse_ESTest' to C:\mooctest\projects\6580\118570\MatrixInverse\.evosuite\tmp_2022_06_07_13_53_11\tests
+* Done!
+

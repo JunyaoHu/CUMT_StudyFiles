@@ -1,0 +1,25 @@
+Cal: A, D, M
+W-check: on, off
+W-clickable: on, off 
+Auto: on, off
+I: on, off
+maxIter: -1, 1, 2, 16000, 32766, 32767
+maxError: -1, 0, 1, 19.09, 200, 1000000
+R: on, off
+F: on, off
+T: on, off
+P: on, off
+B: on, off
+E: 1, 2, 25, 49, 50
+G-click: yes, no 
+L: on, off
+S: on, off
+Y: on, off
+H: on, off
+N: on, off
+Q: on, off
+K: on, off
+U: on, off
+V: on, off
+IF [Cal] <> "M" THEN [W-clickable] = "off";
+IF [I] = "off" THEN [maxIter] = -1 AND [maxError] = -1;

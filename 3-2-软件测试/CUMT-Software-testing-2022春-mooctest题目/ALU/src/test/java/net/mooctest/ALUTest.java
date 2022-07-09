@@ -1,0 +1,863 @@
+package net.mooctest;
+
+import static org.evosuite.runtime.EvoAssertions.verifyException;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import net.mooctest.ALU;
+
+public class ALUTest {
+
+	@Test(timeout = 4000)
+	public void test() {
+		ALU alu = new ALU();
+	}
+	
+	@Test(timeout = 4000)
+	  public void test00()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.negation("fMcBL(T");
+	      aLU0.claAdder("<H\"VHv2", "p}=bnMo^}3)HYVZ", 'C');
+	      aLU0.claAdder("fMcBL(T", "1101110", '-');
+	      String string0 = "'G67,?)!(-*b:nWFDg";
+	      int int0 = 2752;
+	      aLU0.ieee754("", 2752);
+	      int int1 = (-581);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.ieee754("<H\"VHv2", 64);
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"<H\"VHv2\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test01()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerTrueValue("gQ;pMhkj");
+	      aLU0.floatRepresentation("-2920", 373, 52);
+	      aLU0.ieee754("-2920", 0);
+	      aLU0.oneAdder("f&zR@mJTIAR)i?>.%#K");
+	      aLU0.normalize("");
+	      aLU0.normalize("1");
+	      aLU0.leftShift(".", 1);
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test02()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      // Undeclared exception!
+	      aLU0.adder("1", "1", '0', 1407);
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test03()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.fullAdder('.', 't', '8');
+	      aLU0.negation("01");
+	      aLU0.fullAdder('8', '.', 'F');
+	      aLU0.fullAdder('/', '/', '/');
+	      aLU0.ieee754("", 0);
+	      aLU0.floatTrueValue("10", 1, 0);
+	      aLU0.integerRepresentation("10", 1);
+	      aLU0.floatRepresentation("0", 0, 0);
+	      aLU0.negation("10");
+	      aLU0.fullAdder('a', 'V', '\"');
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatTrueValue("", 0, 1);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test04()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.ieee754("GG3hfKvp", 1);
+	      aLU0.adder("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "1", 'e', 399);
+	      aLU0.integerSubtraction("GG3hfKvp", "GG3hfKvp", 399);
+	      aLU0.floatTrueValue("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111110", 11, 11);
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test05()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.leftShift("0", 1);
+	      aLU0.oneAdder("0");
+	      aLU0.andGate('.', '2');
+	      aLU0.ieee754("9NYEGSn&d|Md(StQ{", '2');
+	      aLU0.normalize("01");
+	      aLU0.normalize("");
+	      aLU0.integerTrueValue("9NYEGSn&d|Md(StQ{");
+	      aLU0.fullAdder('.', '2', '2');
+	      aLU0.oneAdder("0");
+	      // Undeclared exception!
+	      try { 
+	        aLU0.claAdder("0", "9NYEGSn&d|Md(StQ{", '.');
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test06()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.oneAdder("JOV");
+	      // Undeclared exception!
+	      try { 
+	        aLU0.leftShift((String) null, (-730));
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test07()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '4';
+	      aLU0.andGate('4', '4');
+	      String string0 = "%[DPKag<_*:b(Ql";
+	      int int0 = 4;
+	      aLU0.floatTrueValue("%[DPKag<_*:b(Ql", 4, 4);
+	      aLU0.floatRepresentation("40.75", '0', 4);
+	      aLU0.claAdder("40.75", "40.75", '4');
+	      aLU0.negation("01111111111111111100000000000000000000000000000110100");
+	      aLU0.ieee754("01111111111111111100000000000000000000000000000110100", 0);
+	      int int1 = 1;
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatRepresentation("%[DPKag<_*:b(Ql", 1, 4);
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"%[DPKag<_*:b(Ql\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test08()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '`';
+	      aLU0.xorGate('`', '`');
+	      aLU0.negation("&tMvk");
+	      aLU0.floatTrueValue("00000", 0, 106);
+	      aLU0.fullAdder('0', '0', '`');
+	      aLU0.ieee754("&tMvk", 0);
+	      aLU0.fullAdder('0', '`', '`');
+	      String string0 = "";
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation("", (-1));
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test09()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '\'';
+	      aLU0.fullAdder('l', '\'', '\"');
+	      int int0 = 0;
+	      aLU0.floatRepresentation("01", 0, 0);
+	      aLU0.oneAdder("");
+	      aLU0.negation("");
+	      aLU0.integerTrueValue("'");
+	      aLU0.integerRepresentation("1", 0);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.leftShift("9", (-1));
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+
+	  @Test(timeout = 4000)
+	  public void test10()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.normalize("");
+	      aLU0.normalize("0");
+	  }
+
+	  
+	  @Test(timeout = 4000)
+	  public void test11()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerSubtraction("GG3hf*Kvk>p", "GG3hf*Kvk>p", 399);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatTrueValue("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111110", 3, 3);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	         //
+	         // String index out of range: -1
+	         //
+	         verifyException("java.lang.AbstractStringBuilder", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test12()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerSubtraction("GG3hf*Kvk>p", "GG3hf*Kvk>p", 399);
+	      aLU0.claAdder("01111111111", "[DPK", ',');
+	      aLU0.floatTrueValue("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111110", 20, 20);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.claAdder("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111110", "0.0", '=');
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test13()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '1';
+	      aLU0.andGate('1', '1');
+	      String string0 = "%[DPKag<_*:b(Ql";
+	      int int0 = (-17);
+	      int int1 = (-864);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatTrueValue("%[DPKag<_*:b(Ql", (-17), (-864));
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test14()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = null;
+	      aLU0.floatTrueValue("1S!c::fv", 0, 1422);
+	      aLU0.floatTrueValue("+Inf", 0, 0);
+	      aLU0.ieee754(":4Mr8&why kZt)vh", 1422);
+	      int int0 = 0;
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatRepresentation((String) null, 0, 1417);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test15()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation("-", (-309));
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test16()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '.';
+	      char char1 = 't';
+	      char char2 = '8';
+	      aLU0.fullAdder('.', 't', '8');
+	      char char3 = '\"';
+	      aLU0.negation("01");
+	      aLU0.fullAdder('8', '.', 'F');
+	      aLU0.fullAdder('%', '%', '%');
+	      int int0 = 1;
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatTrueValue("10", 1, 'a');
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	         //
+	         // String index out of range: -3
+	         //
+	         verifyException("java.lang.AbstractStringBuilder", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test17()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerTrueValue("gQ;pMhk(");
+	      aLU0.integerRepresentation("-2986", 373);
+	      aLU0.ieee754("-2986", 0);
+	      aLU0.oneAdder("f&zR@mJTIAR)i?>.%#K");
+	      aLU0.normalize("");
+	      aLU0.normalize("1");
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test18()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerSubtraction("GG3hf*Kvk>p", "GG3hf*Kvk>p", 399);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatTrueValue("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111110", 399, 399);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test19()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = null;
+	      // Undeclared exception!
+	      try { 
+	        aLU0.ieee754((String) null, 32);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+//	  @Test(timeout = 4000)
+//	  public void test20()  throws Throwable  {
+//	      ALU aLU0 = new ALU();
+//	      aLU0.integerSubtraction("GG3hf*Kvk>p", "GG3hf*Kvk>p", 399);
+//	      aLU0.integerSubtraction("GG3hf*Kvk>p", "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111110", 399);
+//	      aLU0.claAdder("01111111111", "[DPK", ',');
+//	      // Undeclared exception!
+//	      aLU0.floatTrueValue("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111110", 399, 399);
+//	  }
+	  
+	  @Test(timeout = 4000)
+	  public void test21()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      // Undeclared exception!
+	      try { 
+	        aLU0.ieee754("", 32);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test22()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.adder("<9M", "111", 'v', 16);
+	      aLU0.adder("01111111111111111", "@8jc]h{6Ki1", 'v', 4);
+	      aLU0.negation("<9M");
+	      aLU0.integerTrueValue("Xr^2CET");
+	      aLU0.normalize("111");
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation("<9M", (-747));
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"<9M\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test23()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '.';
+	      String string0 = "0";
+	      aLU0.leftShift("0", 1);
+	      String string1 = "9NYEGSn&d|Md(StQ{";
+	      aLU0.claAdder("D ]KW", "9NYEGSn&d|Md(StQ{", 'y');
+	      char char1 = '2';
+	      aLU0.andGate('.', '2');
+	      // Undeclared exception!
+	      try { 
+	        aLU0.adder((String) null, (String) null, '.', 2895);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test24()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      // Undeclared exception!
+	      try { 
+	        aLU0.leftShift((String) null, (-730));
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test25()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.ieee754((String) null, 299);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation((String) null, 0);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	  
+	  @Test(timeout = 4000)
+	  public void test26()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = "";
+	      String string1 = "QxE_-F.3yr4|";
+	      String string2 = "1";
+	      int int0 = (-835);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerSubtraction("1", (String) null, (-835));
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test27()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      int int0 = 0;
+	      String string0 = "";
+	      int int1 = 892;
+	      aLU0.ieee754("", 892);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation("", 0);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test28()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = "";
+	      int int0 = 0;
+	      // Undeclared exception!
+	      try { 
+	        aLU0.claAdder("#vYU@/9l4c-w#tj-ST", (String) null, 'w');
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test29()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = null;
+	      char char0 = 'z';
+	      aLU0.fullAdder('#', 'z', 'z');
+	      char char1 = '6';
+	      int int0 = 0;
+	      aLU0.ieee754((String) null, 0);
+	      aLU0.leftShift("5roEiq7TbT*", 0);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.oneAdder((String) null);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test30()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerTrueValue("+0}to?u!");
+	      aLU0.normalize("+0}to?u!");
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test31()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.xorGate('.', '.');
+	      aLU0.ieee754((String) null, 0);
+	      aLU0.xorGate('0', '.');
+	      aLU0.fullAdder('O', '2', '.');
+	      aLU0.andGate('1', 'V');
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test32()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = null;
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatTrueValue((String) null, 4, 0);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test33()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = "0YQj";
+	      aLU0.oneAdder("OoYH?hKSO-e");
+	      aLU0.negation("J%6yB");
+	      String string1 = "1";
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerSubtraction("1", "", 4);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	         //
+	         // String index out of range: 0
+	         //
+	         verifyException("java.lang.AbstractStringBuilder", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test34()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      char char0 = '-';
+	      char char1 = '5';
+	      char char2 = ']';
+	      aLU0.fullAdder('-', '5', ']');
+	      aLU0.ieee754("tbq", 0);
+	      aLU0.ieee754("g-K|^)~~", 2239);
+	      // Undeclared exception!
+	      aLU0.integerSubtraction("tbq", "i_AWzq!)K=", 4030);
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test35()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.adder("s&U/.fz", "s&U/.fz", '', 27);
+	  }
+
+	  
+	  @Test(timeout = 4000)
+	  public void test36()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.leftShift("", 0);
+	      aLU0.integerTrueValue("1");
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test37()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.negation("wwP+;,C^=G9_Mt8");
+	      // Undeclared exception!
+	      try { 
+	        aLU0.negation((String) null);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test38()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = "0";
+	      aLU0.negation("0");
+	      aLU0.floatRepresentation("1", 64, 0);
+	      String string1 = "C'!S2qUn2eK";
+	      aLU0.ieee754("C'!S2qUn2eK", (-1));
+	      aLU0.integerTrueValue("1");
+	      char char0 = 't';
+	      aLU0.andGate('\"', 't');
+	      String string2 = "p~@D";
+	      // Undeclared exception!
+	      try { 
+	        aLU0.ieee754("I-W", 64);
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"I-W\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test39()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.andGate('.', '.');
+	      aLU0.xorGate('[', 'J');
+	      aLU0.oneAdder("");
+	      aLU0.floatRepresentation("0", 11, 1438);
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test40()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.negation("}*-`v)>AaVg`$GGK");
+	      aLU0.fullAdder('N', ' ', ',');
+	      aLU0.floatRepresentation("0000000000000000", 0, 0);
+	      aLU0.integerRepresentation("0", 0);
+	      aLU0.oneAdder("");
+	      aLU0.fullAdder('A', 'w', 'r');
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatRepresentation("", 1959, 5);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test41()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      // Undeclared exception!
+	      try { 
+	        aLU0.normalize((String) null);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test42()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.xorGate('Z', 'Z');
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerTrueValue((String) null);
+	        fail("Expecting exception: NullPointerException");
+	      
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	         verifyException("net.mooctest.ALU", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test43()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = "0";
+	      aLU0.negation("0");
+	      aLU0.floatRepresentation("1", 64, 0);
+	      String string1 = "C'!S2qUn2eK";
+	      aLU0.ieee754("C'!S2qUn2eK", (-1));
+	      aLU0.integerTrueValue("1");
+	      char char0 = 't';
+	      aLU0.andGate('\u0015', 't');
+	      aLU0.ieee754("-1", 64);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatRepresentation("p~@D", 1639, 1639);
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"p~@D\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test44()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.integerSubtraction("10100", "10100", 587);
+	      char char0 = 'M';
+	      aLU0.fullAdder('^', 'M', 'M');
+	      int int0 = 1;
+	      aLU0.integerRepresentation("000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 1);
+	      aLU0.adder("10100", "0", 'M', 77);
+	      int int1 = 5;
+	      aLU0.integerRepresentation("0", 5);
+	      aLU0.oneAdder("101101101000");
+	      int int2 = (-2268);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.adder("@`M(n", "@`M(n", '^', (-2268));
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	         //
+	         // String index out of range: -2272
+	         //
+	         verifyException("java.lang.AbstractStringBuilder", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test45()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation("+Inf", 7);
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"+Inf\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test46()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.floatRepresentation("000", (-186), (-186));
+	      int int0 = (-251);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.integerRepresentation("!/VL56s+aUs", (-251));
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"!/VL56s+aUs\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test47()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      aLU0.fullAdder('.', 't', '8');
+	      char char0 = '\"';
+	      aLU0.fullAdder('\"', 'a', 'y');
+	      aLU0.fullAdder('/', '/', '/');
+	      int int0 = (-5);
+	      aLU0.ieee754("", (-5));
+	      int int1 = 1;
+	      aLU0.floatTrueValue("01", 1, (-5));
+	      aLU0.integerRepresentation("01", 1);
+	      // Undeclared exception!
+	      try { 
+	        aLU0.floatRepresentation("+Inf", (-5), (-5));
+	        fail("Expecting exception: NumberFormatException");
+	      
+	      } catch(NumberFormatException e) {
+	         //
+	         // For input string: \"+Inf\"
+	         //
+	         verifyException("java.lang.NumberFormatException", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test48()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      int int0 = 861;
+	      aLU0.floatTrueValue("1010", 0, 33);
+	      aLU0.floatRepresentation("1010", 861, 861);
+	      aLU0.xorGate('C', 'C');
+	      String string0 = "fDsj:>b/^8*YKsRCYuO";
+	      aLU0.adder("0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000111111110010", "0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000111111110010", '0', 861);
+	      aLU0.negation("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000110");
+	      // Undeclared exception!
+	      try { 
+	        aLU0.adder("1010", "", 'C', 95);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	         //
+	         // String index out of range: 0
+	         //
+	         verifyException("java.lang.AbstractStringBuilder", e);
+	      }
+	  }
+	
+	  @Test(timeout = 4000)
+	  public void test49()  throws Throwable  {
+	      ALU aLU0 = new ALU();
+	      String string0 = "t?g4!(qcC^";
+	      int int0 = 1;
+	      aLU0.floatTrueValue("t?g4!(qcC^", 6, 1);
+	      aLU0.floatRepresentation("1.0", 1, 1);
+	      String string1 = "NaN";
+	      char char0 = '\\';
+	      // Undeclared exception!
+	      try { 
+	        aLU0.adder("NaN", "1.0", '\\', 1);
+	        fail("Expecting exception: StringIndexOutOfBoundsException");
+	      
+	      } catch(StringIndexOutOfBoundsException e) {
+	         //
+	         // String index out of range: -3
+	         //
+	         verifyException("java.lang.AbstractStringBuilder", e);
+	      }
+	  }
+}

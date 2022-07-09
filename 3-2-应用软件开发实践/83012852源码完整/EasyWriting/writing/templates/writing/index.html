@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写作小助手-主页</title>
+</head>
+{% load static %}
+<script src="{% static 'scripts/echarts.js' %}"></script>
+<script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+<body>
+<div class="layui-header">
+    <ul class="layui-nav">
+        <li class="layui-nav-item layui-this"><a href="">主页</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:list' %}">写作台</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:help' %}">使用指南</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:about' %}">关于</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+            <a href="javascript:;">
+                <img id='iconNav' src="{% static 'media/web/icon.jpg' %}" class="layui-nav-img">
+                欢迎您，{{ username }}！
+            </a>
+            <dl class="layui-nav-child">
+                <dd><a href="{% url 'writing:user' %}">修改信息</a></dd>
+                <dd><a href="{% url 'user:logout' %}">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<div style="margin: 20px">
+    <blockquote class="layui-elem-quote layui-text">
+        这里是用户写作平台的主页，可以查看写作相关数据。
+    </blockquote>
+
+
+    <div class="layui-bg-gray" style="padding: 20px;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md4">
+                <div class="layui-card">
+                    <div class="layui-card-header">一周写作量统计</div>
+                    <div class="layui-card-body">
+                        <div id="main" style="width: auto; height:300px;"></div>
+                        <script type="text/javascript">
+                            // 基于准备好的dom，初始化echarts实例
+                            var myChart = echarts.init(document.getElementById('main'));
+                            // 指定图表的配置项和数据
+                            var option = {
+                                grid: {
+                                    bottom: '10%',
+                                },
+                                title: {
+                                    text: '近一周新建文章数量',
+                                },
+                                tooltip: {
+                                    trigger: 'axis',
+                                    axisPointer: {
+                                        type: 'cross'
+                                    }
+                                },
+                                toolbox: {
+                                    show: true,
+                                    feature: {
+                                        saveAsImage: {}
+                                    }
+                                },
+                                legend: {
+                                    data: ['用户', '全站'],
+                                    top: '2%',
+                                    right: '15%'
+                                },
+                                xAxis: {data: {{ list_recent_a_week | safe}}},
+                                yAxis: [
+                                    {
+                                        type: 'value',
+                                        name: '用户',
+                                        position: 'left',
+                                        alignTicks: true,
+                                    },
+                                    {
+                                        type: 'value',
+                                        name: '全站',
+                                        position: 'right',
+                                        alignTicks: true,
+                                    }
+                                ],
+                                series: [
+                                    {
+
+                                        name: '用户',
+                                        type: 'bar',
+                                        data: {{ data_user | safe }}
+                                    },
+                                    {
+                                        name: '全站',
+                                        type: 'line',
+                                        yAxisIndex: 1,
+                                        data: {{ data_all | safe }}
+                                    }
+                                ]
+                            }
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart.setOption(option);
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-col-md4">
+                <div class="layui-card">
+                    <div class="layui-card-header">全站活跃时间分布</div>
+                    <div class="layui-card-body">
+                        <div id="main2" style="width: auto; height:300px;"></div>
+                        <script type="text/javascript">
+                            myChart2 = echarts.init(document.getElementById('main2'));
+                            option = {
+                                title: {
+                                    text: '全站活跃时间分布',
+                                },
+                                grid: {
+                                    bottom: '10%',
+                                },
+                                tooltip: {
+                                    trigger: 'axis',
+                                    axisPointer: {
+                                        type: 'cross'
+                                    }
+                                },
+                                toolbox: {
+                                    show: true,
+                                    feature: {
+                                        saveAsImage: {}
+                                    }
+                                },
+                                xAxis: {
+                                    type: 'category',
+                                    boundaryGap: false,
+                                    // prettier-ignore
+                                    data: ['00:00', '02:00', '04:00',
+                                        '06:00', '08:00', '10:00',
+                                        '12:00', '14:00', '16:00',
+                                        '18:00', '20:00', '22:00']
+                                },
+                                yAxis: {},
+                                series: [
+                                    {
+                                        name: '全站活跃时间分布',
+                                        type: 'line',
+                                        smooth: true,
+                                        data: {{ data_hour_all | safe }},
+                                        markArea: {
+                                            itemStyle: {
+                                                color: 'rgba(255, 173, 177, 0.4)'
+                                            },
+                                            data: [
+                                                [{name: '早高峰', xAxis: '08:00'}, {xAxis: '10:00'}],
+                                                [{name: '晚高峰', xAxis: '18:00'}, {xAxis: '20:00'}]
+                                            ]
+                                        }
+                                    }
+                                ]
+                            };
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart2.setOption(option);
+                            setTimeout(function () {
+                                window.onresize = function () {
+                                    myChart2.resize();
+                                }
+                            }, 200)
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-col-md4">
+                <div class="layui-card">
+                    <div class="layui-card-header">全站近七天写作热点</div>
+                    <div class="layui-card-body">
+                        <div id="main3"
+                             style="   height: 300px;display: flex;align-items: center;justify-content: center;">
+                            <img src="{% static 'media/web/wordcloud' %}/wordcloud_{{ today | safe }}.png" style="max-width: 100%;
+    max-height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md4">
+                <div class="layui-card">
+                    <div class="layui-card-header">模型评估指标</div>
+                    <div class="layui-card-body">
+                        <div id="main4" style="width: 100%; height:250px;"></div>
+                        <script type="text/javascript">
+                            // 基于准备好的dom，初始化echarts实例
+                            var myChart4 = echarts.init(document.getElementById('main4'));
+                            // 指定图表的配置项和数据
+                            option = {
+                                title: {
+                                    text: '模型评估指标'
+                                },
+                                tooltip: {},
+                                legend: {
+                                    orient: 'vertical',
+                                    data: ['第一版', '第二版', '第三版'],
+                                    x: 'right',      //可设定图例在左、右、居中
+                                    y: 'bottom'     //可设定图例在上、下、居中
+                                },
+                                radar: {
+                                    // shape: 'circle',
+                                    indicator: [
+                                        {name: 'Rouge-1'},
+                                        {name: 'Rouge-2'},
+                                        {name: 'Rouge-L'},
+                                        {name: '平均运行时长'},
+                                    ],
+                                    axisName: {
+                                        formatter: '【{value}】',
+                                        color: '#428BD4'
+                                    },
+                                },
+                                series: [
+                                    {
+                                        type: 'radar',
+
+                                        data: [
+                                            {
+                                                value: [0.2764, 0.1768, 0.2655, 5.8],
+                                                name: '第一版'
+                                            },
+                                            {
+                                                value: [0.2803, 0.1770, 0.2825, 4.6],
+                                                name: '第二版'
+                                            },
+                                            {
+                                                value: [0.3041, 0.1970, 0.2872, 4.3],
+                                                name: '第三版'
+                                            }
+                                        ]
+                                    }
+                                ]
+                            };
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart4.setOption(option);
+                            setTimeout(function () {
+                                window.onresize = function () {
+                                    myChart4.resize();
+                                }
+                            }, 200)
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-col-md4">
+                <div class="layui-card">
+                    <div class="layui-card-header">全站文章类型</div>
+                    <div class="layui-card-body">
+                        <div id="main5" style="width: auto; height:250px;"></div>
+                        <script type="text/javascript">
+                            myChart5 = echarts.init(document.getElementById('main5'));
+                            option = {
+                                title: {
+                                    text: '全站文章类型'
+                                },
+                                tooltip: {
+                                    trigger: 'item'
+                                },
+                                legend: {
+                                    x: 'center',      //可设定图例在左、右、居中
+                                    y: 'bottom'     //可设定图例在上、下、居中
+                                },
+                                series: [
+                                    {
+                                        name: '全站文章类型占比',
+                                        type: 'pie',
+                                        radius: ['40%', '70%'],
+                                        avoidLabelOverlap: false,
+                                        label: {
+                                            show: false,
+                                            position: 'center'
+                                        },
+                                        emphasis: {
+                                            label: {
+                                                show: true,
+                                                fontSize: '40',
+                                                fontWeight: 'bold'
+                                            }
+                                        },
+                                        labelLine: {
+                                            show: false
+                                        },
+                                        data: [
+                                            {value: {{ type_num.0 }}, name: '党建'},
+                                            {value: {{ type_num.1 }}, name: '科技'},
+                                            {value: {{ type_num.2 }}, name: '国际'},
+                                            {value: {{ type_num.3 }}, name: '文化'},
+                                            {value: {{ type_num.4 }}, name: '经济'}
+                                        ]
+                                    }
+                                ]
+                            };
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart5.setOption(option);
+                            setTimeout(function () {
+                                window.onresize = function () {
+                                    myChart5.resize();
+                                }
+                            }, 200)
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-card">
+                    <div class="layui-card-header">全网热搜榜单</div>
+                    <div class="layui-card-body">
+                        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                            <ul class="layui-tab-title">
+                                <li class="layui-this"><img src="{% static 'media/web/baidu.jpg' %}" height="24px"></li>
+                                <li><img src="{% static 'media/web/bili.jpg' %}" height="24px"></li>
+                                <li><img src="{% static 'media/web/cumt.png' %}" height="22px"></li>
+                            </ul>
+                            <div class="layui-tab-content">
+                                <div class="layui-tab-item layui-show" style="height: 180px;overflow:auto;">
+                                    <table class="layui-table" lay-even="" lay-skin="nob">
+                                        <colgroup>
+                                            <col width="20">
+                                            <col width="200">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th>排名</th>
+                                            <th>百度话题</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for baidu in baidu_link_and_title %}
+                                            <tr>
+                                                <td>{{ forloop.counter }}</td>
+                                                <td><a href="{{ baidu.0 }} " target="_blank">{{ baidu.1 }}</a></td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="layui-tab-item" style="height: 180px;overflow:auto;">
+                                    <table class="layui-table" lay-even="" lay-skin="nob">
+                                        <colgroup>
+                                            <col width="20">
+                                            <col width="200">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th>排名</th>
+                                            <th>B站话题</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for bili in bili_link_and_title %}
+                                            <tr>
+                                                <td>{{ forloop.counter }}</td>
+                                                <td><a href="http://{{ bili.0 }} " target="_blank">{{ bili.1 }}</a></td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="layui-tab-item" style="height: 180px;overflow:auto;">
+                                    <table class="layui-table" lay-even="" lay-skin="nob">
+                                        <colgroup>
+                                            <col width="20">
+                                            <col width="200">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>矿大新闻</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for cumt in cumt_link_and_title %}
+                                            <tr>
+                                                <td>{{ forloop.counter }}</td>
+                                                <td><a href="http://xwzx.cumt.edu.cn{{ cumt.0 }} "
+                                                       target="_blank">{{ cumt.1 }}</a></td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+<script src="{% static 'layui/layui.js' %}"></script>
+<script>
+    setTimeout(function () {
+        window.onresize = function () {
+            myChart.resize();
+            myChart2.resize();
+            myChart4.resize();
+            myChart5.resize();
+        }
+    }, 200)
+</script>
+</html>

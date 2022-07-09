@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655197048009" clover="4.4.1">
+   <project name="SegmentTree 0.0.1-SNAPSHOT" timestamp="1655197045848">
+      <metrics coveredelements="736" complexity="291" loc="1426" methods="90" classes="13" statements="536" packages="1" coveredconditionals="200" coveredmethods="83" elements="906" ncloc="921" files="3" conditionals="280" coveredstatements="453"/>
+      <package name="net.mooctest">
+         <metrics coveredelements="736" complexity="291" loc="1426" methods="90" classes="13" statements="536" coveredconditionals="200" coveredmethods="83" elements="906" ncloc="921" files="3" conditionals="280" coveredstatements="453"/>
+         <file path="C:\mooctest\projects\6588\118570\SegmentTree\src\main\java\net\mooctest\DynamicSegmentTree.java" name="DynamicSegmentTree.java">
+            <metrics coveredelements="166" coveredconditionals="47" complexity="56" loc="280" coveredmethods="10" methods="11" elements="219" classes="2" ncloc="207" statements="136" conditionals="72" coveredstatements="109"/>
+            <class name="DynamicSegmentTree">
+               <metrics coveredelements="62" coveredconditionals="14" complexity="17" coveredmethods="6" methods="6" elements="83" statements="55" conditionals="22" coveredstatements="42"/>
+            </class>
+            <class name="DynamicSegmentTree.OverlappingSegment">
+               <metrics coveredelements="104" coveredconditionals="33" complexity="39" coveredmethods="4" methods="5" elements="136" statements="81" conditionals="50" coveredstatements="67"/>
+            </class>
+            <line complexity="3" visibility="public" signature="compare(OverlappingSegment&lt;?&gt;,OverlappingSegment&lt;?&gt;) : int" num="25" count="4" type="method"/>
+            <line num="26" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="26" type="cond"/>
+            <line num="27" count="0" type="stmt"/>
+            <line num="28" count="4" type="stmt"/>
+            <line falsecount="0" truecount="4" num="28" type="cond"/>
+            <line num="29" count="4" type="stmt"/>
+            <line num="30" count="0" type="stmt"/>
+            <line complexity="3" visibility="public" signature="compare(OverlappingSegment&lt;?&gt;,OverlappingSegment&lt;?&gt;) : int" num="38" count="5" type="method"/>
+            <line num="39" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="39" type="cond"/>
+            <line num="40" count="0" type="stmt"/>
+            <line num="41" count="5" type="stmt"/>
+            <line falsecount="1" truecount="4" num="41" type="cond"/>
+            <line num="42" count="4" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="DynamicSegmentTree(List&lt;D&gt;)" num="47" count="1" type="method"/>
+            <line num="48" count="1" type="stmt"/>
+            <line complexity="5" visibility="public" signature="DynamicSegmentTree(List&lt;D&gt;,int)" num="51" count="1" type="method"/>
+            <line num="52" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="52" type="cond"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="56" count="1" type="stmt"/>
+            <line num="57" count="1" type="stmt"/>
+            <line falsecount="1" truecount="5" num="57" type="cond"/>
+            <line num="58" count="5" type="stmt"/>
+            <line falsecount="1" truecount="4" num="58" type="cond"/>
+            <line num="59" count="4" type="stmt"/>
+            <line num="60" count="4" type="stmt"/>
+            <line num="61" count="4" type="stmt"/>
+            <line num="63" count="4" type="stmt"/>
+            <line num="64" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="64" type="cond"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="74" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="81" count="1" type="stmt"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line num="84" count="1" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line num="88" count="1" type="stmt"/>
+            <line num="89" count="1" type="stmt"/>
+            <line num="90" count="1" type="stmt"/>
+            <line num="91" count="1" type="stmt"/>
+            <line num="92" count="1" type="stmt"/>
+            <line num="94" count="1" type="stmt"/>
+            <line num="95" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="query(long) : D" num="101" count="3" type="method"/>
+            <line num="103" count="3" type="stmt"/>
+            <line complexity="4" visibility="public" signature="query(long,long) : D" num="109" count="4" type="method"/>
+            <line num="111" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="111" type="cond"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="114" count="4" type="stmt"/>
+            <line num="115" count="4" type="stmt"/>
+            <line num="116" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="116" type="cond"/>
+            <line num="117" count="0" type="stmt"/>
+            <line num="118" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="118" type="cond"/>
+            <line num="119" count="0" type="stmt"/>
+            <line num="121" count="4" type="stmt"/>
+            <line num="123" count="4" type="stmt"/>
+            <line num="124" count="4" type="stmt"/>
+            <line num="125" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="OverlappingSegment(int)" num="136" count="17" type="method"/>
+            <line num="137" count="17" type="stmt"/>
+            <line complexity="2" visibility="public" signature="OverlappingSegment(int,long,long,D)" num="140" count="19" type="method"/>
+            <line num="141" count="19" type="stmt"/>
+            <line num="143" count="19" type="stmt"/>
+            <line num="144" count="19" type="stmt"/>
+            <line num="145" count="19" type="stmt"/>
+            <line num="146" count="19" type="stmt"/>
+            <line falsecount="13" truecount="6" num="146" type="cond"/>
+            <line num="147" count="6" type="stmt"/>
+            <line num="148" count="13" type="stmt"/>
+            <line complexity="16" visibility="protected" signature="createFromList(int,List&lt;OverlappingSegment&lt;D&gt;&gt;,long,int) : Segment&lt;D&gt;" num="151" count="17" type="method"/>
+            <line num="152" count="17" type="stmt"/>
+            <line num="153" count="17" type="stmt"/>
+            <line num="154" count="17" type="stmt"/>
+            <line num="155" count="17" type="stmt"/>
+            <line num="157" count="17" type="stmt"/>
+            <line num="158" count="38" type="stmt"/>
+            <line falsecount="27" truecount="11" num="158" type="cond"/>
+            <line num="159" count="11" type="stmt"/>
+            <line num="160" count="27" type="stmt"/>
+            <line falsecount="27" truecount="0" num="160" type="cond"/>
+            <line num="163" count="27" type="stmt"/>
+            <line num="165" count="27" type="stmt"/>
+            <line falsecount="16" truecount="11" num="165" type="cond"/>
+            <line num="166" count="11" type="stmt"/>
+            <line falsecount="3" truecount="8" num="166" type="cond"/>
+            <line num="167" count="8" type="stmt"/>
+            <line num="169" count="3" type="stmt"/>
+            <line num="170" count="16" type="stmt"/>
+            <line falsecount="0" truecount="16" num="170" type="cond"/>
+            <line num="171" count="16" type="stmt"/>
+            <line falsecount="9" truecount="7" num="171" type="cond"/>
+            <line num="172" count="7" type="stmt"/>
+            <line num="174" count="9" type="stmt"/>
+            <line num="179" count="17" type="stmt"/>
+            <line falsecount="9" truecount="8" num="179" type="cond"/>
+            <line num="180" count="8" type="stmt"/>
+            <line num="182" count="8" type="stmt"/>
+            <line num="183" count="8" type="stmt"/>
+            <line num="184" count="8" type="stmt"/>
+            <line falsecount="8" truecount="25" num="184" type="cond"/>
+            <line num="185" count="25" type="stmt"/>
+            <line num="186" count="25" type="stmt"/>
+            <line num="187" count="25" type="stmt"/>
+            <line falsecount="16" truecount="9" num="187" type="cond"/>
+            <line num="188" count="9" type="stmt"/>
+            <line num="189" count="16" type="stmt"/>
+            <line falsecount="6" truecount="10" num="189" type="cond"/>
+            <line num="190" count="10" type="stmt"/>
+            <line num="193" count="6" type="stmt"/>
+            <line num="194" count="6" type="stmt"/>
+            <line num="196" count="6" type="stmt"/>
+            <line num="197" count="6" type="stmt"/>
+            <line num="201" count="8" type="stmt"/>
+            <line num="202" count="8" type="stmt"/>
+            <line num="203" count="8" type="stmt"/>
+            <line num="206" count="17" type="stmt"/>
+            <line complexity="19" visibility="public" signature="query(long,long) : D" num="212" count="19" type="method"/>
+            <line num="214" count="19" type="stmt"/>
+            <line num="217" count="19" type="stmt"/>
+            <line falsecount="14" truecount="5" num="217" type="cond"/>
+            <line num="218" count="5" type="stmt"/>
+            <line num="219" count="5" type="stmt"/>
+            <line num="220" count="5" type="stmt"/>
+            <line falsecount="0" truecount="5" num="220" type="cond"/>
+            <line num="221" count="5" type="stmt"/>
+            <line falsecount="0" truecount="5" num="221" type="cond"/>
+            <line num="222" count="5" type="stmt"/>
+            <line num="224" count="0" type="stmt"/>
+            <line num="227" count="14" type="stmt"/>
+            <line falsecount="14" truecount="0" num="227" type="cond"/>
+            <line num="228" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="228" type="cond"/>
+            <line num="231" count="0" type="stmt"/>
+            <line num="232" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="232" type="cond"/>
+            <line num="235" count="0" type="stmt"/>
+            <line num="236" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="236" type="cond"/>
+            <line num="237" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="237" type="cond"/>
+            <line num="238" count="0" type="stmt"/>
+            <line num="240" count="0" type="stmt"/>
+            <line num="246" count="14" type="stmt"/>
+            <line num="247" count="14" type="stmt"/>
+            <line num="248" count="14" type="stmt"/>
+            <line falsecount="13" truecount="1" num="248" type="cond"/>
+            <line num="249" count="1" type="stmt"/>
+            <line num="250" count="1" type="stmt"/>
+            <line num="251" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="251" type="cond"/>
+            <line num="252" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="252" type="cond"/>
+            <line num="253" count="0" type="stmt"/>
+            <line num="255" count="1" type="stmt"/>
+            <line num="257" count="13" type="stmt"/>
+            <line falsecount="6" truecount="7" num="257" type="cond"/>
+            <line num="258" count="7" type="stmt"/>
+            <line num="259" count="6" type="stmt"/>
+            <line falsecount="0" truecount="6" num="259" type="cond"/>
+            <line num="260" count="6" type="stmt"/>
+            <line num="262" count="14" type="stmt"/>
+            <line falsecount="0" truecount="14" num="262" type="cond"/>
+            <line num="263" count="14" type="stmt"/>
+            <line num="266" count="19" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="272" count="0" type="method"/>
+            <line num="274" count="0" type="stmt"/>
+            <line num="275" count="0" type="stmt"/>
+            <line num="276" count="0" type="stmt"/>
+            <line num="277" count="0" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6588\118570\SegmentTree\src\main\java\net\mooctest\FlatSegmentTree.java" name="FlatSegmentTree.java">
+            <metrics coveredelements="151" coveredconditionals="44" complexity="54" loc="239" coveredmethods="9" methods="10" elements="196" classes="2" ncloc="180" statements="120" conditionals="66" coveredstatements="98"/>
+            <class name="FlatSegmentTree">
+               <metrics coveredelements="58" coveredconditionals="16" complexity="14" coveredmethods="4" methods="4" elements="65" statements="41" conditionals="20" coveredstatements="38"/>
+            </class>
+            <class name="FlatSegmentTree.NonOverlappingSegment">
+               <metrics coveredelements="93" coveredconditionals="28" complexity="40" coveredmethods="5" methods="6" elements="131" statements="79" conditionals="46" coveredstatements="60"/>
+            </class>
+            <line complexity="1" visibility="public" signature="FlatSegmentTree(List&lt;D&gt;)" num="22" count="1" type="method"/>
+            <line num="23" count="1" type="stmt"/>
+            <line complexity="8" visibility="public" signature="FlatSegmentTree(List&lt;D&gt;,int)" num="26" count="1" type="method"/>
+            <line num="27" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="27" type="cond"/>
+            <line num="28" count="0" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="33" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="33" type="cond"/>
+            <line num="34" count="1" type="stmt"/>
+            <line falsecount="1" truecount="4" num="34" type="cond"/>
+            <line num="35" count="4" type="stmt"/>
+            <line num="36" count="4" type="stmt"/>
+            <line num="37" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="37" type="cond"/>
+            <line num="38" count="0" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line falsecount="1" truecount="6" num="44" type="cond"/>
+            <line num="45" count="6" type="stmt"/>
+            <line falsecount="1" truecount="5" num="45" type="cond"/>
+            <line num="46" count="5" type="stmt"/>
+            <line num="47" count="5" type="stmt"/>
+            <line num="48" count="5" type="stmt"/>
+            <line num="49" count="5" type="stmt"/>
+            <line num="50" count="5" type="stmt"/>
+            <line falsecount="2" truecount="3" num="50" type="cond"/>
+            <line num="51" count="3" type="stmt"/>
+            <line num="52" count="3" type="stmt"/>
+            <line num="53" count="3" type="stmt"/>
+            <line num="54" count="3" type="stmt"/>
+            <line num="55" count="3" type="stmt"/>
+            <line num="56" count="3" type="stmt"/>
+            <line num="59" count="1" type="stmt"/>
+            <line num="60" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line num="68" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="query(long) : D" num="74" count="3" type="method"/>
+            <line num="76" count="3" type="stmt"/>
+            <line complexity="4" visibility="public" signature="query(long,long) : D" num="82" count="7" type="method"/>
+            <line num="84" count="7" type="stmt"/>
+            <line falsecount="7" truecount="0" num="84" type="cond"/>
+            <line num="85" count="0" type="stmt"/>
+            <line num="87" count="7" type="stmt"/>
+            <line num="88" count="7" type="stmt"/>
+            <line num="89" count="7" type="stmt"/>
+            <line falsecount="5" truecount="2" num="89" type="cond"/>
+            <line num="90" count="2" type="stmt"/>
+            <line num="91" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="91" type="cond"/>
+            <line num="92" count="1" type="stmt"/>
+            <line num="94" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NonOverlappingSegment(int)" num="104" count="41" type="method"/>
+            <line num="105" count="41" type="stmt"/>
+            <line complexity="1" visibility="public" signature="NonOverlappingSegment(int,D)" num="108" count="0" type="method"/>
+            <line num="109" count="0" type="stmt"/>
+            <line complexity="2" visibility="public" signature="NonOverlappingSegment(int,long,long,D)" num="112" count="35" type="method"/>
+            <line num="113" count="35" type="stmt"/>
+            <line num="115" count="35" type="stmt"/>
+            <line num="116" count="35" type="stmt"/>
+            <line num="117" count="35" type="stmt"/>
+            <line num="118" count="35" type="stmt"/>
+            <line falsecount="35" truecount="0" num="118" type="cond"/>
+            <line num="119" count="0" type="stmt"/>
+            <line num="120" count="35" type="stmt"/>
+            <line complexity="8" visibility="protected" signature="createFromList(int,List&lt;NonOverlappingSegment&lt;D&gt;&gt;,long,int) : Segment&lt;D&gt;" num="123" count="41" type="method"/>
+            <line num="124" count="41" type="stmt"/>
+            <line num="125" count="41" type="stmt"/>
+            <line num="126" count="41" type="stmt"/>
+            <line num="127" count="41" type="stmt"/>
+            <line num="129" count="41" type="stmt"/>
+            <line num="130" count="73" type="stmt"/>
+            <line falsecount="32" truecount="41" num="130" type="cond"/>
+            <line num="131" count="41" type="stmt"/>
+            <line num="133" count="32" type="stmt"/>
+            <line num="137" count="41" type="stmt"/>
+            <line falsecount="21" truecount="20" num="137" type="cond"/>
+            <line num="138" count="20" type="stmt"/>
+            <line num="140" count="20" type="stmt"/>
+            <line num="141" count="20" type="stmt"/>
+            <line num="142" count="20" type="stmt"/>
+            <line falsecount="20" truecount="51" num="142" type="cond"/>
+            <line num="143" count="51" type="stmt"/>
+            <line num="144" count="51" type="stmt"/>
+            <line num="145" count="51" type="stmt"/>
+            <line falsecount="30" truecount="21" num="145" type="cond"/>
+            <line num="146" count="21" type="stmt"/>
+            <line num="147" count="30" type="stmt"/>
+            <line falsecount="13" truecount="17" num="147" type="cond"/>
+            <line num="148" count="17" type="stmt"/>
+            <line num="151" count="13" type="stmt"/>
+            <line num="152" count="13" type="stmt"/>
+            <line num="154" count="13" type="stmt"/>
+            <line num="155" count="13" type="stmt"/>
+            <line num="159" count="20" type="stmt"/>
+            <line num="160" count="20" type="stmt"/>
+            <line num="161" count="20" type="stmt"/>
+            <line num="162" count="21" type="stmt"/>
+            <line falsecount="0" truecount="21" num="162" type="cond"/>
+            <line num="163" count="21" type="stmt"/>
+            <line num="164" count="22" type="stmt"/>
+            <line num="168" count="41" type="stmt"/>
+            <line complexity="27" visibility="public" signature="query(long,long) : D" num="174" count="40" type="method"/>
+            <line num="176" count="40" type="stmt"/>
+            <line falsecount="30" truecount="10" num="176" type="cond"/>
+            <line num="177" count="10" type="stmt"/>
+            <line falsecount="10" truecount="0" num="177" type="cond"/>
+            <line num="178" count="0" type="stmt"/>
+            <line num="179" count="10" type="stmt"/>
+            <line num="180" count="10" type="stmt"/>
+            <line num="183" count="30" type="stmt"/>
+            <line falsecount="29" truecount="1" num="183" type="cond"/>
+            <line num="184" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="184" type="cond"/>
+            <line num="187" count="0" type="stmt"/>
+            <line num="188" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="188" type="cond"/>
+            <line num="189" count="0" type="stmt"/>
+            <line num="190" count="0" type="stmt"/>
+            <line num="191" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="191" type="cond"/>
+            <line num="192" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="192" type="cond"/>
+            <line num="193" count="0" type="stmt"/>
+            <line num="195" count="0" type="stmt"/>
+            <line num="196" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="196" type="cond"/>
+            <line num="197" count="0" type="stmt"/>
+            <line falsecount="0" truecount="0" num="197" type="cond"/>
+            <line num="198" count="0" type="stmt"/>
+            <line num="200" count="0" type="stmt"/>
+            <line num="203" count="0" type="stmt"/>
+            <line num="207" count="30" type="stmt"/>
+            <line falsecount="1" truecount="29" num="207" type="cond"/>
+            <line num="208" count="29" type="stmt"/>
+            <line falsecount="25" truecount="4" num="208" type="cond"/>
+            <line num="209" count="4" type="stmt"/>
+            <line num="210" count="4" type="stmt"/>
+            <line num="211" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="211" type="cond"/>
+            <line num="212" count="0" type="stmt"/>
+            <line num="213" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="213" type="cond"/>
+            <line num="214" count="0" type="stmt"/>
+            <line num="215" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="215" type="cond"/>
+            <line num="216" count="0" type="stmt"/>
+            <line num="217" count="4" type="stmt"/>
+            <line falsecount="0" truecount="4" num="217" type="cond"/>
+            <line num="218" count="4" type="stmt"/>
+            <line num="219" count="25" type="stmt"/>
+            <line falsecount="11" truecount="14" num="219" type="cond"/>
+            <line num="220" count="14" type="stmt"/>
+            <line num="222" count="11" type="stmt"/>
+            <line num="225" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="231" count="62" type="method"/>
+            <line num="233" count="62" type="stmt"/>
+            <line num="234" count="62" type="stmt"/>
+            <line num="235" count="62" type="stmt"/>
+            <line num="236" count="62" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6588\118570\SegmentTree\src\main\java\net\mooctest\SegmentTree.java" name="SegmentTree.java">
+            <metrics coveredelements="419" coveredconditionals="109" complexity="181" loc="907" coveredmethods="64" methods="69" elements="491" classes="9" ncloc="534" statements="280" conditionals="142" coveredstatements="246"/>
+            <class name="SegmentTree">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="4" statements="3" conditionals="0" coveredstatements="3"/>
+            </class>
+            <class name="SegmentTree.Data">
+               <metrics coveredelements="19" coveredconditionals="2" complexity="7" coveredmethods="5" methods="5" elements="23" statements="14" conditionals="4" coveredstatements="12"/>
+            </class>
+            <class name="SegmentTree.Data.QuadrantData">
+               <metrics coveredelements="59" coveredconditionals="7" complexity="20" coveredmethods="10" methods="10" elements="61" statements="43" conditionals="8" coveredstatements="42"/>
+            </class>
+            <class name="SegmentTree.Data.RangeMaximumData">
+               <metrics coveredelements="78" coveredconditionals="27" complexity="40" coveredmethods="10" methods="11" elements="97" statements="50" conditionals="36" coveredstatements="41"/>
+            </class>
+            <class name="SegmentTree.Data.RangeMinimumData">
+               <metrics coveredelements="79" coveredconditionals="26" complexity="40" coveredmethods="10" methods="11" elements="97" statements="50" conditionals="36" coveredstatements="43"/>
+            </class>
+            <class name="SegmentTree.Data.RangeSumData">
+               <metrics coveredelements="76" coveredconditionals="21" complexity="34" coveredmethods="10" methods="11" elements="85" statements="50" conditionals="24" coveredstatements="45"/>
+            </class>
+            <class name="SegmentTree.Data.IntervalData">
+               <metrics coveredelements="55" coveredconditionals="11" complexity="22" coveredmethods="10" methods="12" elements="69" statements="41" conditionals="16" coveredstatements="34"/>
+            </class>
+            <class name="SegmentTree.Segment">
+               <metrics coveredelements="21" coveredconditionals="2" complexity="8" coveredmethods="6" methods="6" elements="25" statements="15" conditionals="4" coveredstatements="13"/>
+            </class>
+            <class name="SegmentTree.SegmentTreePrinter">
+               <metrics coveredelements="28" coveredconditionals="13" complexity="9" coveredmethods="2" methods="2" elements="30" statements="14" conditionals="14" coveredstatements="13"/>
+            </class>
+            <line complexity="1" visibility="public" signature="toString() : String" num="57" count="1" type="method"/>
+            <line num="59" count="1" type="stmt"/>
+            <line num="60" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Data(long)" num="75" count="16" type="method"/>
+            <line num="76" count="16" type="stmt"/>
+            <line num="77" count="16" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Data(long,long)" num="88" count="198" type="method"/>
+            <line num="89" count="198" type="stmt"/>
+            <line num="90" count="198" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="96" count="34" type="method"/>
+            <line num="97" count="34" type="stmt"/>
+            <line num="98" count="34" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="131" count="163" type="method"/>
+            <line num="133" count="163" type="stmt"/>
+            <line num="134" count="163" type="stmt"/>
+            <line num="135" count="163" type="stmt"/>
+            <line complexity="3" visibility="public" signature="compareTo(Data) : int" num="141" count="5" type="method"/>
+            <line num="142" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="142" type="cond"/>
+            <line num="143" count="0" type="stmt"/>
+            <line num="144" count="5" type="stmt"/>
+            <line falsecount="0" truecount="5" num="144" type="cond"/>
+            <line num="145" count="5" type="stmt"/>
+            <line num="146" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="QuadrantData(long,long)" num="160" count="28" type="method"/>
+            <line num="161" count="28" type="stmt"/>
+            <line complexity="1" visibility="public" signature="QuadrantData(long,long,long,long,long)" num="164" count="16" type="method"/>
+            <line num="165" count="16" type="stmt"/>
+            <line num="167" count="16" type="stmt"/>
+            <line num="168" count="16" type="stmt"/>
+            <line num="169" count="16" type="stmt"/>
+            <line num="170" count="16" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="176" count="7" type="method"/>
+            <line num="178" count="7" type="stmt"/>
+            <line num="180" count="7" type="stmt"/>
+            <line num="181" count="7" type="stmt"/>
+            <line num="182" count="7" type="stmt"/>
+            <line num="183" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="copy() : QuadrantData" num="189" count="28" type="method"/>
+            <line num="191" count="28" type="stmt"/>
+            <line num="192" count="28" type="stmt"/>
+            <line num="193" count="28" type="stmt"/>
+            <line num="194" count="28" type="stmt"/>
+            <line num="195" count="28" type="stmt"/>
+            <line num="196" count="28" type="stmt"/>
+            <line complexity="3" visibility="public" signature="query(long,long) : Data" num="202" count="5" type="method"/>
+            <line num="204" count="5" type="stmt"/>
+            <line falsecount="5" truecount="0" num="204" type="cond"/>
+            <line num="205" count="0" type="stmt"/>
+            <line num="206" count="5" type="stmt"/>
+            <line complexity="2" visibility="public" signature="combined(Data) : Data" num="212" count="43" type="method"/>
+            <line num="214" count="43" type="stmt"/>
+            <line num="215" count="43" type="stmt"/>
+            <line falsecount="36" truecount="7" num="215" type="cond"/>
+            <line num="216" count="7" type="stmt"/>
+            <line num="217" count="7" type="stmt"/>
+            <line num="219" count="43" type="stmt"/>
+            <line complexity="1" visibility="private" signature="combined(QuadrantData) : void" num="222" count="7" type="method"/>
+            <line num="223" count="7" type="stmt"/>
+            <line num="224" count="7" type="stmt"/>
+            <line num="225" count="7" type="stmt"/>
+            <line num="226" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="232" count="6" type="method"/>
+            <line num="234" count="6" type="stmt"/>
+            <line complexity="8" visibility="public" signature="equals(Object) : boolean" num="240" count="18" type="method"/>
+            <line num="242" count="18" type="stmt"/>
+            <line falsecount="12" truecount="6" num="242" type="cond"/>
+            <line num="243" count="6" type="stmt"/>
+            <line num="244" count="12" type="stmt"/>
+            <line num="245" count="12" type="stmt"/>
+            <line falsecount="6" truecount="6" num="245" type="cond"/>
+            <line num="248" count="6" type="stmt"/>
+            <line num="250" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="256" count="30" type="method"/>
+            <line num="258" count="30" type="stmt"/>
+            <line num="259" count="30" type="stmt"/>
+            <line num="260" count="30" type="stmt"/>
+            <line num="261" count="30" type="stmt"/>
+            <line num="262" count="30" type="stmt"/>
+            <line num="263" count="30" type="stmt"/>
+            <line num="264" count="30" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeMaximumData(long,long)" num="275" count="2" type="method"/>
+            <line num="276" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeMaximumData(long,N)" num="279" count="0" type="method"/>
+            <line num="280" count="0" type="stmt"/>
+            <line num="282" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeMaximumData(long,long,N)" num="285" count="44" type="method"/>
+            <line num="286" count="44" type="stmt"/>
+            <line num="288" count="44" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="294" count="7" type="method"/>
+            <line num="296" count="7" type="stmt"/>
+            <line num="298" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="copy() : Data" num="304" count="32" type="method"/>
+            <line num="306" count="32" type="stmt"/>
+            <line complexity="3" visibility="public" signature="query(long,long) : Data" num="312" count="4" type="method"/>
+            <line num="314" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="314" type="cond"/>
+            <line num="315" count="0" type="stmt"/>
+            <line num="317" count="4" type="stmt"/>
+            <line complexity="2" visibility="public" signature="combined(Data) : Data" num="323" count="20" type="method"/>
+            <line num="325" count="20" type="stmt"/>
+            <line num="326" count="20" type="stmt"/>
+            <line falsecount="10" truecount="10" num="326" type="cond"/>
+            <line num="327" count="10" type="stmt"/>
+            <line num="328" count="10" type="stmt"/>
+            <line num="330" count="20" type="stmt"/>
+            <line complexity="23" visibility="private" signature="combined(RangeMaximumData&lt;N&gt;) : void" num="333" count="10" type="method"/>
+            <line num="334" count="10" type="stmt"/>
+            <line falsecount="6" truecount="4" num="334" type="cond"/>
+            <line num="335" count="4" type="stmt"/>
+            <line num="336" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="336" type="cond"/>
+            <line num="337" count="0" type="stmt"/>
+            <line num="338" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="338" type="cond"/>
+            <line num="339" count="0" type="stmt"/>
+            <line num="342" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="342" type="cond"/>
+            <line num="343" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="343" type="cond"/>
+            <line num="344" count="0" type="stmt"/>
+            <line num="345" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="345" type="cond"/>
+            <line num="346" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="346" type="cond"/>
+            <line num="347" count="0" type="stmt"/>
+            <line num="348" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="348" type="cond"/>
+            <line num="349" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="349" type="cond"/>
+            <line num="350" count="1" type="stmt"/>
+            <line num="351" count="3" type="stmt"/>
+            <line falsecount="2" truecount="1" num="351" type="cond"/>
+            <line num="352" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="352" type="cond"/>
+            <line num="353" count="0" type="stmt"/>
+            <line num="354" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="354" type="cond"/>
+            <line num="355" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="355" type="cond"/>
+            <line num="356" count="0" type="stmt"/>
+            <line num="359" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="359" type="cond"/>
+            <line num="360" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="368" count="6" type="method"/>
+            <line num="370" count="6" type="stmt"/>
+            <line complexity="5" visibility="public" signature="equals(Object) : boolean" num="376" count="18" type="method"/>
+            <line num="378" count="18" type="stmt"/>
+            <line falsecount="12" truecount="6" num="378" type="cond"/>
+            <line num="379" count="6" type="stmt"/>
+            <line num="381" count="12" type="stmt"/>
+            <line num="382" count="12" type="stmt"/>
+            <line falsecount="6" truecount="6" num="382" type="cond"/>
+            <line num="383" count="6" type="stmt"/>
+            <line num="384" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="390" count="36" type="method"/>
+            <line num="392" count="36" type="stmt"/>
+            <line num="393" count="36" type="stmt"/>
+            <line num="394" count="36" type="stmt"/>
+            <line num="395" count="36" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeMinimumData(long,long)" num="406" count="2" type="method"/>
+            <line num="407" count="2" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeMinimumData(long,N)" num="410" count="0" type="method"/>
+            <line num="411" count="0" type="stmt"/>
+            <line num="413" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeMinimumData(long,long,N)" num="416" count="26" type="method"/>
+            <line num="417" count="26" type="stmt"/>
+            <line num="419" count="26" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="425" count="6" type="method"/>
+            <line num="427" count="6" type="stmt"/>
+            <line num="429" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="copy() : Data" num="435" count="14" type="method"/>
+            <line num="437" count="14" type="stmt"/>
+            <line complexity="3" visibility="public" signature="query(long,long) : Data" num="443" count="1" type="method"/>
+            <line num="445" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="445" type="cond"/>
+            <line num="446" count="0" type="stmt"/>
+            <line num="448" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="combined(Data) : Data" num="454" count="20" type="method"/>
+            <line num="456" count="20" type="stmt"/>
+            <line num="457" count="20" type="stmt"/>
+            <line falsecount="14" truecount="6" num="457" type="cond"/>
+            <line num="458" count="6" type="stmt"/>
+            <line num="459" count="6" type="stmt"/>
+            <line num="461" count="20" type="stmt"/>
+            <line complexity="23" visibility="private" signature="combined(RangeMinimumData&lt;N&gt;) : void" num="464" count="6" type="method"/>
+            <line num="465" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="465" type="cond"/>
+            <line num="466" count="0" type="stmt"/>
+            <line num="467" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="467" type="cond"/>
+            <line num="468" count="0" type="stmt"/>
+            <line num="469" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="469" type="cond"/>
+            <line num="470" count="0" type="stmt"/>
+            <line num="473" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="473" type="cond"/>
+            <line num="474" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="474" type="cond"/>
+            <line num="475" count="1" type="stmt"/>
+            <line num="476" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="476" type="cond"/>
+            <line num="477" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="477" type="cond"/>
+            <line num="478" count="1" type="stmt"/>
+            <line num="479" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="479" type="cond"/>
+            <line num="480" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="480" type="cond"/>
+            <line num="481" count="1" type="stmt"/>
+            <line num="482" count="3" type="stmt"/>
+            <line falsecount="2" truecount="1" num="482" type="cond"/>
+            <line num="483" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="483" type="cond"/>
+            <line num="484" count="1" type="stmt"/>
+            <line num="485" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="485" type="cond"/>
+            <line num="486" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="486" type="cond"/>
+            <line num="487" count="1" type="stmt"/>
+            <line num="490" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="490" type="cond"/>
+            <line num="491" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="499" count="6" type="method"/>
+            <line num="501" count="6" type="stmt"/>
+            <line complexity="5" visibility="public" signature="equals(Object) : boolean" num="507" count="18" type="method"/>
+            <line num="509" count="18" type="stmt"/>
+            <line falsecount="12" truecount="6" num="509" type="cond"/>
+            <line num="510" count="6" type="stmt"/>
+            <line num="512" count="12" type="stmt"/>
+            <line num="513" count="12" type="stmt"/>
+            <line falsecount="6" truecount="6" num="513" type="cond"/>
+            <line num="514" count="6" type="stmt"/>
+            <line num="516" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="522" count="25" type="method"/>
+            <line num="524" count="25" type="stmt"/>
+            <line num="525" count="25" type="stmt"/>
+            <line num="526" count="25" type="stmt"/>
+            <line num="527" count="25" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeSumData(long,long)" num="538" count="3" type="method"/>
+            <line num="539" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeSumData(long,N)" num="542" count="0" type="method"/>
+            <line num="543" count="0" type="stmt"/>
+            <line num="545" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="RangeSumData(long,long,N)" num="548" count="60" type="method"/>
+            <line num="549" count="60" type="stmt"/>
+            <line num="551" count="60" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="557" count="7" type="method"/>
+            <line num="559" count="7" type="stmt"/>
+            <line num="561" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="copy() : Data" num="567" count="48" type="method"/>
+            <line num="569" count="48" type="stmt"/>
+            <line complexity="3" visibility="public" signature="query(long,long) : Data" num="575" count="4" type="method"/>
+            <line num="577" count="4" type="stmt"/>
+            <line falsecount="4" truecount="0" num="577" type="cond"/>
+            <line num="578" count="0" type="stmt"/>
+            <line num="580" count="4" type="stmt"/>
+            <line complexity="2" visibility="public" signature="combined(Data) : Data" num="586" count="16" type="method"/>
+            <line num="588" count="16" type="stmt"/>
+            <line num="589" count="16" type="stmt"/>
+            <line falsecount="6" truecount="10" num="589" type="cond"/>
+            <line num="590" count="10" type="stmt"/>
+            <line num="591" count="10" type="stmt"/>
+            <line num="593" count="16" type="stmt"/>
+            <line complexity="17" visibility="private" signature="combined(RangeSumData&lt;N&gt;) : void" num="596" count="10" type="method"/>
+            <line num="597" count="10" type="stmt"/>
+            <line falsecount="6" truecount="4" num="597" type="cond"/>
+            <line num="598" count="4" type="stmt"/>
+            <line num="599" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="599" type="cond"/>
+            <line num="600" count="0" type="stmt"/>
+            <line num="601" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="601" type="cond"/>
+            <line num="602" count="0" type="stmt"/>
+            <line num="605" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="605" type="cond"/>
+            <line num="606" count="1" type="stmt"/>
+            <line num="607" count="1" type="stmt"/>
+            <line num="608" count="5" type="stmt"/>
+            <line falsecount="4" truecount="1" num="608" type="cond"/>
+            <line num="609" count="1" type="stmt"/>
+            <line num="610" count="1" type="stmt"/>
+            <line num="611" count="4" type="stmt"/>
+            <line falsecount="3" truecount="1" num="611" type="cond"/>
+            <line num="612" count="1" type="stmt"/>
+            <line num="613" count="1" type="stmt"/>
+            <line num="614" count="3" type="stmt"/>
+            <line falsecount="2" truecount="1" num="614" type="cond"/>
+            <line num="615" count="1" type="stmt"/>
+            <line num="616" count="1" type="stmt"/>
+            <line num="617" count="2" type="stmt"/>
+            <line falsecount="1" truecount="1" num="617" type="cond"/>
+            <line num="618" count="1" type="stmt"/>
+            <line num="619" count="1" type="stmt"/>
+            <line num="622" count="1" type="stmt"/>
+            <line num="623" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="631" count="6" type="method"/>
+            <line num="633" count="6" type="stmt"/>
+            <line complexity="5" visibility="public" signature="equals(Object) : boolean" num="639" count="18" type="method"/>
+            <line num="641" count="18" type="stmt"/>
+            <line falsecount="12" truecount="6" num="641" type="cond"/>
+            <line num="642" count="6" type="stmt"/>
+            <line num="644" count="12" type="stmt"/>
+            <line num="645" count="12" type="stmt"/>
+            <line falsecount="6" truecount="6" num="645" type="cond"/>
+            <line num="646" count="6" type="stmt"/>
+            <line num="648" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="654" count="46" type="method"/>
+            <line num="656" count="46" type="stmt"/>
+            <line num="657" count="46" type="stmt"/>
+            <line num="658" count="46" type="stmt"/>
+            <line num="659" count="46" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IntervalData(long,O)" num="676" count="0" type="method"/>
+            <line num="677" count="0" type="stmt"/>
+            <line num="679" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IntervalData(long,long,O)" num="688" count="14" type="method"/>
+            <line num="689" count="14" type="stmt"/>
+            <line num="691" count="14" type="stmt"/>
+            <line complexity="1" visibility="public" signature="IntervalData(long,long,Set&lt;O&gt;)" num="700" count="19" type="method"/>
+            <line num="701" count="19" type="stmt"/>
+            <line num="703" count="19" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getData() : Collection&lt;O&gt;" num="711" count="0" type="method"/>
+            <line num="712" count="0" type="stmt"/>
+            <line complexity="1" visibility="public" signature="clear() : void" num="718" count="7" type="method"/>
+            <line num="720" count="7" type="stmt"/>
+            <line num="722" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="copy() : Data" num="728" count="19" type="method"/>
+            <line num="730" count="19" type="stmt"/>
+            <line num="731" count="19" type="stmt"/>
+            <line num="732" count="19" type="stmt"/>
+            <line complexity="3" visibility="public" signature="query(long,long) : Data" num="738" count="1" type="method"/>
+            <line num="740" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="740" type="cond"/>
+            <line num="741" count="0" type="stmt"/>
+            <line num="743" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="combined(Data) : Data" num="749" count="17" type="method"/>
+            <line num="751" count="17" type="stmt"/>
+            <line num="752" count="17" type="stmt"/>
+            <line falsecount="10" truecount="7" num="752" type="cond"/>
+            <line num="753" count="7" type="stmt"/>
+            <line num="754" count="7" type="stmt"/>
+            <line num="756" count="17" type="stmt"/>
+            <line complexity="3" visibility="private" signature="combined(IntervalData&lt;O&gt;) : void" num="765" count="7" type="method"/>
+            <line num="766" count="7" type="stmt"/>
+            <line falsecount="7" truecount="0" num="766" type="cond"/>
+            <line num="767" count="0" type="stmt"/>
+            <line num="768" count="7" type="stmt"/>
+            <line falsecount="0" truecount="7" num="768" type="cond"/>
+            <line num="769" count="7" type="stmt"/>
+            <line num="770" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="hashCode() : int" num="776" count="6" type="method"/>
+            <line num="778" count="6" type="stmt"/>
+            <line complexity="6" visibility="public" signature="equals(Object) : boolean" num="784" count="18" type="method"/>
+            <line num="786" count="18" type="stmt"/>
+            <line falsecount="12" truecount="6" num="786" type="cond"/>
+            <line num="787" count="6" type="stmt"/>
+            <line num="789" count="12" type="stmt"/>
+            <line num="790" count="12" type="stmt"/>
+            <line falsecount="6" truecount="6" num="790" type="cond"/>
+            <line num="791" count="6" type="stmt"/>
+            <line falsecount="6" truecount="0" num="791" type="cond"/>
+            <line num="792" count="0" type="stmt"/>
+            <line num="793" count="6" type="stmt"/>
+            <line num="794" count="12" type="stmt"/>
+            <line falsecount="12" truecount="0" num="794" type="cond"/>
+            <line num="795" count="0" type="stmt"/>
+            <line num="797" count="6" type="stmt"/>
+            <line num="799" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="805" count="26" type="method"/>
+            <line num="807" count="26" type="stmt"/>
+            <line num="808" count="26" type="stmt"/>
+            <line num="809" count="26" type="stmt"/>
+            <line num="810" count="26" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Segment(int)" num="828" count="112" type="method"/>
+            <line num="829" count="112" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="hasChildren() : boolean" num="843" count="90" type="method"/>
+            <line num="844" count="90" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="getLeftChild() : Segment&lt;D&gt;" num="847" count="116" type="method"/>
+            <line num="848" count="116" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="getRightChild() : Segment&lt;D&gt;" num="851" count="26" type="method"/>
+            <line num="852" count="26" type="stmt"/>
+            <line complexity="1" visibility="public" signature="toString() : String" num="858" count="62" type="method"/>
+            <line num="860" count="62" type="stmt"/>
+            <line num="861" count="62" type="stmt"/>
+            <line num="862" count="62" type="stmt"/>
+            <line num="863" count="62" type="stmt"/>
+            <line num="864" count="62" type="stmt"/>
+            <line num="865" count="62" type="stmt"/>
+            <line complexity="3" visibility="public" signature="compareTo(Segment&lt;D&gt;) : int" num="871" count="22" type="method"/>
+            <line num="872" count="22" type="stmt"/>
+            <line falsecount="22" truecount="0" num="872" type="cond"/>
+            <line num="873" count="0" type="stmt"/>
+            <line num="874" count="22" type="stmt"/>
+            <line falsecount="22" truecount="0" num="874" type="cond"/>
+            <line num="875" count="0" type="stmt"/>
+            <line num="876" count="22" type="stmt"/>
+            <line complexity="2" visibility="public" signature="getString(SegmentTree&lt;D&gt;) : String" num="882" count="1" type="method"/>
+            <line num="883" count="1" type="stmt"/>
+            <line falsecount="1" truecount="0" num="883" type="cond"/>
+            <line num="884" count="0" type="stmt"/>
+            <line num="885" count="1" type="stmt"/>
+            <line complexity="7" visibility="private" signature="getString(Segment&lt;D&gt;,String,boolean) : String" num="888" count="41" type="method"/>
+            <line num="889" count="41" type="stmt"/>
+            <line num="890" count="41" type="stmt"/>
+            <line falsecount="20" truecount="21" num="890" type="cond"/>
+            <line num="892" count="41" type="stmt"/>
+            <line num="893" count="41" type="stmt"/>
+            <line falsecount="21" truecount="20" num="893" type="cond"/>
+            <line num="894" count="20" type="stmt"/>
+            <line num="895" count="40" type="stmt"/>
+            <line num="898" count="41" type="stmt"/>
+            <line falsecount="41" truecount="20" num="898" type="cond"/>
+            <line num="899" count="20" type="stmt"/>
+            <line falsecount="7" truecount="13" num="899" type="cond"/>
+            <line num="901" count="41" type="stmt"/>
+            <line falsecount="21" truecount="20" num="901" type="cond"/>
+            <line num="902" count="20" type="stmt"/>
+            <line falsecount="7" truecount="13" num="902" type="cond"/>
+            <line num="904" count="41" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="SegmentTree 0.0.1-SNAPSHOT" timestamp="1655197045848">
+      <metrics coveredelements="419" complexity="9" loc="615" methods="9" classes="1" statements="410" packages="1" coveredconditionals="0" coveredmethods="9" elements="419" ncloc="485" files="1" conditionals="0" coveredstatements="410"/>
+      <package name="net.mooctest">
+         <metrics coveredelements="419" complexity="9" loc="615" methods="9" classes="1" statements="410" coveredconditionals="0" coveredmethods="9" elements="419" ncloc="485" files="1" conditionals="0" coveredstatements="410"/>
+         <file path="C:\mooctest\projects\6588\118570\SegmentTree\src\test\java\net\mooctest\SegmentTreeTest.java" name="SegmentTreeTest.java">
+            <metrics coveredelements="419" coveredconditionals="0" complexity="9" loc="615" coveredmethods="9" methods="9" elements="419" classes="1" ncloc="485" statements="410" conditionals="0" coveredstatements="410"/>
+            <class name="SegmentTreeTest">
+               <metrics coveredelements="419" complexity="9" methods="9" testruns="9" statements="410" coveredconditionals="0" coveredmethods="9" elements="419" testfailures="0" testduration="0.063" conditionals="0" coveredstatements="410" testpasses="9"/>
+            </class>
+            <line complexity="1" visibility="public" signature="st() : void" num="14" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="17" count="1" type="stmt"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="st_combine() : void" num="27" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line num="32" count="1" type="stmt"/>
+            <line num="33" count="1" type="stmt"/>
+            <line num="34" count="1" type="stmt"/>
+            <line num="37" count="1" type="stmt"/>
+            <line num="38" count="1" type="stmt"/>
+            <line num="39" count="1" type="stmt"/>
+            <line num="40" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+            <line num="46" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="52" count="1" type="stmt"/>
+            <line num="55" count="1" type="stmt"/>
+            <line num="56" count="1" type="stmt"/>
+            <line num="57" count="1" type="stmt"/>
+            <line num="58" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line num="62" count="1" type="stmt"/>
+            <line num="63" count="1" type="stmt"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line num="68" count="1" type="stmt"/>
+            <line num="69" count="1" type="stmt"/>
+            <line num="70" count="1" type="stmt"/>
+            <line num="71" count="1" type="stmt"/>
+            <line num="72" count="1" type="stmt"/>
+            <line num="73" count="1" type="stmt"/>
+            <line num="74" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="78" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="80" count="1" type="stmt"/>
+            <line num="81" count="1" type="stmt"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="84" count="1" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line num="86" count="1" type="stmt"/>
+            <line num="87" count="1" type="stmt"/>
+            <line num="88" count="1" type="stmt"/>
+            <line num="89" count="1" type="stmt"/>
+            <line num="90" count="1" type="stmt"/>
+            <line num="91" count="1" type="stmt"/>
+            <line num="92" count="1" type="stmt"/>
+            <line num="93" count="1" type="stmt"/>
+            <line num="95" count="1" type="stmt"/>
+            <line num="96" count="1" type="stmt"/>
+            <line num="97" count="1" type="stmt"/>
+            <line num="98" count="1" type="stmt"/>
+            <line num="99" count="1" type="stmt"/>
+            <line num="100" count="1" type="stmt"/>
+            <line num="101" count="1" type="stmt"/>
+            <line num="102" count="1" type="stmt"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="104" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="st_combine_long() : void" num="107" testsuccess="true" count="1" testduration="0.016" type="method"/>
+            <line num="110" count="1" type="stmt"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="112" count="1" type="stmt"/>
+            <line num="113" count="1" type="stmt"/>
+            <line num="114" count="1" type="stmt"/>
+            <line num="117" count="1" type="stmt"/>
+            <line num="118" count="1" type="stmt"/>
+            <line num="119" count="1" type="stmt"/>
+            <line num="120" count="1" type="stmt"/>
+            <line num="123" count="1" type="stmt"/>
+            <line num="124" count="1" type="stmt"/>
+            <line num="125" count="1" type="stmt"/>
+            <line num="126" count="1" type="stmt"/>
+            <line num="129" count="1" type="stmt"/>
+            <line num="130" count="1" type="stmt"/>
+            <line num="131" count="1" type="stmt"/>
+            <line num="132" count="1" type="stmt"/>
+            <line num="135" count="1" type="stmt"/>
+            <line num="136" count="1" type="stmt"/>
+            <line num="137" count="1" type="stmt"/>
+            <line num="138" count="1" type="stmt"/>
+            <line num="141" count="1" type="stmt"/>
+            <line num="142" count="1" type="stmt"/>
+            <line num="143" count="1" type="stmt"/>
+            <line num="144" count="1" type="stmt"/>
+            <line num="145" count="1" type="stmt"/>
+            <line num="146" count="1" type="stmt"/>
+            <line num="147" count="1" type="stmt"/>
+            <line num="148" count="1" type="stmt"/>
+            <line num="149" count="1" type="stmt"/>
+            <line num="150" count="1" type="stmt"/>
+            <line num="151" count="1" type="stmt"/>
+            <line num="152" count="1" type="stmt"/>
+            <line num="153" count="1" type="stmt"/>
+            <line num="154" count="1" type="stmt"/>
+            <line num="155" count="1" type="stmt"/>
+            <line num="158" count="1" type="stmt"/>
+            <line num="159" count="1" type="stmt"/>
+            <line num="160" count="1" type="stmt"/>
+            <line num="161" count="1" type="stmt"/>
+            <line num="162" count="1" type="stmt"/>
+            <line num="164" count="1" type="stmt"/>
+            <line num="165" count="1" type="stmt"/>
+            <line num="166" count="1" type="stmt"/>
+            <line num="167" count="1" type="stmt"/>
+            <line num="168" count="1" type="stmt"/>
+            <line num="169" count="1" type="stmt"/>
+            <line num="170" count="1" type="stmt"/>
+            <line num="171" count="1" type="stmt"/>
+            <line num="172" count="1" type="stmt"/>
+            <line num="173" count="1" type="stmt"/>
+            <line num="175" count="1" type="stmt"/>
+            <line num="176" count="1" type="stmt"/>
+            <line num="177" count="1" type="stmt"/>
+            <line num="178" count="1" type="stmt"/>
+            <line num="179" count="1" type="stmt"/>
+            <line num="180" count="1" type="stmt"/>
+            <line num="181" count="1" type="stmt"/>
+            <line num="182" count="1" type="stmt"/>
+            <line num="183" count="1" type="stmt"/>
+            <line num="184" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="st_combine_double() : void" num="187" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="190" count="1" type="stmt"/>
+            <line num="191" count="1" type="stmt"/>
+            <line num="192" count="1" type="stmt"/>
+            <line num="193" count="1" type="stmt"/>
+            <line num="194" count="1" type="stmt"/>
+            <line num="197" count="1" type="stmt"/>
+            <line num="198" count="1" type="stmt"/>
+            <line num="199" count="1" type="stmt"/>
+            <line num="200" count="1" type="stmt"/>
+            <line num="203" count="1" type="stmt"/>
+            <line num="204" count="1" type="stmt"/>
+            <line num="205" count="1" type="stmt"/>
+            <line num="206" count="1" type="stmt"/>
+            <line num="209" count="1" type="stmt"/>
+            <line num="210" count="1" type="stmt"/>
+            <line num="211" count="1" type="stmt"/>
+            <line num="212" count="1" type="stmt"/>
+            <line num="215" count="1" type="stmt"/>
+            <line num="216" count="1" type="stmt"/>
+            <line num="217" count="1" type="stmt"/>
+            <line num="218" count="1" type="stmt"/>
+            <line num="221" count="1" type="stmt"/>
+            <line num="222" count="1" type="stmt"/>
+            <line num="223" count="1" type="stmt"/>
+            <line num="224" count="1" type="stmt"/>
+            <line num="225" count="1" type="stmt"/>
+            <line num="226" count="1" type="stmt"/>
+            <line num="227" count="1" type="stmt"/>
+            <line num="228" count="1" type="stmt"/>
+            <line num="229" count="1" type="stmt"/>
+            <line num="230" count="1" type="stmt"/>
+            <line num="231" count="1" type="stmt"/>
+            <line num="232" count="1" type="stmt"/>
+            <line num="233" count="1" type="stmt"/>
+            <line num="234" count="1" type="stmt"/>
+            <line num="235" count="1" type="stmt"/>
+            <line num="238" count="1" type="stmt"/>
+            <line num="239" count="1" type="stmt"/>
+            <line num="240" count="1" type="stmt"/>
+            <line num="241" count="1" type="stmt"/>
+            <line num="242" count="1" type="stmt"/>
+            <line num="244" count="1" type="stmt"/>
+            <line num="245" count="1" type="stmt"/>
+            <line num="246" count="1" type="stmt"/>
+            <line num="247" count="1" type="stmt"/>
+            <line num="248" count="1" type="stmt"/>
+            <line num="249" count="1" type="stmt"/>
+            <line num="250" count="1" type="stmt"/>
+            <line num="251" count="1" type="stmt"/>
+            <line num="252" count="1" type="stmt"/>
+            <line num="253" count="1" type="stmt"/>
+            <line num="255" count="1" type="stmt"/>
+            <line num="256" count="1" type="stmt"/>
+            <line num="257" count="1" type="stmt"/>
+            <line num="258" count="1" type="stmt"/>
+            <line num="259" count="1" type="stmt"/>
+            <line num="260" count="1" type="stmt"/>
+            <line num="261" count="1" type="stmt"/>
+            <line num="262" count="1" type="stmt"/>
+            <line num="263" count="1" type="stmt"/>
+            <line num="264" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="st_combine_float() : void" num="267" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="270" count="1" type="stmt"/>
+            <line num="271" count="1" type="stmt"/>
+            <line num="272" count="1" type="stmt"/>
+            <line num="273" count="1" type="stmt"/>
+            <line num="274" count="1" type="stmt"/>
+            <line num="277" count="1" type="stmt"/>
+            <line num="278" count="1" type="stmt"/>
+            <line num="279" count="1" type="stmt"/>
+            <line num="280" count="1" type="stmt"/>
+            <line num="283" count="1" type="stmt"/>
+            <line num="284" count="1" type="stmt"/>
+            <line num="285" count="1" type="stmt"/>
+            <line num="286" count="1" type="stmt"/>
+            <line num="289" count="1" type="stmt"/>
+            <line num="290" count="1" type="stmt"/>
+            <line num="291" count="1" type="stmt"/>
+            <line num="292" count="1" type="stmt"/>
+            <line num="295" count="1" type="stmt"/>
+            <line num="296" count="1" type="stmt"/>
+            <line num="297" count="1" type="stmt"/>
+            <line num="298" count="1" type="stmt"/>
+            <line num="301" count="1" type="stmt"/>
+            <line num="302" count="1" type="stmt"/>
+            <line num="303" count="1" type="stmt"/>
+            <line num="304" count="1" type="stmt"/>
+            <line num="305" count="1" type="stmt"/>
+            <line num="306" count="1" type="stmt"/>
+            <line num="307" count="1" type="stmt"/>
+            <line num="308" count="1" type="stmt"/>
+            <line num="309" count="1" type="stmt"/>
+            <line num="310" count="1" type="stmt"/>
+            <line num="311" count="1" type="stmt"/>
+            <line num="312" count="1" type="stmt"/>
+            <line num="313" count="1" type="stmt"/>
+            <line num="314" count="1" type="stmt"/>
+            <line num="315" count="1" type="stmt"/>
+            <line num="318" count="1" type="stmt"/>
+            <line num="319" count="1" type="stmt"/>
+            <line num="320" count="1" type="stmt"/>
+            <line num="321" count="1" type="stmt"/>
+            <line num="322" count="1" type="stmt"/>
+            <line num="324" count="1" type="stmt"/>
+            <line num="325" count="1" type="stmt"/>
+            <line num="326" count="1" type="stmt"/>
+            <line num="327" count="1" type="stmt"/>
+            <line num="328" count="1" type="stmt"/>
+            <line num="329" count="1" type="stmt"/>
+            <line num="330" count="1" type="stmt"/>
+            <line num="331" count="1" type="stmt"/>
+            <line num="332" count="1" type="stmt"/>
+            <line num="333" count="1" type="stmt"/>
+            <line num="335" count="1" type="stmt"/>
+            <line num="336" count="1" type="stmt"/>
+            <line num="337" count="1" type="stmt"/>
+            <line num="338" count="1" type="stmt"/>
+            <line num="339" count="1" type="stmt"/>
+            <line num="340" count="1" type="stmt"/>
+            <line num="341" count="1" type="stmt"/>
+            <line num="342" count="1" type="stmt"/>
+            <line num="343" count="1" type="stmt"/>
+            <line num="344" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="st_combine_biginteger() : void" num="347" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="350" count="1" type="stmt"/>
+            <line num="351" count="1" type="stmt"/>
+            <line num="352" count="1" type="stmt"/>
+            <line num="353" count="1" type="stmt"/>
+            <line num="354" count="1" type="stmt"/>
+            <line num="357" count="1" type="stmt"/>
+            <line num="358" count="1" type="stmt"/>
+            <line num="359" count="1" type="stmt"/>
+            <line num="360" count="1" type="stmt"/>
+            <line num="363" count="1" type="stmt"/>
+            <line num="364" count="1" type="stmt"/>
+            <line num="365" count="1" type="stmt"/>
+            <line num="366" count="1" type="stmt"/>
+            <line num="369" count="1" type="stmt"/>
+            <line num="370" count="1" type="stmt"/>
+            <line num="371" count="1" type="stmt"/>
+            <line num="372" count="1" type="stmt"/>
+            <line num="375" count="1" type="stmt"/>
+            <line num="376" count="1" type="stmt"/>
+            <line num="377" count="1" type="stmt"/>
+            <line num="378" count="1" type="stmt"/>
+            <line num="381" count="1" type="stmt"/>
+            <line num="382" count="1" type="stmt"/>
+            <line num="383" count="1" type="stmt"/>
+            <line num="384" count="1" type="stmt"/>
+            <line num="385" count="1" type="stmt"/>
+            <line num="386" count="1" type="stmt"/>
+            <line num="387" count="1" type="stmt"/>
+            <line num="388" count="1" type="stmt"/>
+            <line num="389" count="1" type="stmt"/>
+            <line num="390" count="1" type="stmt"/>
+            <line num="391" count="1" type="stmt"/>
+            <line num="392" count="1" type="stmt"/>
+            <line num="393" count="1" type="stmt"/>
+            <line num="394" count="1" type="stmt"/>
+            <line num="395" count="1" type="stmt"/>
+            <line num="398" count="1" type="stmt"/>
+            <line num="399" count="1" type="stmt"/>
+            <line num="400" count="1" type="stmt"/>
+            <line num="401" count="1" type="stmt"/>
+            <line num="402" count="1" type="stmt"/>
+            <line num="404" count="1" type="stmt"/>
+            <line num="405" count="1" type="stmt"/>
+            <line num="406" count="1" type="stmt"/>
+            <line num="407" count="1" type="stmt"/>
+            <line num="408" count="1" type="stmt"/>
+            <line num="409" count="1" type="stmt"/>
+            <line num="410" count="1" type="stmt"/>
+            <line num="411" count="1" type="stmt"/>
+            <line num="412" count="1" type="stmt"/>
+            <line num="413" count="1" type="stmt"/>
+            <line num="415" count="1" type="stmt"/>
+            <line num="416" count="1" type="stmt"/>
+            <line num="417" count="1" type="stmt"/>
+            <line num="418" count="1" type="stmt"/>
+            <line num="419" count="1" type="stmt"/>
+            <line num="420" count="1" type="stmt"/>
+            <line num="421" count="1" type="stmt"/>
+            <line num="422" count="1" type="stmt"/>
+            <line num="423" count="1" type="stmt"/>
+            <line num="424" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="st_combine_bigdecimal() : void" num="427" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="430" count="1" type="stmt"/>
+            <line num="431" count="1" type="stmt"/>
+            <line num="432" count="1" type="stmt"/>
+            <line num="433" count="1" type="stmt"/>
+            <line num="434" count="1" type="stmt"/>
+            <line num="437" count="1" type="stmt"/>
+            <line num="438" count="1" type="stmt"/>
+            <line num="439" count="1" type="stmt"/>
+            <line num="440" count="1" type="stmt"/>
+            <line num="443" count="1" type="stmt"/>
+            <line num="444" count="1" type="stmt"/>
+            <line num="445" count="1" type="stmt"/>
+            <line num="446" count="1" type="stmt"/>
+            <line num="449" count="1" type="stmt"/>
+            <line num="450" count="1" type="stmt"/>
+            <line num="451" count="1" type="stmt"/>
+            <line num="452" count="1" type="stmt"/>
+            <line num="455" count="1" type="stmt"/>
+            <line num="456" count="1" type="stmt"/>
+            <line num="457" count="1" type="stmt"/>
+            <line num="458" count="1" type="stmt"/>
+            <line num="461" count="1" type="stmt"/>
+            <line num="462" count="1" type="stmt"/>
+            <line num="463" count="1" type="stmt"/>
+            <line num="464" count="1" type="stmt"/>
+            <line num="465" count="1" type="stmt"/>
+            <line num="466" count="1" type="stmt"/>
+            <line num="467" count="1" type="stmt"/>
+            <line num="468" count="1" type="stmt"/>
+            <line num="469" count="1" type="stmt"/>
+            <line num="470" count="1" type="stmt"/>
+            <line num="471" count="1" type="stmt"/>
+            <line num="472" count="1" type="stmt"/>
+            <line num="473" count="1" type="stmt"/>
+            <line num="474" count="1" type="stmt"/>
+            <line num="475" count="1" type="stmt"/>
+            <line num="478" count="1" type="stmt"/>
+            <line num="479" count="1" type="stmt"/>
+            <line num="480" count="1" type="stmt"/>
+            <line num="481" count="1" type="stmt"/>
+            <line num="482" count="1" type="stmt"/>
+            <line num="484" count="1" type="stmt"/>
+            <line num="485" count="1" type="stmt"/>
+            <line num="486" count="1" type="stmt"/>
+            <line num="487" count="1" type="stmt"/>
+            <line num="488" count="1" type="stmt"/>
+            <line num="489" count="1" type="stmt"/>
+            <line num="490" count="1" type="stmt"/>
+            <line num="491" count="1" type="stmt"/>
+            <line num="492" count="1" type="stmt"/>
+            <line num="493" count="1" type="stmt"/>
+            <line num="495" count="1" type="stmt"/>
+            <line num="496" count="1" type="stmt"/>
+            <line num="497" count="1" type="stmt"/>
+            <line num="498" count="1" type="stmt"/>
+            <line num="499" count="1" type="stmt"/>
+            <line num="500" count="1" type="stmt"/>
+            <line num="501" count="1" type="stmt"/>
+            <line num="502" count="1" type="stmt"/>
+            <line num="503" count="1" type="stmt"/>
+            <line num="504" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="dt() : void" num="507" testsuccess="true" count="1" testduration="0.027" type="method"/>
+            <line num="510" count="1" type="stmt"/>
+            <line num="512" count="1" type="stmt"/>
+            <line num="513" count="1" type="stmt"/>
+            <line num="514" count="1" type="stmt"/>
+            <line num="515" count="1" type="stmt"/>
+            <line num="516" count="1" type="stmt"/>
+            <line num="518" count="1" type="stmt"/>
+            <line num="520" count="1" type="stmt"/>
+            <line num="521" count="1" type="stmt"/>
+            <line num="523" count="1" type="stmt"/>
+            <line num="524" count="1" type="stmt"/>
+            <line num="526" count="1" type="stmt"/>
+            <line num="527" count="1" type="stmt"/>
+            <line num="529" count="1" type="stmt"/>
+            <line num="530" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="ft() : void" num="533" testsuccess="true" count="1" testduration="0.018" type="method"/>
+            <line num="535" count="1" type="stmt"/>
+            <line num="537" count="1" type="stmt"/>
+            <line num="538" count="1" type="stmt"/>
+            <line num="539" count="1" type="stmt"/>
+            <line num="540" count="1" type="stmt"/>
+            <line num="541" count="1" type="stmt"/>
+            <line num="542" count="1" type="stmt"/>
+            <line num="544" count="1" type="stmt"/>
+            <line num="547" count="1" type="stmt"/>
+            <line num="590" count="1" type="stmt"/>
+            <line num="591" count="1" type="stmt"/>
+            <line num="593" count="1" type="stmt"/>
+            <line num="594" count="1" type="stmt"/>
+            <line num="597" count="1" type="stmt"/>
+            <line num="598" count="1" type="stmt"/>
+            <line num="600" count="1" type="stmt"/>
+            <line num="603" count="1" type="stmt"/>
+            <line num="604" count="1" type="stmt"/>
+            <line num="607" count="1" type="stmt"/>
+            <line num="608" count="1" type="stmt"/>
+            <line num="611" count="1" type="stmt"/>
+            <line num="612" count="1" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>

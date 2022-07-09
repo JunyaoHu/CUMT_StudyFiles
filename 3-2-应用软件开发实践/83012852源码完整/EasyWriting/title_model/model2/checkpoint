@@ -1,0 +1,2 @@
+model_checkpoint_path: "best_model2_fin.weights"
+all_model_checkpoint_paths: "best_model2_fin.weights"

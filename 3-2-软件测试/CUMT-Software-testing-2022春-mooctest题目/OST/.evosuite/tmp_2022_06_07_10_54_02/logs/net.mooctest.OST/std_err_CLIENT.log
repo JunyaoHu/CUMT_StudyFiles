@@ -1,0 +1,93 @@
+[MASTER] 10:55:19.217 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.lang.Comparable<T> : Type points to itself
+[MASTER] 10:55:23.832 [Thread-4] ERROR ClientNodeImpl - Cannot inform master of change of state
+java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.OptionalDataException
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:389) ~[na:1.8.0_311]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:1.8.0_311]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:1.8.0_311]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_311]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[na:1.8.0_311]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) ~[na:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_311]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_311]
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:303) ~[na:1.8.0_311]
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:279) ~[na:1.8.0_311]
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:163) ~[na:1.8.0_311]
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:235) ~[na:1.8.0_311]
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:180) ~[na:1.8.0_311]
+	at com.sun.proxy.$Proxy7.evosuite_collectStatistics(Unknown Source) ~[na:na]
+	at org.evosuite.rmi.service.ClientNodeImpl.updateStatistics(ClientNodeImpl.java:237) ~[evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsSender.sendIndividualToMaster(StatisticsSender.java:68) [evosuite-master-1.0.6.jar:1.0.6]
+	at org.evosuite.statistics.StatisticsListener$1.run(StatisticsListener.java:71) [evosuite-master-1.0.6.jar:1.0.6]
+Caused by: java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.io.OptionalDataException
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:348) ~[na:1.8.0_311]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:1.8.0_311]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:1.8.0_311]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_311]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[na:1.8.0_311]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_311]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) ~[na:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_311]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_311]
+Caused by: java.io.OptionalDataException: null
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1713) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:508) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:466) ~[na:1.8.0_311]
+	at java.util.HashMap.readObject(HashMap.java:1417) ~[na:1.8.0_311]
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_311]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_311]
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1185) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2319) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2210) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1690) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2428) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2352) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2210) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1690) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:508) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:466) ~[na:1.8.0_311]
+	at java.util.HashMap.readObject(HashMap.java:1417) ~[na:1.8.0_311]
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_311]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_311]
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1185) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2319) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2210) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1690) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2428) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2352) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2210) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1690) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:508) ~[na:1.8.0_311]
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:466) ~[na:1.8.0_311]
+	at sun.rmi.server.UnicastRef.unmarshalValue(UnicastRef.java:326) ~[na:1.8.0_311]
+	at sun.rmi.server.UnicastServerRef.unmarshalParametersUnchecked(UnicastServerRef.java:629) ~[na:1.8.0_311]
+	at sun.rmi.server.UnicastServerRef.unmarshalParameters(UnicastServerRef.java:617) ~[na:1.8.0_311]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:338) ~[na:1.8.0_311]
+	... 12 common frames omitted
+[MASTER] 10:56:44.901 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<HashSet<Object>>[] comparableArray0 = (Comparable<HashSet<Object>>[]) Array.newInstance(Comparable.class, 2);, assignment statement: comparableArray0[0] = (Comparable<HashSet<Object>>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 10:59:07.661 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.function.Predicate<T> : Type points to itself
+[MASTER] 11:00:17.264 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<Object>[] comparableArray0 = (Comparable<Object>[]) Array.newInstance(Comparable.class, 3);, assignment statement: comparableArray0[0] = (Comparable<Object>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:00:24.911 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<Object>[] comparableArray0 = (Comparable<Object>[]) Array.newInstance(Comparable.class, 8);, assignment statement: comparableArray0[0] = (Comparable<Object>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:01:48.909 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<HashSet<Object>>[] comparableArray0 = (Comparable<HashSet<Object>>[]) Array.newInstance(Comparable.class, 1);, assignment statement: comparableArray0[0] = (Comparable<HashSet<Object>>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:01:53.334 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<HashSet<String>>[] comparableArray0 = (Comparable<HashSet<String>>[]) Array.newInstance(Comparable.class, 7);, assignment statement: comparableArray0[0] = (Comparable<HashSet<String>>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:04:04.589 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<String>[] comparableArray0 = (Comparable<String>[]) Array.newInstance(Comparable.class, 8);, assignment statement: comparableArray0[0] = (Comparable<String>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:05:21.371 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<Object>[] comparableArray0 = (Comparable<Object>[]) Array.newInstance(Comparable.class, 4);, assignment statement: comparableArray0[0] = (Comparable<Object>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:09:16.142 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<String>[] comparableArray0 = (Comparable<String>[]) Array.newInstance(Comparable.class, 6);, assignment statement: comparableArray0[0] = (Comparable<String>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:17:26.728 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<String>[] comparableArray0 = (Comparable<String>[]) Array.newInstance(Comparable.class, 5);, assignment statement: comparableArray0[0] = (Comparable<String>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:18:52.074 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<HashSet<Object>>[] comparableArray0 = (Comparable<HashSet<Object>>[]) Array.newInstance(Comparable.class, 1);, assignment statement: comparableArray0[0] = (Comparable<HashSet<Object>>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:19:18.002 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<Object>[] comparableArray0 = (Comparable<Object>[]) Array.newInstance(Comparable.class, 9);, assignment statement: comparableArray0[0] = (Comparable<Object>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:21:42.769 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<Object>[] comparableArray0 = (Comparable<Object>[]) Array.newInstance(Comparable.class, 4);, assignment statement: comparableArray0[0] = (Comparable<Object>) comparableArray0;; SUT=net.mooctest.OST
+[MASTER] 11:21:58.815 [TEST_EXECUTION_THREAD_0] ERROR AbstractStatement - Error assigning value of type Comparable[] defined at statement Comparable<String>[] comparableArray0 = (Comparable<String>[]) Array.newInstance(Comparable.class, 4);, assignment statement: comparableArray0[0] = (Comparable<String>) comparableArray0;; SUT=net.mooctest.OST

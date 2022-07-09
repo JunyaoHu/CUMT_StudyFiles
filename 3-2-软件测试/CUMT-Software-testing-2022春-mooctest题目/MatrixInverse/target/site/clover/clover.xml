@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1654593453944" clover="4.4.1">
+   <project name="MatrixInverse 0.0.1-SNAPSHOT" timestamp="1654593451695">
+      <metrics coveredelements="97" complexity="25" loc="98" methods="4" classes="1" statements="51" packages="1" coveredconditionals="42" coveredmethods="4" elements="97" ncloc="65" files="1" conditionals="42" coveredstatements="51"/>
+      <package name="net.mooctest">
+         <metrics coveredelements="97" complexity="25" loc="98" methods="4" classes="1" statements="51" coveredconditionals="42" coveredmethods="4" elements="97" ncloc="65" files="1" conditionals="42" coveredstatements="51"/>
+         <file path="C:\mooctest\projects\6580\118570\MatrixInverse\src\main\java\net\mooctest\MatrixInverse.java" name="MatrixInverse.java">
+            <metrics coveredelements="97" coveredconditionals="42" complexity="25" loc="98" coveredmethods="4" methods="4" elements="97" classes="1" ncloc="65" statements="51" conditionals="42" coveredstatements="51"/>
+            <class name="MatrixInverse">
+               <metrics coveredelements="97" coveredconditionals="42" complexity="25" coveredmethods="4" methods="4" elements="97" statements="51" conditionals="42" coveredstatements="51"/>
+            </class>
+            <line complexity="6" visibility="package" signature="inverse(double[][]) : double[][]" num="16" count="8" type="method"/>
+            <line num="17" count="8" type="stmt"/>
+            <line num="17" count="2" type="stmt"/>
+            <line falsecount="4" truecount="2" num="17" type="cond"/>
+            <line num="18" count="4" type="stmt"/>
+            <line num="19" count="4" type="stmt"/>
+            <line num="20" count="4" type="stmt"/>
+            <line falsecount="4" truecount="13" num="20" type="cond"/>
+            <line num="21" count="13" type="stmt"/>
+            <line falsecount="13" truecount="53" num="21" type="cond"/>
+            <line num="22" count="53" type="stmt"/>
+            <line num="23" count="13" type="stmt"/>
+            <line num="25" count="4" type="stmt"/>
+            <line num="26" count="4" type="stmt"/>
+            <line num="27" count="4" type="stmt"/>
+            <line falsecount="4" truecount="13" num="27" type="cond"/>
+            <line num="28" count="13" type="stmt"/>
+            <line falsecount="13" truecount="53" num="28" type="cond"/>
+            <line num="29" count="53" type="stmt"/>
+            <line num="30" count="4" type="stmt"/>
+            <line complexity="10" visibility="package" signature="solve(double[][]) : void" num="39" count="8" type="method"/>
+            <line num="40" count="8" type="stmt"/>
+            <line num="41" count="7" type="stmt"/>
+            <line falsecount="4" truecount="17" num="41" type="cond"/>
+            <line num="42" count="17" type="stmt"/>
+            <line num="42" count="1" type="stmt"/>
+            <line falsecount="16" truecount="1" num="42" type="cond"/>
+            <line num="43" count="16" type="stmt"/>
+            <line num="44" count="16" type="stmt"/>
+            <line falsecount="14" truecount="99" num="44" type="cond"/>
+            <line num="45" count="99" type="stmt"/>
+            <line falsecount="78" truecount="21" num="45" type="cond"/>
+            <line num="46" count="21" type="stmt"/>
+            <line num="47" count="21" type="stmt"/>
+            <line num="47" count="1" type="stmt"/>
+            <line falsecount="20" truecount="1" num="47" type="cond"/>
+            <line num="50" count="14" type="stmt"/>
+            <line num="51" count="14" type="stmt"/>
+            <line num="52" count="14" type="stmt"/>
+            <line num="53" count="14" type="stmt"/>
+            <line num="54" count="14" type="stmt"/>
+            <line num="54" count="107" type="stmt"/>
+            <line falsecount="14" truecount="107" num="54" type="cond"/>
+            <line num="55" count="14" type="stmt"/>
+            <line falsecount="14" truecount="55" num="55" type="cond"/>
+            <line num="56" count="55" type="stmt"/>
+            <line falsecount="14" truecount="41" num="56" type="cond"/>
+            <line num="57" count="41" type="stmt"/>
+            <line num="58" count="41" type="stmt"/>
+            <line num="58" count="413" type="stmt"/>
+            <line falsecount="41" truecount="413" num="58" type="cond"/>
+            <line num="61" count="14" type="stmt"/>
+            <line complexity="5" visibility="package" signature="isInconsistent(double[][]) : boolean" num="66" count="5" type="method"/>
+            <line num="67" count="5" type="stmt"/>
+            <line num="68" count="4" type="stmt"/>
+            <line falsecount="1" truecount="11" num="68" type="cond"/>
+            <line num="69" count="11" type="stmt"/>
+            <line falsecount="7" truecount="2" num="69" type="cond"/>
+            <line num="70" count="2" type="stmt"/>
+            <line falsecount="1" truecount="4" num="70" type="cond"/>
+            <line num="71" count="4" type="stmt"/>
+            <line num="71" count="1" type="stmt"/>
+            <line falsecount="3" truecount="1" num="71" type="cond"/>
+            <line num="72" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line complexity="4" visibility="package" signature="hasMultipleSolutions(double[][]) : boolean" num="79" count="5" type="method"/>
+            <line num="80" count="5" type="stmt"/>
+            <line num="81" count="4" type="stmt"/>
+            <line falsecount="3" truecount="8" num="81" type="cond"/>
+            <line num="82" count="8" type="stmt"/>
+            <line falsecount="5" truecount="30" num="82" type="cond"/>
+            <line num="83" count="30" type="stmt"/>
+            <line num="83" count="2" type="stmt"/>
+            <line falsecount="27" truecount="2" num="83" type="cond"/>
+            <line num="84" count="5" type="stmt"/>
+            <line num="86" count="3" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="MatrixInverse 0.0.1-SNAPSHOT" timestamp="1654593451695">
+      <metrics coveredelements="127" complexity="30" loc="279" methods="21" classes="1" statements="115" packages="1" coveredconditionals="0" coveredmethods="21" elements="136" ncloc="209" files="1" conditionals="0" coveredstatements="106"/>
+      <package name="net.mooctest">
+         <metrics coveredelements="127" complexity="30" loc="279" methods="21" classes="1" statements="115" coveredconditionals="0" coveredmethods="21" elements="136" ncloc="209" files="1" conditionals="0" coveredstatements="106"/>
+         <file path="C:\mooctest\projects\6580\118570\MatrixInverse\src\test\java\net\mooctest\MatrixInverseTest.java" name="MatrixInverseTest.java">
+            <metrics coveredelements="127" coveredconditionals="0" complexity="30" loc="279" coveredmethods="21" methods="21" elements="136" classes="1" ncloc="209" statements="115" conditionals="0" coveredstatements="106"/>
+            <class name="MatrixInverseTest">
+               <metrics coveredelements="127" complexity="30" methods="21" testruns="21" statements="115" coveredconditionals="0" coveredmethods="21" elements="136" testfailures="0" testduration="0.023" conditionals="0" coveredstatements="106" testpasses="21"/>
+            </class>
+            <line complexity="1" visibility="public" signature="Test() : void" num="16" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test00() : void" num="22" testsuccess="true" count="1" testduration="0.018" type="method"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test01() : void" num="34" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="36" count="1" type="stmt"/>
+            <line num="37" count="1" type="stmt"/>
+            <line num="38" count="1" type="stmt"/>
+            <line num="39" count="1" type="stmt"/>
+            <line num="40" count="1" type="stmt"/>
+            <line num="41" count="1" type="stmt"/>
+            <line num="42" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test02() : void" num="45" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="47" count="1" type="stmt"/>
+            <line num="48" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line num="52" count="1" type="stmt"/>
+            <line num="53" count="1" type="stmt"/>
+            <line num="54" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test03() : void" num="57" testsuccess="true" count="1" testduration="0.003" type="method"/>
+            <line num="59" count="1" type="stmt"/>
+            <line num="60" count="1" type="stmt"/>
+            <line num="61" count="1" type="stmt"/>
+            <line num="62" count="1" type="stmt"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="72" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test04() : void" num="76" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="78" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="80" count="1" type="stmt"/>
+            <line num="81" count="1" type="stmt"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test05() : void" num="86" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="88" count="1" type="stmt"/>
+            <line num="89" count="1" type="stmt"/>
+            <line num="90" count="1" type="stmt"/>
+            <line num="91" count="1" type="stmt"/>
+            <line num="92" count="1" type="stmt"/>
+            <line num="93" count="1" type="stmt"/>
+            <line num="94" count="1" type="stmt"/>
+            <line num="95" count="1" type="stmt"/>
+            <line num="96" count="1" type="stmt"/>
+            <line num="97" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test06() : void" num="100" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="102" count="1" type="stmt"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="104" count="1" type="stmt"/>
+            <line num="105" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test07() : void" num="108" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="112" count="1" type="stmt"/>
+            <line num="113" count="0" type="stmt"/>
+            <line num="119" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test08() : void" num="123" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="125" count="1" type="stmt"/>
+            <line num="126" count="1" type="stmt"/>
+            <line num="127" count="1" type="stmt"/>
+            <line num="129" count="1" type="stmt"/>
+            <line num="130" count="1" type="stmt"/>
+            <line num="131" count="0" type="stmt"/>
+            <line num="137" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test09() : void" num="141" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="144" count="1" type="stmt"/>
+            <line num="145" count="1" type="stmt"/>
+            <line num="146" count="0" type="stmt"/>
+            <line num="152" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test10() : void" num="156" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="158" count="1" type="stmt"/>
+            <line num="159" count="1" type="stmt"/>
+            <line num="160" count="1" type="stmt"/>
+            <line num="162" count="1" type="stmt"/>
+            <line num="163" count="1" type="stmt"/>
+            <line num="164" count="0" type="stmt"/>
+            <line num="170" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test11() : void" num="174" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="177" count="1" type="stmt"/>
+            <line num="178" count="1" type="stmt"/>
+            <line num="179" count="0" type="stmt"/>
+            <line num="185" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test12() : void" num="189" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="191" count="1" type="stmt"/>
+            <line num="193" count="1" type="stmt"/>
+            <line num="194" count="1" type="stmt"/>
+            <line num="195" count="0" type="stmt"/>
+            <line num="201" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test13() : void" num="205" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="208" count="1" type="stmt"/>
+            <line num="209" count="1" type="stmt"/>
+            <line num="210" count="0" type="stmt"/>
+            <line num="216" count="1" type="stmt"/>
+            <line complexity="2" visibility="public" signature="test14() : void" num="220" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="222" count="1" type="stmt"/>
+            <line num="223" count="1" type="stmt"/>
+            <line num="224" count="1" type="stmt"/>
+            <line num="226" count="1" type="stmt"/>
+            <line num="227" count="1" type="stmt"/>
+            <line num="228" count="0" type="stmt"/>
+            <line num="234" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test15() : void" num="238" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="240" count="1" type="stmt"/>
+            <line num="241" count="1" type="stmt"/>
+            <line num="242" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test16() : void" num="245" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="247" count="1" type="stmt"/>
+            <line num="248" count="1" type="stmt"/>
+            <line num="249" count="1" type="stmt"/>
+            <line num="250" count="1" type="stmt"/>
+            <line num="251" count="1" type="stmt"/>
+            <line num="252" count="1" type="stmt"/>
+            <line num="253" count="1" type="stmt"/>
+            <line num="254" count="1" type="stmt"/>
+            <line num="256" count="1" type="stmt"/>
+            <line num="257" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test17() : void" num="260" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="262" count="1" type="stmt"/>
+            <line num="263" count="1" type="stmt"/>
+            <line num="264" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test18() : void" num="267" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="269" count="1" type="stmt"/>
+            <line num="270" count="1" type="stmt"/>
+            <line num="271" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="test19() : void" num="274" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="276" count="1" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>

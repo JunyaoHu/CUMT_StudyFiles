@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写作小助手-关于</title>
+</head>
+{% load static %}
+<script src="{% static 'scripts/echarts.js' %}"></script>
+<script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+<body>
+<div class="layui-header">
+    <ul class="layui-nav">
+        <li class="layui-nav-item"><a href="{% url 'writing:index' %}">主页</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:list' %}">写作台</a></li>
+        <li class="layui-nav-item"><a href="{% url 'writing:help' %}">使用指南</a></li>
+        <li class="layui-nav-item layui-this"><a href="">关于</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+            <a href="javascript:;">
+                <img id='iconNav' src="{% static 'media/web/icon.jpg' %}" class="layui-nav-img">
+                欢迎您，{{ username }}！
+            </a>
+            <dl class="layui-nav-child">
+                <dd><a href="{% url 'writing:user' %}">修改信息</a></dd>
+                <dd><a href="{% url 'user:logout' %}">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<div style="margin: 10px">
+    <div style="margin: 10px">
+        <blockquote class="layui-elem-quote layui-text">
+            这里是用户写作平台的制作人介绍。
+        </blockquote>
+
+        <div class="layui-bg-gray" style="padding: 20px;">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md8">
+                    <div class="layui-panel" style="padding: 25px;">
+                        <ul class="layui-timeline">
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis"></i>
+                                <div class="layui-timeline-content layui-text">
+                                    <h3 class="layui-timeline-title">6月9日</h3>
+                                    <p>整合网站框架与训练模型。</p>
+                                </div>
+                            </li>
+
+
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis"></i>
+                                <div class="layui-timeline-content layui-text">
+                                    <h3 class="layui-timeline-title">5月25日</h3>
+                                    <p>开始零基础学习Bert。</p>
+                                </div>
+                            </li>
+
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis"></i>
+                                <div class="layui-timeline-content layui-text">
+                                    <h3 class="layui-timeline-title">5月18日</h3>
+                                    <p>开始学习Django，搭建网站</p>
+                                </div>
+                            </li>
+
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis"></i>
+                                <div class="layui-timeline-content layui-text">
+                                    <h3 class="layui-timeline-title">5月16日</h3>
+                                    <p>
+                                        接受任务，确定选题与分工。
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis"></i>
+                                <div class="layui-timeline-content layui-text">
+                                    <div class="layui-timeline-title">过去，纯纯的小白。</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="layui-col-md4">
+                    <div class="layui-panel">
+                        <div id="main" style="width: 440px; height:440px;"></div>
+                        <script type="text/javascript">
+                            // 基于准备好的dom，初始化echarts实例
+                            var myChart = echarts.init(document.getElementById('main'));
+                            // 指定图表的配置项和数据
+                            const symbolSize = 6;
+                            const data = [
+                                [-57, 87],
+                                [-76, 78],
+                                [-79, 57],
+                                [-68, 44],
+                                [-52, 50],
+                                [],
+                                [-38, 85],
+                                [-36, 59],
+                                [-21, 43],
+                                [-7, 58],
+                                [-10, 87],
+                                [],
+                                [4, 43],
+                                [14, 85],
+                                [24, 44],
+                                [38, 86],
+                                [43, 43],
+                                [],
+                                [56, 86],
+                                [88, 85],
+                                [70, 86],
+                                [69, 40],
+                                [],
+                                [-7, 29],
+                                [-29, 23],
+                                [-37, 0],
+                                [-24, -18],
+                                [0, -10],
+                                [],
+                                [41, 30],
+                                [14, 19],
+                                [48, -6],
+                                [19, -19],
+                                [],
+                                [-86, -54],
+                                [-67, -41],
+                                [-54, -60],
+                                [-84, -86],
+                                [-52, -90],
+                                [],
+                                [-10, -48],
+                                [-35, -46],
+                                [-35, -86],
+                                [-14, -87],
+                                [-10, -48],
+                                [],
+                                [23, -32],
+                                [12, -89],
+                                [],
+                                [67, -50],
+                                [56, -40],
+                                [46, -50],
+                                [54, -64],
+                                [67, -50],
+                                [50, -89],
+                            ];
+                            option = {
+                                xAxis: {
+                                    min: -100,
+                                    max: 100,
+                                    type: 'value',
+                                    axisLine: {onZero: false}
+                                },
+                                yAxis: {
+                                    min: -100,
+                                    max: 100,
+                                    type: 'value',
+                                    axisLine: {onZero: false}
+                                },
+                                series: [
+                                    {
+                                        id: 'a',
+                                        type: 'line',
+                                        smooth: true,
+                                        symbolSize: symbolSize,
+                                        data: data
+                                    }
+                                ]
+                            };
+                            setTimeout(function () {
+                                // Add shadow circles (which is not visible) to enable drag.
+                                myChart.setOption({
+                                    graphic: data.map(function (item, dataIndex) {
+                                        return {
+                                            type: 'circle',
+                                            position: myChart.convertToPixel('grid', item),
+                                            shape: {
+                                                cx: 0,
+                                                cy: 0,
+                                                r: symbolSize / 2
+                                            },
+                                            invisible: true,
+                                            draggable: true,
+                                            ondrag: function (dx, dy) {
+                                                onPointDragging(dataIndex, [this.x, this.y]);
+                                            },
+                                            onmousemove: function () {
+                                                showTooltip(dataIndex);
+                                            },
+                                            onmouseout: function () {
+                                                hideTooltip(dataIndex);
+                                            },
+                                            z: 100
+                                        };
+                                    })
+                                });
+                            }, 0);
+                            window.addEventListener('resize', updatePosition);
+                            myChart.on('dataZoom', updatePosition);
+
+                            function updatePosition() {
+                                myChart.setOption({
+                                    graphic: data.map(function (item, dataIndex) {
+                                        return {
+                                            position: myChart.convertToPixel('grid', item)
+                                        };
+                                    })
+                                });
+                            }
+
+                            function showTooltip(dataIndex) {
+                                myChart.dispatchAction({
+                                    type: 'showTip',
+                                    seriesIndex: 0,
+                                    dataIndex: dataIndex
+                                });
+                            }
+
+                            function hideTooltip(dataIndex) {
+                                myChart.dispatchAction({
+                                    type: 'hideTip'
+                                });
+                            }
+
+                            function onPointDragging(dataIndex, pos) {
+                                data[dataIndex] = myChart.convertFromPixel('grid', pos);
+                                // Update data
+                                myChart.setOption({
+                                    series: [
+                                        {
+                                            id: 'a',
+                                            data: data
+                                        }
+                                    ]
+                                });
+                            }
+
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart.setOption(option);
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="{% static 'layui/layui.js' %}"></script>
+</html>

@@ -1,0 +1,2 @@
+model_checkpoint_path: "bert_model.ckpt"
+all_model_checkpoint_paths: "bert_model.ckpt"

@@ -1,0 +1,166 @@
+body{
+    background: url('/static/media/web/bg.jpg') no-repeat fixed ;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main{
+    background-color: rgba(232, 235, 255, 0.66);
+    width: 300px;
+    height: max-content;
+    border-radius: 40px;
+    padding: 15px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.main-header{
+    height: 50px;
+    padding: 5px;
+    border-bottom: 2px solid #7db5ff;
+
+}
+
+.main-header div {
+    width: max-content;
+    height: 40px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.errorMsg {
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+    padding: 5px 10px;
+    width: 75%;
+}
+.main-header img{
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 10px;
+    border: #ccdfff solid;
+
+}
+
+.main-header span{
+    font-size: 20px;
+    float: left;
+    padding: 8px;
+}
+
+.input-box{
+    margin: 15px 0% 5px 8%;
+    text-align: left;
+}
+
+
+.input-box input{
+    width: 80%;
+    height: 30px;
+    margin-left: 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+}
+
+.input-box input:hover{
+    border: 1px solid #a6aaff;
+}
+
+.input-box input:focus{
+    border: 1px solid rgba(26, 71, 255, 0.76);
+}
+
+.input-box #id{
+    background: url("/static/media/web/id.png") center;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-box #pw{
+    background: url("/static/media/web/pw.png") center;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-box #repw{
+    background: url("/static/media/web/pw.png") center;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-box #mail{
+    background: url("/static/media/web/mail.png") center;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-box #icode{
+    background: url("/static/media/web/code.png") center;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-box #code {
+    width: 63%;
+}
+
+.button-box {
+    text-align: center;
+}
+.button-box input{
+    margin-top: 12px;
+    width: 85%;
+    background-color: #3e94ff;
+    color: #ffffff;
+    font-size: 16px;
+    height: 36px;
+    border: 1px solid #93c5ff;
+    border-radius: 8px;
+}
+
+.button-box input:hover{
+    background-color: #59a5ff;
+}
+
+.button-box input:active{
+    background-color: #89c0ff;
+}
+
+.tips {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.tips span{
+    margin: 2px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+

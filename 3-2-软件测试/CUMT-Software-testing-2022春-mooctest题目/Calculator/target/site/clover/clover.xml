@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1654314771623" clover="4.4.1">
+   <project name="Calculator 0.0.1-SNAPSHOT" timestamp="1654314769190">
+      <metrics coveredelements="405" complexity="92" loc="1088" methods="30" classes="10" statements="285" packages="1" coveredconditionals="95" coveredmethods="30" elements="413" ncloc="432" files="10" conditionals="98" coveredstatements="280"/>
+      <package name="net.mooctest">
+         <metrics coveredelements="405" complexity="92" loc="1088" methods="30" classes="10" statements="285" coveredconditionals="95" coveredmethods="30" elements="413" ncloc="432" files="10" conditionals="98" coveredstatements="280"/>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\Calculator.java" name="Calculator.java">
+            <metrics coveredelements="124" coveredconditionals="17" complexity="12" loc="181" coveredmethods="2" methods="2" elements="126" classes="1" ncloc="120" statements="106" conditionals="18" coveredstatements="105"/>
+            <class name="Calculator">
+               <metrics coveredelements="124" coveredconditionals="17" complexity="12" coveredmethods="2" methods="2" elements="126" statements="106" conditionals="18" coveredstatements="105"/>
+            </class>
+            <line complexity="1" visibility="public" signature="evaluate(String) : String" num="40" count="33" type="method"/>
+            <line num="45" count="33" type="stmt"/>
+            <line num="47" count="33" type="stmt"/>
+            <line complexity="11" visibility="public" signature="parseCommand(String) : void" num="58" count="10" type="method"/>
+            <line num="59" count="10" type="stmt"/>
+            <line falsecount="9" truecount="1" num="59" type="cond"/>
+            <line num="61" count="1" type="stmt"/>
+            <line num="62" count="9" type="stmt"/>
+            <line falsecount="8" truecount="1" num="62" type="cond"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line num="68" count="1" type="stmt"/>
+            <line num="69" count="1" type="stmt"/>
+            <line num="70" count="1" type="stmt"/>
+            <line num="71" count="1" type="stmt"/>
+            <line num="72" count="1" type="stmt"/>
+            <line num="73" count="1" type="stmt"/>
+            <line num="74" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line num="78" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="80" count="1" type="stmt"/>
+            <line num="81" count="1" type="stmt"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line num="84" count="1" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line num="86" count="1" type="stmt"/>
+            <line num="87" count="8" type="stmt"/>
+            <line falsecount="7" truecount="1" num="87" type="cond"/>
+            <line num="89" count="1" type="stmt"/>
+            <line num="90" count="1" type="stmt"/>
+            <line num="91" count="1" type="stmt"/>
+            <line num="92" count="1" type="stmt"/>
+            <line num="93" count="1" type="stmt"/>
+            <line num="94" count="1" type="stmt"/>
+            <line num="95" count="1" type="stmt"/>
+            <line num="96" count="1" type="stmt"/>
+            <line num="97" count="1" type="stmt"/>
+            <line num="98" count="1" type="stmt"/>
+            <line num="99" count="1" type="stmt"/>
+            <line num="100" count="1" type="stmt"/>
+            <line num="101" count="1" type="stmt"/>
+            <line num="102" count="1" type="stmt"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="104" count="1" type="stmt"/>
+            <line num="105" count="1" type="stmt"/>
+            <line num="106" count="1" type="stmt"/>
+            <line num="107" count="1" type="stmt"/>
+            <line num="108" count="1" type="stmt"/>
+            <line num="109" count="1" type="stmt"/>
+            <line num="110" count="1" type="stmt"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="112" count="1" type="stmt"/>
+            <line num="113" count="7" type="stmt"/>
+            <line falsecount="6" truecount="1" num="113" type="cond"/>
+            <line num="115" count="1" type="stmt"/>
+            <line num="116" count="1" type="stmt"/>
+            <line num="117" count="1" type="stmt"/>
+            <line num="118" count="1" type="stmt"/>
+            <line num="119" count="1" type="stmt"/>
+            <line num="120" count="1" type="stmt"/>
+            <line num="121" count="1" type="stmt"/>
+            <line num="122" count="1" type="stmt"/>
+            <line num="123" count="1" type="stmt"/>
+            <line num="124" count="1" type="stmt"/>
+            <line num="125" count="1" type="stmt"/>
+            <line num="126" count="1" type="stmt"/>
+            <line num="127" count="6" type="stmt"/>
+            <line falsecount="5" truecount="1" num="127" type="cond"/>
+            <line num="129" count="1" type="stmt"/>
+            <line num="130" count="1" type="stmt"/>
+            <line num="131" count="1" type="stmt"/>
+            <line num="132" count="1" type="stmt"/>
+            <line num="133" count="1" type="stmt"/>
+            <line num="134" count="1" type="stmt"/>
+            <line num="135" count="1" type="stmt"/>
+            <line num="136" count="5" type="stmt"/>
+            <line falsecount="3" truecount="2" num="136" type="cond"/>
+            <line num="138" count="2" type="stmt"/>
+            <line num="139" count="2" type="stmt"/>
+            <line num="140" count="2" type="stmt"/>
+            <line num="141" count="2" type="stmt"/>
+            <line num="142" count="2" type="stmt"/>
+            <line num="143" count="2" type="stmt"/>
+            <line num="144" count="2" type="stmt"/>
+            <line num="145" count="2" type="stmt"/>
+            <line num="146" count="2" type="stmt"/>
+            <line num="147" count="3" type="stmt"/>
+            <line falsecount="1" truecount="2" num="147" type="cond"/>
+            <line num="151" count="2" type="stmt"/>
+            <line num="153" count="2" type="stmt"/>
+            <line falsecount="2" truecount="6" num="153" type="cond"/>
+            <line num="155" count="6" type="stmt"/>
+            <line num="158" count="2" type="stmt"/>
+            <line num="159" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="159" type="cond"/>
+            <line num="161" count="1" type="stmt"/>
+            <line num="162" count="1" type="stmt"/>
+            <line num="163" count="1" type="stmt"/>
+            <line num="164" count="1" type="stmt"/>
+            <line num="165" count="1" type="stmt"/>
+            <line num="166" count="1" type="stmt"/>
+            <line num="167" count="1" type="stmt"/>
+            <line num="168" count="1" type="stmt"/>
+            <line num="169" count="1" type="stmt"/>
+            <line num="170" count="1" type="stmt"/>
+            <line num="171" count="1" type="stmt"/>
+            <line num="172" count="1" type="stmt"/>
+            <line num="173" count="1" type="stmt"/>
+            <line num="174" count="1" type="stmt"/>
+            <line num="175" count="1" type="stmt"/>
+            <line num="178" count="0" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\CommandNotFoundException.java" name="CommandNotFoundException.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="2" loc="32" coveredmethods="2" methods="2" elements="5" classes="1" ncloc="11" statements="3" conditionals="0" coveredstatements="3"/>
+            <class name="CommandNotFoundException">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="5" statements="3" conditionals="0" coveredstatements="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="CommandNotFoundException(String)" num="17" count="1" type="method"/>
+            <line num="18" count="1" type="stmt"/>
+            <line num="19" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getCommand() : String" num="29" count="1" type="method"/>
+            <line num="30" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\ExpressionParser.java" name="ExpressionParser.java">
+            <metrics coveredelements="151" coveredconditionals="39" complexity="40" loc="496" coveredmethods="9" methods="9" elements="156" classes="1" ncloc="167" statements="107" conditionals="40" coveredstatements="103"/>
+            <class name="ExpressionParser">
+               <metrics coveredelements="151" coveredconditionals="39" complexity="40" coveredmethods="9" methods="9" elements="156" statements="107" conditionals="40" coveredstatements="103"/>
+            </class>
+            <line complexity="1" visibility="public" signature="ExpressionParser(int)" num="54" count="26" type="method"/>
+            <line num="55" count="26" type="stmt"/>
+            <line num="56" count="26" type="stmt"/>
+            <line complexity="3" visibility="public" signature="addVariable(String,String) : void" num="68" count="27" type="method"/>
+            <line num="70" count="27" type="stmt"/>
+            <line falsecount="24" truecount="24" num="70" type="cond"/>
+            <line num="72" count="24" type="stmt"/>
+            <line falsecount="21" truecount="3" num="72" type="cond"/>
+            <line num="73" count="3" type="stmt"/>
+            <line num="74" count="3" type="stmt"/>
+            <line num="81" count="24" type="stmt"/>
+            <line num="82" count="22" type="stmt"/>
+            <line num="83" count="22" type="stmt"/>
+            <line complexity="5" visibility="public" signature="evaluate(String) : String" num="98" count="132" type="method"/>
+            <line num="99" count="132" type="stmt"/>
+            <line num="100" count="132" type="stmt"/>
+            <line falsecount="130" truecount="2" num="100" type="cond"/>
+            <line num="102" count="2" type="stmt"/>
+            <line num="103" count="130" type="stmt"/>
+            <line falsecount="87" truecount="43" num="103" type="cond"/>
+            <line num="105" count="43" type="stmt"/>
+            <line num="106" count="87" type="stmt"/>
+            <line falsecount="65" truecount="22" num="106" type="cond"/>
+            <line num="112" count="22" type="stmt"/>
+            <line num="113" count="22" type="stmt"/>
+            <line num="119" count="21" type="stmt"/>
+            <line num="120" count="20" type="stmt"/>
+            <line num="126" count="65" type="stmt"/>
+            <line num="127" count="65" type="stmt"/>
+            <line num="128" count="64" type="stmt"/>
+            <line num="135" count="63" type="stmt"/>
+            <line num="138" count="81" type="stmt"/>
+            <line num="140" count="81" type="stmt"/>
+            <line num="143" count="2" type="stmt"/>
+            <line num="145" count="79" type="stmt"/>
+            <line complexity="5" visibility="protected" signature="parseVariables(String) : String" num="164" count="68" type="method"/>
+            <line num="169" count="68" type="stmt"/>
+            <line falsecount="68" truecount="132" num="169" type="cond"/>
+            <line num="171" count="132" type="stmt"/>
+            <line num="178" count="68" type="stmt"/>
+            <line num="179" count="68" type="stmt"/>
+            <line num="180" count="68" type="stmt"/>
+            <line falsecount="67" truecount="1" num="180" type="cond"/>
+            <line num="185" count="1" type="stmt"/>
+            <line num="191" count="67" type="stmt"/>
+            <line num="192" count="67" type="stmt"/>
+            <line complexity="3" visibility="protected" signature="parseParenthesis(String) : String" num="210" count="73" type="method"/>
+            <line num="211" count="73" type="stmt"/>
+            <line num="216" count="73" type="stmt"/>
+            <line num="221" count="73" type="stmt"/>
+            <line falsecount="70" truecount="28" num="221" type="cond"/>
+            <line num="223" count="28" type="stmt"/>
+            <line num="224" count="28" type="stmt"/>
+            <line num="228" count="27" type="stmt"/>
+            <line num="234" count="25" type="stmt"/>
+            <line falsecount="21" truecount="4" num="234" type="cond"/>
+            <line num="236" count="4" type="stmt"/>
+            <line num="237" count="4" type="stmt"/>
+            <line num="243" count="25" type="stmt"/>
+            <line num="250" count="70" type="stmt"/>
+            <line num="251" count="70" type="stmt"/>
+            <line complexity="7" visibility="protected" signature="parseFunctions(String) : String" num="274" count="74" type="method"/>
+            <line num="275" count="74" type="stmt"/>
+            <line num="276" count="74" type="stmt"/>
+            <line num="277" count="74" type="stmt"/>
+            <line num="282" count="74" type="stmt"/>
+            <line num="283" count="74" type="stmt"/>
+            <line num="290" count="74" type="stmt"/>
+            <line num="297" count="74" type="stmt"/>
+            <line falsecount="68" truecount="34" num="297" type="cond"/>
+            <line num="299" count="34" type="stmt"/>
+            <line num="300" count="34" type="stmt"/>
+            <line num="306" count="31" type="stmt"/>
+            <line num="312" count="31" type="stmt"/>
+            <line num="315" count="30" type="stmt"/>
+            <line num="322" count="28" type="stmt"/>
+            <line falsecount="26" truecount="2" num="322" type="cond"/>
+            <line num="324" count="2" type="stmt"/>
+            <line num="325" count="2" type="stmt"/>
+            <line num="328" count="28" type="stmt"/>
+            <line num="334" count="1" type="stmt"/>
+            <line num="337" count="2" type="stmt"/>
+            <line num="340" count="3" type="stmt"/>
+            <line num="343" count="0" type="stmt"/>
+            <line num="348" count="68" type="stmt"/>
+            <line num="349" count="68" type="stmt"/>
+            <line complexity="10" visibility="protected" signature="parseOperators(String) : String" num="367" count="66" type="method"/>
+            <line num="368" count="66" type="stmt"/>
+            <line num="370" count="66" type="stmt"/>
+            <line num="379" count="66" type="stmt"/>
+            <line falsecount="66" truecount="3" num="379" type="cond"/>
+            <line num="380" count="3" type="stmt"/>
+            <line num="381" count="3" type="stmt"/>
+            <line num="388" count="0" type="stmt"/>
+            <line num="389" count="0" type="stmt"/>
+            <line num="393" count="66" type="stmt"/>
+            <line num="396" count="66" type="stmt"/>
+            <line num="398" count="392" type="stmt"/>
+            <line falsecount="388" truecount="996" num="398" type="cond"/>
+            <line num="399" count="996" type="stmt"/>
+            <line falsecount="944" truecount="52" num="399" type="cond"/>
+            <line num="400" count="52" type="stmt"/>
+            <line num="402" count="52" type="stmt"/>
+            <line falsecount="52" truecount="68" num="402" type="cond"/>
+            <line num="403" count="68" type="stmt"/>
+            <line num="405" count="52" type="stmt"/>
+            <line falsecount="52" truecount="60" num="405" type="cond"/>
+            <line num="406" count="60" type="stmt"/>
+            <line num="407" count="52" type="stmt"/>
+            <line num="409" count="52" type="stmt"/>
+            <line num="410" count="49" type="stmt"/>
+            <line num="415" count="48" type="stmt"/>
+            <line num="416" count="48" type="stmt"/>
+            <line num="419" count="4" type="stmt"/>
+            <line num="424" count="62" type="stmt"/>
+            <line num="427" count="62" type="stmt"/>
+            <line num="428" count="154" type="stmt"/>
+            <line num="430" count="62" type="stmt"/>
+            <line complexity="1" visibility="protected" signature="adjustNumberSpacing(String) : String" num="444" count="207" type="method"/>
+            <line num="446" count="207" type="stmt"/>
+            <line num="451" count="207" type="stmt"/>
+            <line num="452" count="207" type="stmt"/>
+            <line complexity="5" visibility="protected" signature="indexOfMatchingBracket(String,int,char,char) : int" num="472" count="90" type="method"/>
+            <line num="474" count="90" type="stmt"/>
+            <line num="476" count="90" type="stmt"/>
+            <line falsecount="6" truecount="741" num="476" type="cond"/>
+            <line num="478" count="741" type="stmt"/>
+            <line falsecount="660" truecount="81" num="478" type="cond"/>
+            <line num="479" count="81" type="stmt"/>
+            <line num="487" count="660" type="stmt"/>
+            <line falsecount="636" truecount="24" num="487" type="cond"/>
+            <line num="488" count="24" type="stmt"/>
+            <line num="490" count="6" type="stmt"/>
+            <line falsecount="0" truecount="6" num="490" type="cond"/>
+            <line num="492" count="6" type="stmt"/>
+            <line num="494" count="0" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\ExpressionParserException.java" name="ExpressionParserException.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="2" loc="29" coveredmethods="2" methods="2" elements="5" classes="1" ncloc="11" statements="3" conditionals="0" coveredstatements="3"/>
+            <class name="ExpressionParserException">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="5" statements="3" conditionals="0" coveredstatements="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="ExpressionParserException(String)" num="15" count="29" type="method"/>
+            <line num="16" count="29" type="stmt"/>
+            <line num="18" count="29" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getFaultyExpression() : String" num="26" count="1" type="method"/>
+            <line num="27" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\FunctionNotFoundException.java" name="FunctionNotFoundException.java">
+            <metrics coveredelements="7" coveredconditionals="0" complexity="3" loc="47" coveredmethods="3" methods="3" elements="7" classes="1" ncloc="14" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="FunctionNotFoundException">
+               <metrics coveredelements="7" coveredconditionals="0" complexity="3" coveredmethods="3" methods="3" elements="7" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="FunctionNotFoundException(String,String)" num="23" count="7" type="method"/>
+            <line num="24" count="7" type="stmt"/>
+            <line num="25" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="FunctionNotFoundException(String)" num="35" count="4" type="method"/>
+            <line num="36" count="4" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getFunc() : String" num="44" count="2" type="method"/>
+            <line num="45" count="2" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\MathParser.java" name="MathParser.java">
+            <metrics coveredelements="94" coveredconditionals="39" complexity="25" loc="158" coveredmethods="4" methods="4" elements="95" classes="1" ncloc="67" statements="51" conditionals="40" coveredstatements="51"/>
+            <class name="MathParser">
+               <metrics coveredelements="94" coveredconditionals="39" complexity="25" coveredmethods="4" methods="4" elements="95" statements="51" conditionals="40" coveredstatements="51"/>
+            </class>
+            <line complexity="2" visibility="protected" signature="isNumber(String) : boolean" num="19" count="362" type="method"/>
+            <line num="20" count="362" type="stmt"/>
+            <line num="22" count="362" type="stmt"/>
+            <line num="23" count="145" type="stmt"/>
+            <line num="25" count="217" type="stmt"/>
+            <line complexity="3" visibility="protected" signature="factorial(double) : double" num="37" count="19" type="method"/>
+            <line num="39" count="19" type="stmt"/>
+            <line falsecount="10" truecount="9" num="39" type="cond"/>
+            <line num="40" count="9" type="stmt"/>
+            <line num="41" count="10" type="stmt"/>
+            <line num="42" count="10" type="stmt"/>
+            <line falsecount="10" truecount="37" num="42" type="cond"/>
+            <line num="43" count="37" type="stmt"/>
+            <line num="44" count="10" type="stmt"/>
+            <line complexity="7" visibility="protected" signature="solveBinaryOperation(double,String,double) : double" num="69" count="55" type="method"/>
+            <line num="70" count="55" type="stmt"/>
+            <line num="75" count="55" type="stmt"/>
+            <line falsecount="49" truecount="6" num="75" type="cond"/>
+            <line num="76" count="6" type="stmt"/>
+            <line num="77" count="49" type="stmt"/>
+            <line falsecount="47" truecount="2" num="77" type="cond"/>
+            <line num="78" count="2" type="stmt"/>
+            <line num="79" count="47" type="stmt"/>
+            <line falsecount="35" truecount="12" num="79" type="cond"/>
+            <line num="80" count="12" type="stmt"/>
+            <line num="81" count="35" type="stmt"/>
+            <line falsecount="19" truecount="16" num="81" type="cond"/>
+            <line num="82" count="16" type="stmt"/>
+            <line num="83" count="19" type="stmt"/>
+            <line falsecount="1" truecount="18" num="83" type="cond"/>
+            <line num="84" count="18" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line falsecount="0" truecount="1" num="85" type="cond"/>
+            <line num="86" count="1" type="stmt"/>
+            <line num="88" count="55" type="stmt"/>
+            <line complexity="13" visibility="protected" signature="solveUnaryFunction(String,double) : double" num="120" count="48" type="method"/>
+            <line num="121" count="48" type="stmt"/>
+            <line num="126" count="48" type="stmt"/>
+            <line falsecount="45" truecount="3" num="126" type="cond"/>
+            <line num="127" count="3" type="stmt"/>
+            <line num="128" count="45" type="stmt"/>
+            <line falsecount="43" truecount="2" num="128" type="cond"/>
+            <line num="129" count="2" type="stmt"/>
+            <line num="130" count="43" type="stmt"/>
+            <line falsecount="41" truecount="2" num="130" type="cond"/>
+            <line num="131" count="2" type="stmt"/>
+            <line num="132" count="41" type="stmt"/>
+            <line falsecount="39" truecount="2" num="132" type="cond"/>
+            <line num="133" count="2" type="stmt"/>
+            <line num="134" count="39" type="stmt"/>
+            <line falsecount="37" truecount="2" num="134" type="cond"/>
+            <line num="135" count="2" type="stmt"/>
+            <line num="136" count="37" type="stmt"/>
+            <line falsecount="35" truecount="2" num="136" type="cond"/>
+            <line num="137" count="2" type="stmt"/>
+            <line num="138" count="35" type="stmt"/>
+            <line falsecount="33" truecount="2" num="138" type="cond"/>
+            <line num="139" count="2" type="stmt"/>
+            <line num="140" count="33" type="stmt"/>
+            <line falsecount="31" truecount="2" num="140" type="cond"/>
+            <line num="141" count="2" type="stmt"/>
+            <line num="142" count="31" type="stmt"/>
+            <line falsecount="16" truecount="15" num="142" type="cond"/>
+            <line num="143" count="15" type="stmt"/>
+            <line num="144" count="16" type="stmt"/>
+            <line falsecount="9" truecount="7" num="144" type="cond"/>
+            <line num="145" count="7" type="stmt"/>
+            <line num="146" count="9" type="stmt"/>
+            <line falsecount="6" truecount="3" num="146" type="cond"/>
+            <line num="147" count="3" type="stmt"/>
+            <line num="148" count="6" type="stmt"/>
+            <line falsecount="3" truecount="3" num="148" type="cond"/>
+            <line num="149" count="3" type="stmt"/>
+            <line num="154" count="3" type="stmt"/>
+            <line num="156" count="45" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\MissingOperandException.java" name="MissingOperandException.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="2" loc="34" coveredmethods="2" methods="2" elements="5" classes="1" ncloc="11" statements="3" conditionals="0" coveredstatements="3"/>
+            <class name="MissingOperandException">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="5" statements="3" conditionals="0" coveredstatements="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="MissingOperandException(String,String)" num="20" count="6" type="method"/>
+            <line num="21" count="6" type="stmt"/>
+            <line num="22" count="6" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getOperator() : String" num="31" count="1" type="method"/>
+            <line num="32" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\NullExpressionException.java" name="NullExpressionException.java">
+            <metrics coveredelements="2" coveredconditionals="0" complexity="1" loc="20" coveredmethods="1" methods="1" elements="2" classes="1" ncloc="6" statements="1" conditionals="0" coveredstatements="1"/>
+            <class name="NullExpressionException">
+               <metrics coveredelements="2" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="NullExpressionException()" num="17" count="2" type="method"/>
+            <line num="18" count="2" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\UnmatchedBracketsException.java" name="UnmatchedBracketsException.java">
+            <metrics coveredelements="5" coveredconditionals="0" complexity="2" loc="39" coveredmethods="2" methods="2" elements="5" classes="1" ncloc="11" statements="3" conditionals="0" coveredstatements="3"/>
+            <class name="UnmatchedBracketsException">
+               <metrics coveredelements="5" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="5" statements="3" conditionals="0" coveredstatements="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="UnmatchedBracketsException(String,int)" num="24" count="8" type="method"/>
+            <line num="25" count="8" type="stmt"/>
+            <line num="26" count="8" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getIndexOfBracket() : int" num="36" count="2" type="method"/>
+            <line num="37" count="2" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\main\java\net\mooctest\VariableNotFoundException.java" name="VariableNotFoundException.java">
+            <metrics coveredelements="7" coveredconditionals="0" complexity="3" loc="52" coveredmethods="3" methods="3" elements="7" classes="1" ncloc="14" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="VariableNotFoundException">
+               <metrics coveredelements="7" coveredconditionals="0" complexity="3" coveredmethods="3" methods="3" elements="7" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="VariableNotFoundException(String,String)" num="24" count="3" type="method"/>
+            <line num="25" count="3" type="stmt"/>
+            <line num="26" count="3" type="stmt"/>
+            <line complexity="1" visibility="public" signature="VariableNotFoundException(String)" num="38" count="1" type="method"/>
+            <line num="39" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getVar() : String" num="49" count="2" type="method"/>
+            <line num="50" count="2" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="Calculator 0.0.1-SNAPSHOT" timestamp="1654314769190">
+      <metrics coveredelements="228" complexity="52" loc="643" methods="52" classes="9" statements="176" packages="1" coveredconditionals="0" coveredmethods="52" elements="228" ncloc="376" files="9" conditionals="0" coveredstatements="176"/>
+      <package name="net.mooctest">
+         <metrics coveredelements="228" complexity="52" loc="643" methods="52" classes="9" statements="176" coveredconditionals="0" coveredmethods="52" elements="228" ncloc="376" files="9" conditionals="0" coveredstatements="176"/>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\CalculatorTest.java" name="CalculatorTest.java">
+            <metrics coveredelements="51" coveredconditionals="0" complexity="3" loc="87" coveredmethods="3" methods="3" elements="51" classes="1" ncloc="62" statements="48" conditionals="0" coveredstatements="48"/>
+            <class name="CalculatorTest">
+               <metrics coveredelements="51" complexity="3" methods="3" testruns="3" statements="48" coveredconditionals="0" coveredmethods="3" elements="51" testfailures="0" testduration="0.083" conditionals="0" coveredstatements="48" testpasses="3"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testEvaluate() : void" num="20" testsuccess="true" count="1" testduration="0.02" type="method"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line num="32" count="1" type="stmt"/>
+            <line num="33" count="1" type="stmt"/>
+            <line num="34" count="1" type="stmt"/>
+            <line num="35" count="1" type="stmt"/>
+            <line num="36" count="1" type="stmt"/>
+            <line num="37" count="1" type="stmt"/>
+            <line num="38" count="1" type="stmt"/>
+            <line num="39" count="1" type="stmt"/>
+            <line num="40" count="1" type="stmt"/>
+            <line num="41" count="1" type="stmt"/>
+            <line num="42" count="1" type="stmt"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line num="45" count="1" type="stmt"/>
+            <line num="46" count="1" type="stmt"/>
+            <line num="47" count="1" type="stmt"/>
+            <line num="48" count="1" type="stmt"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseCommand() : void" num="61" testsuccess="true" count="1" testduration="0.007" type="method"/>
+            <line num="63" count="1" type="stmt"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line num="67" count="1" type="stmt"/>
+            <line num="68" count="1" type="stmt"/>
+            <line num="69" count="1" type="stmt"/>
+            <line num="70" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseCommand01() : void" num="73" testsuccess="true" count="1" testduration="0.056" type="method"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line num="78" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="80" count="1" type="stmt"/>
+            <line num="81" count="1" type="stmt"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line num="84" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\CommandNotFoundExceptionTest.java" name="CommandNotFoundExceptionTest.java">
+            <metrics coveredelements="3" coveredconditionals="0" complexity="1" loc="31" coveredmethods="1" methods="1" elements="3" classes="1" ncloc="10" statements="2" conditionals="0" coveredstatements="2"/>
+            <class name="CommandNotFoundExceptionTest">
+               <metrics coveredelements="3" complexity="1" methods="1" testruns="1" statements="2" coveredconditionals="0" coveredmethods="1" elements="3" testfailures="0" testduration="0.007" conditionals="0" coveredstatements="2" testpasses="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testGetCommand() : void" num="21" testsuccess="true" count="1" testduration="0.007" type="method"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\ExpressionParserExceptionTest.java" name="ExpressionParserExceptionTest.java">
+            <metrics coveredelements="3" coveredconditionals="0" complexity="1" loc="32" coveredmethods="1" methods="1" elements="3" classes="1" ncloc="10" statements="2" conditionals="0" coveredstatements="2"/>
+            <class name="ExpressionParserExceptionTest">
+               <metrics coveredelements="3" complexity="1" methods="1" testruns="1" statements="2" coveredconditionals="0" coveredmethods="1" elements="3" testfailures="0" testduration="0.007" conditionals="0" coveredstatements="2" testpasses="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testGetFaultyExpression() : void" num="23" testsuccess="true" count="1" testduration="0.007" type="method"/>
+            <line num="25" count="1" type="stmt"/>
+            <line num="26" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\ExpressionParserTest.java" name="ExpressionParserTest.java">
+            <metrics coveredelements="102" coveredconditionals="0" complexity="28" loc="245" coveredmethods="28" methods="28" elements="102" classes="1" ncloc="163" statements="74" conditionals="0" coveredstatements="74"/>
+            <class name="ExpressionParserTest">
+               <metrics coveredelements="102" complexity="28" methods="28" testruns="28" statements="74" coveredconditionals="0" coveredmethods="28" elements="102" testfailures="0" testduration="0.04" conditionals="0" coveredstatements="74" testpasses="28"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testAddVariable() : void" num="20" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line num="25" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testAddVariable1() : void" num="28" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="30" count="1" type="stmt"/>
+            <line num="31" count="1" type="stmt"/>
+            <line num="32" count="1" type="stmt"/>
+            <line num="33" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate1() : void" num="41" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="43" count="1" type="stmt"/>
+            <line num="44" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate2() : void" num="47" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="49" count="1" type="stmt"/>
+            <line num="50" count="1" type="stmt"/>
+            <line num="51" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate3() : void" num="54" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="56" count="1" type="stmt"/>
+            <line num="57" count="1" type="stmt"/>
+            <line num="58" count="1" type="stmt"/>
+            <line num="59" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate4() : void" num="62" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="64" count="1" type="stmt"/>
+            <line num="65" count="1" type="stmt"/>
+            <line num="66" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate5() : void" num="74" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="77" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate6() : void" num="80" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testEvaluate7() : void" num="86" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="88" count="1" type="stmt"/>
+            <line num="89" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseVariables() : void" num="97" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="99" count="1" type="stmt"/>
+            <line num="100" count="1" type="stmt"/>
+            <line num="101" count="1" type="stmt"/>
+            <line num="102" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseVariables01() : void" num="105" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="107" count="1" type="stmt"/>
+            <line num="108" count="1" type="stmt"/>
+            <line num="109" count="1" type="stmt"/>
+            <line num="110" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseVariables02() : void" num="113" testsuccess="true" count="1" testduration="0.007" type="method"/>
+            <line num="115" count="1" type="stmt"/>
+            <line num="116" count="1" type="stmt"/>
+            <line num="117" count="1" type="stmt"/>
+            <line num="118" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseParenthesis() : void" num="126" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="128" count="1" type="stmt"/>
+            <line num="129" count="1" type="stmt"/>
+            <line num="130" count="1" type="stmt"/>
+            <line num="131" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseParenthesis01() : void" num="134" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="136" count="1" type="stmt"/>
+            <line num="137" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseParenthesis02() : void" num="140" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="142" count="1" type="stmt"/>
+            <line num="143" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseFunctions() : void" num="151" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="153" count="1" type="stmt"/>
+            <line num="154" count="1" type="stmt"/>
+            <line num="155" count="1" type="stmt"/>
+            <line num="156" count="1" type="stmt"/>
+            <line num="157" count="1" type="stmt"/>
+            <line num="158" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseFunctions00() : void" num="161" testsuccess="true" count="1" testduration="0.007" type="method"/>
+            <line num="163" count="1" type="stmt"/>
+            <line num="164" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseFunctions01() : void" num="167" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="169" count="1" type="stmt"/>
+            <line num="170" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseFunctions02() : void" num="173" testsuccess="true" count="1" testduration="0.006" type="method"/>
+            <line num="175" count="1" type="stmt"/>
+            <line num="176" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseFunctions04() : void" num="179" testsuccess="true" count="1" testduration="0.006" type="method"/>
+            <line num="181" count="1" type="stmt"/>
+            <line num="182" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseFunctions05() : void" num="185" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="187" count="1" type="stmt"/>
+            <line num="188" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseOperators() : void" num="197" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="199" count="1" type="stmt"/>
+            <line num="200" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseOperators1() : void" num="203" testsuccess="true" count="1" testduration="0.008" type="method"/>
+            <line num="205" count="1" type="stmt"/>
+            <line num="206" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testParseOperators2() : void" num="209" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="211" count="1" type="stmt"/>
+            <line num="212" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testAdjustNumberSpacing() : void" num="219" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="221" count="1" type="stmt"/>
+            <line num="222" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIndexOfMatchingBracket() : void" num="230" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="232" count="1" type="stmt"/>
+            <line num="233" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIndexOfMatchingBracket01() : void" num="236" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="238" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIndexOfMatchingBracket02() : void" num="241" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="243" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\FunctionNotFoundExceptionTest.java" name="FunctionNotFoundExceptionTest.java">
+            <metrics coveredelements="6" coveredconditionals="0" complexity="2" loc="29" coveredmethods="2" methods="2" elements="6" classes="1" ncloc="14" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="FunctionNotFoundExceptionTest">
+               <metrics coveredelements="6" complexity="2" methods="2" testruns="2" statements="4" coveredconditionals="0" coveredmethods="2" elements="6" testfailures="0" testduration="0.0" conditionals="0" coveredstatements="4" testpasses="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testGetFunc1() : void" num="18" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="20" count="1" type="stmt"/>
+            <line num="21" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testGetFunc2() : void" num="24" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="26" count="1" type="stmt"/>
+            <line num="27" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\MathParserTest.java" name="MathParserTest.java">
+            <metrics coveredelements="48" coveredconditionals="0" complexity="12" loc="123" coveredmethods="12" methods="12" elements="48" classes="1" ncloc="77" statements="36" conditionals="0" coveredstatements="36"/>
+            <class name="MathParserTest">
+               <metrics coveredelements="48" complexity="12" methods="12" testruns="12" statements="36" coveredconditionals="0" coveredmethods="12" elements="48" testfailures="0" testduration="0.003" conditionals="0" coveredstatements="36" testpasses="12"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testIsNumber() : void" num="19" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="21" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIsNumber01() : void" num="24" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="26" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIsNumber02() : void" num="29" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="31" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIsNumber03() : void" num="34" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="36" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testIsNumber04() : void" num="39" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="41" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testFactorial() : void" num="51" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="53" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testFactorial01() : void" num="56" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="58" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testFactorial02() : void" num="62" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="64" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testFactorial03() : void" num="68" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="70" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testSolveBinaryOperation() : void" num="79" testsuccess="true" count="1" testduration="0.003" type="method"/>
+            <line num="81" count="1" type="stmt"/>
+            <line num="82" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line num="84" count="1" type="stmt"/>
+            <line num="85" count="1" type="stmt"/>
+            <line num="86" count="1" type="stmt"/>
+            <line num="87" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testSolveUnaryFunction() : void" num="95" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="97" count="1" type="stmt"/>
+            <line num="98" count="1" type="stmt"/>
+            <line num="99" count="1" type="stmt"/>
+            <line num="100" count="1" type="stmt"/>
+            <line num="101" count="1" type="stmt"/>
+            <line num="102" count="1" type="stmt"/>
+            <line num="103" count="1" type="stmt"/>
+            <line num="104" count="1" type="stmt"/>
+            <line num="105" count="1" type="stmt"/>
+            <line num="106" count="1" type="stmt"/>
+            <line num="107" count="1" type="stmt"/>
+            <line num="108" count="1" type="stmt"/>
+            <line num="109" count="1" type="stmt"/>
+            <line num="110" count="1" type="stmt"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="112" count="1" type="stmt"/>
+            <line num="113" count="1" type="stmt"/>
+            <line num="114" count="1" type="stmt"/>
+            <line num="115" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testSolveUnaryFunction01() : void" num="118" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="120" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\MissingOperandExceptionTest.java" name="MissingOperandExceptionTest.java">
+            <metrics coveredelements="3" coveredconditionals="0" complexity="1" loc="26" coveredmethods="1" methods="1" elements="3" classes="1" ncloc="10" statements="2" conditionals="0" coveredstatements="2"/>
+            <class name="MissingOperandExceptionTest">
+               <metrics coveredelements="3" complexity="1" methods="1" testruns="1" statements="2" coveredconditionals="0" coveredmethods="1" elements="3" testfailures="0" testduration="0.0" conditionals="0" coveredstatements="2" testpasses="1"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testGetOperator() : void" num="20" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\UnmatchedBracketsExceptionTest.java" name="UnmatchedBracketsExceptionTest.java">
+            <metrics coveredelements="6" coveredconditionals="0" complexity="2" loc="34" coveredmethods="2" methods="2" elements="6" classes="1" ncloc="15" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="UnmatchedBracketsExceptionTest">
+               <metrics coveredelements="6" complexity="2" methods="2" testruns="2" statements="4" coveredconditionals="0" coveredmethods="2" elements="6" testfailures="0" testduration="0.001" conditionals="0" coveredstatements="4" testpasses="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testGetIndexOfBracket0() : void" num="20" testsuccess="true" count="1" testduration="0.001" type="method"/>
+            <line num="22" count="1" type="stmt"/>
+            <line num="23" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testGetIndexOfBracket1() : void" num="26" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="28" count="1" type="stmt"/>
+            <line num="29" count="1" type="stmt"/>
+         </file>
+         <file path="C:\mooctest\projects\6537\118570\Calculator\src\test\java\net\mooctest\VariableNotFoundExceptionTest.java" name="VariableNotFoundExceptionTest.java">
+            <metrics coveredelements="6" coveredconditionals="0" complexity="2" loc="36" coveredmethods="2" methods="2" elements="6" classes="1" ncloc="15" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="VariableNotFoundExceptionTest">
+               <metrics coveredelements="6" complexity="2" methods="2" testruns="2" statements="4" coveredconditionals="0" coveredmethods="2" elements="6" testfailures="0" testduration="0.0" conditionals="0" coveredstatements="4" testpasses="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="testGetVar0() : void" num="21" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="23" count="1" type="stmt"/>
+            <line num="24" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="testGetVar1() : void" num="27" testsuccess="true" count="1" testduration="0.0" type="method"/>
+            <line num="29" count="1" type="stmt"/>
+            <line num="30" count="1" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>

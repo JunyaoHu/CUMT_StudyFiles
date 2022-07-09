@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="0" name="net.mooctest.SegmentTreeTest" time="0.13" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Software\JavaJDK\jdk1.8.0_311\jre\bin"/>
+    <property name="java.vm.version" value="25.311-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hujunyao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Eclipse"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\hujunyao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Eclipse"/>
+    <property name="java.runtime.version" value="1.8.0_311-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\hujunyao\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Software\JavaJDK\apache-maven-3.8.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Software\JavaJDK\jdk1.8.0_311\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/Software/JavaJDK/jdk-11.0.13/bin/server;D:/Software/JavaJDK/jdk-11.0.13/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\vmware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Software\MATLAB\bin;D:\Software\Git\cmd;D:\Software\nodejs\;D:\Software\opencv-3.4.5\opencv\build\x64\vc14\bin;D:\Software\Python3.9\Scripts\;D:\Software\Python3.9\;D:\Software\MySQL\MySQL Server 8.0\bin;D:\Software\Microsoft VS Code\bin;C:\Users\hujunyao\.dotnet\tools;C:\Users\hujunyao\AppData\Local\GitHubDesktop\bin;C:\Users\hujunyao\AppData\Roaming\npm;D:\Software\mingw64\bin;D:\Software\JavaJDK\jdk1.8.0_311\bin;D:\Software\JavaJDK\apache-maven-3.8.5\bin;C:\Program Files\Bandizip\;D:\Software\AndroidSDK\platform-tools\;D:\Software\GnuWin32\bin;C:\Users\hujunyao\.dotnet\tools;D:\Software\apache-tomcat-9.0.59\bin;D:\Software\apache-tomcat-9.0.59\lib;;C:\Users\hujunyao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Eclipse;;."/>
+    <property name="maven.conf" value="D:\Software\JavaJDK\apache-maven-3.8.5/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Software\JavaJDK\apache-maven-3.8.5\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\hujunyao"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="hujunyao"/>
+    <property name="java.class.path" value="D:\Software\JavaJDK\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Software\JavaJDK\jdk1.8.0_311\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -file C:/mooctest/projects/6588/118570/SegmentTree clean clover:setup test clover:aggregate clover:clover"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_311"/>
+    <property name="java.ext.dirs" value="D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\resources.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\rt.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\sunrsasign.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\jsse.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\jce.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\charsets.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\lib\jfr.jar;D:\Software\JavaJDK\jdk1.8.0_311\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Software\JavaJDK\apache-maven-3.8.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st_combine_long" time="0.072"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st_combine" time="0"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="dt" time="0.029"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="ft" time="0.02"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st" time="0.002"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st_combine_double" time="0.003"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st_combine_bigdecimal" time="0.002"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st_combine_float" time="0.001"/>
+  <testcase classname="net.mooctest.SegmentTreeTest" name="st_combine_biginteger" time="0.001"/>
+</testsuite>

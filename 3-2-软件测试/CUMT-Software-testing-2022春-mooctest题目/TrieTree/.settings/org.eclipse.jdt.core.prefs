@@ -1,0 +1,10 @@
+#Tue Jun 07 10:50:02 CST 2022
+encoding/src/test/java=UTF-8
+org.eclipse.jdt.core.compiler.compliance=1.8
+encoding/src/main/resources=UTF-8
+org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning
+encoding/src/main/java=UTF-8
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+eclipse.preferences.version=1
+encoding/src/test/resources=UTF-8
+org.eclipse.jdt.core.compiler.source=1.8

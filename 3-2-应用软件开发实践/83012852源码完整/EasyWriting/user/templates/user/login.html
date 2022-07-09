@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写作小助手-登录</title>
+    {#  注意引入文件的方式  #}
+    {% load static %}
+    <link href="{% static 'scripts/web/user.css' %}" rel="stylesheet">
+    <script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+    <script src="https://v-cn.vaptcha.com/v3.js"></script>
+    <script type="text/javascript">
+        // 页面加载完成之后
+        $(function () {
+            if ($("div.errorMsg").text() === "") {
+                $("div.errorMsg").hide();
+            }
+            // 给注册绑定单击事件
+            $("#btn_submit").click(function () {
+
+                var usernameText = $("#username").val().trim();
+                if (usernameText === '') {
+                    $("div.errorMsg").show().text("用户名为空！");
+                    return false;
+                }
+
+                var passwordText = $("#password").val().trim();
+                if (passwordText === '') {
+                    $("div.errorMsg").show().text("密码为空！");
+                    return false;
+                }
+
+                // 去掉错误信息
+                $("div.errorMsg").text("").hide();
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<div class="main">
+    <div class="main-header">
+        <div>
+            <img src="{% static 'media/web/icon.jpg' %}">
+            <span>欢迎登录写作小助手</span>
+        </div>
+    </div>
+    {% if msg %}
+        <div class="errorMsg">{{ msg }}</div>
+    {% else %}
+        <div class="errorMsg"></div>
+    {% endif %}
+    <form action="/login/" method="post" class="login">
+        {% csrf_token %}
+        <div class="input-box">
+            <span class="icon" id="id"></span>
+            <input class="login" type="text" placeholder="请输入用户名" name="username" id="username" value="{{ username }}"/>
+        </div>
+        <div class="input-box">
+            <span class="icon" id="pw"></span>
+            <input class="login" type="password" placeholder="请输入密码" name="password" id="password"/><br/>
+        </div>
+
+
+
+        <div class="button-box">
+            <input type="submit" value="登录" id="btn_submit"/>
+        </div>
+
+    </form>
+    <div class="tips">
+        <span>还未注册？<a href="/register/">立即注册</a></span>
+    </div>
+</div>
+
+</body>
+
+</html>

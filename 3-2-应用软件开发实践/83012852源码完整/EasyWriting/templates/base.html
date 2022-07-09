@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DjangoCURD</title>
+   {#  注意引入文件的方式  #}
+    {% load static %}
+    <script src="{% static 'scripts/jquery-1.7.2.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'layui/css/layui.css' %}">
+
+</head>
+<body style="margin: 3%">
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

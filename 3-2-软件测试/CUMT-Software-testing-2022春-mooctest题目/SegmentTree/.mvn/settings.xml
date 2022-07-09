@@ -1,0 +1,78 @@
+<settings>
+<servers>
+<server>
+<id>nexus</id>
+<username>chengxiang</username>
+<password>chengxiang</password>
+</server>
+<server>
+<id>releases</id>
+<username>chengxiang</username>
+<password>chengxiang</password>
+</server>
+<server>
+<id>snapshots</id>
+<username>chengxiang</username>
+<password>chengxiang</password>
+</server>
+</servers>
+<mirrors>
+<mirror>
+<!-- This sends everything else to /public  -->
+<id>nexus</id>
+<mirrorOf>*</mirrorOf>
+<url>
+http://118.178.131.206:8081/nexus/content/groups/public
+</url>
+</mirror>
+<!--
+ 
+        <mirror>
+          <id>Central</id>
+          <url>http://repo1.maven.org/maven2</url>
+          <mirrorOf>central</mirrorOf>
+        </mirror> 
+-->
+</mirrors>
+<profiles>
+<profile>
+<id>nexus</id>
+<!--
+Enable snapshots for the built in central repo to direct 
+-->
+<!-- all requests to nexus via the mirror  -->
+<repositories>
+<repository>
+<id>central</id>
+<url>
+http://118.178.131.206:8081/nexus/content/groups/public
+</url>
+<releases>
+<enabled>true</enabled>
+</releases>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</repository>
+</repositories>
+<pluginRepositories>
+<pluginRepository>
+<id>central</id>
+<url>
+http://118.178.131.206:8081/nexus/content/groups/public
+</url>
+<releases>
+<enabled>true</enabled>
+</releases>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</pluginRepository>
+</pluginRepositories>
+</profile>
+</profiles>
+<activeProfiles>
+<!-- make the profile active all the time  -->
+<activeProfile>nexus</activeProfile>
+</activeProfiles>
+</settings>
